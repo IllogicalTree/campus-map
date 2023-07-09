@@ -7,17 +7,20 @@
   font-weight: normal;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: hsla(278, 56%, 37%, 1);
   transition: 0.4s;
   padding: .5rem;
   margin: .5rem;
   text-align: center;
+  border: none;
+  background: none
 }
 
 @media (hover: hover) {
-  a:hover {
+  a:hover, button:hover {
     background-color: hsla(278, 56%, 37%, 0.2);
+    cursor: pointer;
   }
 }

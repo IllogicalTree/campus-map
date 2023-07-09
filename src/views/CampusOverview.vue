@@ -3,7 +3,9 @@ import { useRouter } from 'vue-router'
 
 import CampusOverview from '../components/CampusOverview.vue'
 
+import { useBuildingStore} from '@/stores/building'
 
+const selectedBuilding = useBuildingStore()
 const router = useRouter()
 
 const buildings = [
@@ -12,10 +14,12 @@ const buildings = [
     'RGUSport',
     'SirIanWood'
 ]
+
 const handleClickEvent = (event) => {
     if (buildings.includes(event.target?.parentNode?.id)) {
+        selectedBuilding.setBuilding(event.target.parentNode.id)
         router.push({
-            name: event.target.parentNode.id
+            name: 'Demo'
         })
     }
 }

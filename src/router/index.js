@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/ishbel-gordon',
       name: 'IshbelGordon',
       component: () => import('../views/IshbelGordon.vue')
+    },
+    {
+      path: '/demo',
+      name: 'Demo',
+      component: () => import('../views/SirIanWoodDemo.vue')
     }
   ]
 })
