@@ -1,3 +1,6 @@
+<!-- alternate view that displays all the Ishbel Gordon SVGs in a list -->
+<!-- accessed by header buttons -->
+<!-- not part of the demo -->
 <script setup>
 import IshbelGordonLevel1 from '../components/IshbelGordon/IshbelGordonLevel1.vue'
 import IshbelGordonLevel2 from '../components/IshbelGordon/IshbelGordonLevel2.vue'

@@ -22,9 +22,11 @@ watch(() => search.query, (query) => {
 });
 </script>
 
+<!-- template html loaded into every page -->
+<!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
   <header>
-    <nav>
+    <nav> 
       <RouterLink to="/">Overview</RouterLink>
       <RouterLink to="/sir-ian-wood">Sir Ian Wood Building</RouterLink>
       <RouterLink to="/business-school">Business School</RouterLink>
@@ -34,7 +36,7 @@ watch(() => search.query, (query) => {
     </nav>
   </header>
 
-  <RouterView />
+  <RouterView /> <!-- adds in the correct view depending on what route the user is on-->
 </template>
 
 <style scoped>

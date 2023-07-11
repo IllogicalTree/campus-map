@@ -6,9 +6,9 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
+const app = createApp(App) 
 
 app.use(createPinia())
-app.use(router)
+app.use(router) //web server
 
-app.mount('#app')
+app.mount('#app') //mounts the js onto the div with id 'app' in index.html.. ie the whole app 

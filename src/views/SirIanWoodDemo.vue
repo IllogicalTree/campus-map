@@ -1,7 +1,12 @@
+<!-- Although this view is called 'SirIanWoodDemo' it is routed to /demo which is the demo for all buildings -->
+
+
 <script setup>
+
 import { watchEffect, shallowRef } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import {useSearchStore } from '@/stores/search';
+//imports
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -14,6 +19,7 @@ watchEffect(() => {
 let previouslySelectedFill = ''
 let previouslySelectedElement = ''
 
+//function that handles vector behaviour when an individual shape is highlighted
 const highlight = (target, isSearch) => {
     if (!target) {
         return
@@ -44,6 +50,7 @@ const highlight = (target, isSearch) => {
 let previouslySelectedElements = [];
 let previouslySelectedCategory = '';
 
+//function that handles highlighting certain groups of vectors
 const highlightAll = category => {
     
     if (previouslySelectedCategory === category) {
@@ -77,6 +84,7 @@ watchEffect(() => {
     highlight(document.querySelector(`[id='${search.query}'] > *`), true);
 })
 
+//handles highlighting when a vector is clicked
 const onClick = event => {
     if (!event.target?.parentNode?.id) {
         return
@@ -86,6 +94,7 @@ const onClick = event => {
 
 </script>
 
+<!-- template is loaded into the 'RouterView' of the App.vue-->
 <template>
     <main>
         <header>

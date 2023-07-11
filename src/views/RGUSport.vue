@@ -1,3 +1,6 @@
+<!-- alternate view that displays all the RGU Sport SVGs in a list -->
+<!-- accessed by header buttons -->
+<!-- not part of the demo -->
 <script setup>
 import RGUSportLevel1 from '../components/RGUSport/RGUSportLevel1.vue'
 import RGUSportLevel2 from '../components/RGUSport/RGUSportLevel2.vue'

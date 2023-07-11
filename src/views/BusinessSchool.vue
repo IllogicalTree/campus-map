@@ -1,3 +1,6 @@
+<!-- alternate view that displays all the Business School SVGs in a list -->
+<!-- accessed by header buttons -->
+<!-- not part of the demo -->
 <script setup>
 import BusinessSchoolLevel1 from '../components/BusinessSchool/BusinessSchoolLevel1.vue'
 import BusinessSchoolLevel2 from '../components/BusinessSchool/BusinessSchoolLevel2.vue'
