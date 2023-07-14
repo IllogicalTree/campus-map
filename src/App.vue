@@ -13,7 +13,7 @@ watch(() => search.query, query => {
     const regex = new RegExp("[Nn][Ss]?[0-9]{3}");
     if (regex.test(query)) {
         const matched = regex.exec(query)[0];
-        search.value = matched.toUpperCase();
+        search.query = matched.toUpperCase();
         building.setLevel(matched.charAt(matched.length - 3));
         router.push({ name: 'Floor' });
     }
