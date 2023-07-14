@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
+//this js file functions more or less as a web server by routing pages to certain routes
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/', //root routes you to the landing page
       name: 'CampusOverview',
-      component: () => import('../views/CampusOverview.vue')
+      component: () => import('../views/CampusOverview.vue') //templates in the page when routed
     },
     {
       path: '/about',
@@ -33,7 +35,7 @@ const router = createRouter({
       component: () => import('../views/IshbelGordon.vue')
     },
     {
-      path: '/demo',
+      path: '/demo', //demo for all buildings, despite the name
       name: 'Demo',
       component: () => import('../views/SirIanWoodDemo.vue')
     }

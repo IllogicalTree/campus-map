@@ -1,3 +1,6 @@
+<!-- alternate view that displays all the Sir Ian Wood SVGs in a list -->
+<!-- accessed by header buttons -->
+<!-- not part of the demo -->
 <script setup>
 import SirIanWoodLevel1 from '../components/SirIanWood/SirIanWoodLevel1.vue'
 import SirIanWoodLevel2 from '../components/SirIanWood/SirIanWoodLevel2.vue'
