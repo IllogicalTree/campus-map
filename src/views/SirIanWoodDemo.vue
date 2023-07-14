@@ -127,3 +127,31 @@ g:hover {
     stroke: yellow;
 }
 </style>
+
+
+<style>
+.background,
+.room {
+   fill: #75378f;
+}
+
+.background {
+   opacity: 0.55;
+}
+
+.lift {
+   fill: #2d6d9c;
+}
+
+.bathroom {
+   fill: #4b337f;
+}
+
+.accessible-toilet {
+   fill: #c26700;
+}
+
+.stair {
+   fill: #b03a4f;
+}
+</style>
