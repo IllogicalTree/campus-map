@@ -20,6 +20,8 @@ watch(() => search.query, query => {
 });
 </script>
 
+<!-- template html loaded into every page -->
+<!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
     <header>
         <nav>
