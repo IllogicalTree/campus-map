@@ -153,7 +153,6 @@ g:hover {
 .stair {
    fill: #b03a4f;
 }
-
 .reception {
     fill: #6c7f28
 }
