@@ -9,12 +9,14 @@ const building = useBuildingStore();
 const highlighted = useHighlightStore();
 const floorComponent = shallowRef();
 
-watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Level${building.level}.vue`).then(val => floorComponent.value = val.default));
+watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Level${building.level}.vue`).then(val => {
+    floorComponent.value = val.default;
+    setTimeout(() => highlight(document.querySelector(`[id='${search.query}'] > *`)), 10);
+}));
 
 const highlight = target => {
     const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`);
-    console.log(element, highlighted.highlightedElement)
-    if (element === highlighted.highlightedElement) {
+    if (!element || element === highlighted.highlightedElement) {
         highlighted.highlightedElement = null;
         building.roomId = null;
         return;
@@ -47,7 +49,6 @@ watch(() => highlighted.highlightedElements,
 );
 
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
-
 </script>
 
 <template>
