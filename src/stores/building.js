@@ -1,26 +1,9 @@
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
+import { rooms, buildings, facilities } from '../data';
 
-const buildings = {
-    'BusinessSchool': {
-        name: 'Business School',
-        levels: 6,
-    },
-    'IshbelGordon': {
-        name: 'Ishbel Gordon',
-        levels: 7,
-    },
-    'RGUSport': {
-        name: 'RGU Sport',
-        levels: 5,
-    },
-    'SirIanWood': {
-        name: 'Sir Ian Wood',
-        levels: 6,
-    },
-};
-
-const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
+import { useRouter } from 'vue-router'
+const router = useRouter();
 
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood');
@@ -50,10 +33,19 @@ export const useBuildingStore = defineStore('building', () => {
             level.value = newLevel;
         };
     };
+
+    const setRoom = newRoomId => {
+        const room = rooms.find(room => room.roomId === newRoomId)
+        if (rooms.find(room => room.roomId === newRoomId)) {
+            nameId.value = room.building.id;
+            roomId.value = room.id;
+            level.value = room.level;
+        };
+    }
     
     const incrementLevel = () => setLevel(level.value + 1);
     const decrementLevel = () => setLevel(level.value - 1);
     const setRoomId = newRoomId => roomId.value = newRoomId;
         
-    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId };
+    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom };
 });
