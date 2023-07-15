@@ -4,17 +4,17 @@ import { watch } from 'vue'
 
 import { useSearchStore } from '@/stores/search';
 import { useBuildingStore } from '@/stores/building';
+import { rooms } from '@/data';
 
 const building = useBuildingStore();
 const search = useSearchStore();
 const router = useRouter();
 
 watch(() => search.query, query => {
-    const regex = new RegExp("[Nn][Ss]?[0-9]{3}");
-    if (regex.test(query)) {
-        const matched = regex.exec(query)[0];
-        search.query = matched.toUpperCase();
-        building.setLevel(matched.charAt(matched.length - 3));
+    const room = rooms.find(room => room.roomId?.toLowerCase() === query?.toLowerCase());
+    if (room) {
+        search.query = room.roomId;
+        building.setRoom(room.roomId);
         router.push({ name: 'Floor' });
     }
 });
