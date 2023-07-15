@@ -1,5 +1,5 @@
 <script setup>
-import { watchEffect, shallowRef, watch } from 'vue';
+import { watchEffect, shallowRef, watch, ref } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
@@ -49,6 +49,64 @@ watch(() => highlighted.highlightedElements,
 );
 
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
+
+var drag = false;
+var offset = { x: 0, y: 0 };
+var factor = .1;
+var matrix = new DOMMatrix();
+
+let viewPortTransform = shallowRef();
+
+const style = ref();
+
+const pointerUp = event => drag = false;
+
+const wheel = event => {
+
+    //console.log("wheel")
+    var zoom = event.deltaY > 0 ? -1 : 1;
+    var scale = 1 + factor * zoom;
+    offset = {
+        x: event.offsetX,
+        y: event.offsetY
+    };
+    matrix.preMultiplySelf(new DOMMatrix()
+        .translateSelf(offset.x, offset.y)
+        .scaleSelf(scale, scale)
+        .translateSelf(-offset.x, -offset.y));
+    //viewPort.style.transform = matrix.toString();
+    //viewPortTransform.value = matrix.toString();
+    style.value = {
+        transform: matrix.toString()
+    };
+
+};
+
+const pointerDown = event => {
+    //console.log("pointer down")
+    drag = true;
+    offset = { x: event.offsetX, y: event.offsetY };
+};
+
+const pointerMove = event =>{
+    //console.log("pointer move", drag)
+    if (drag) {
+        var tx = event.offsetX - offset.x;
+        var ty = event.offsetY - offset.y;
+        offset = {
+            x: event.offsetX,
+            y: event.offsetY
+        };
+        matrix.preMultiplySelf(new DOMMatrix()
+            .translateSelf(tx, ty));
+        // viewPort.style.transform = matrix.toString();
+        //viewPortTransform.value = matrix.toString();
+        style.value = {
+            transform: matrix.toString()
+        };
+    }
+};
+
 </script>
 
 <template>
@@ -60,7 +118,14 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span>
             </nav>
         </header>
-        <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        <div id="around">
+            <svg id="canvas" style="background: pink" :style="style" @pointerup.passive="pointerUp" @wheel.passive="wheel" @pointerdown.passive="pointerDown" @pointermove.passive="pointerMove">
+                <g id="viewport">
+                    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+                </g>
+            </svg>
+        </div>
+       
         <footer>
             <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
             <button @click="highlightCategory('lift')">Lifts</button>
@@ -77,9 +142,27 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         justify-content: space-evenly;
         margin-bottom: 1rem;
     }
-
     span {
         padding: .5rem;
         margin: .5rem;
     }
+</style>
+
+
+
+<style>
+
+#around{
+  display: flex;
+  width: 100%;
+  border: 1px dashed orange;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#canvas{
+  flex: 1;
+  height: auto;
+}
+
 </style>

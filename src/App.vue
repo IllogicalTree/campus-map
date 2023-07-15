@@ -44,7 +44,7 @@ watch(() => search.query, query => {
 </style>
 
 <style>
-    g:hover {
+    g:hover:not(#viewport) {
         cursor: pointer;
         stroke: yellow;
     }
