@@ -5,11 +5,11 @@
 
 import { watchEffect, shallowRef } from 'vue';
 import { useBuildingStore } from '@/stores/building';
-import {useSearchStore } from '@/stores/search';
+import { useSearchStore } from '@/stores/search';
 //imports
 
 const search = useSearchStore();
-const building = useBuildingStore();
+const building = useBuildingStore(); //initialize a store that controls details about the current building, level, room
 const floorComponent = shallowRef('');
 
 watchEffect(() => {
@@ -87,7 +87,7 @@ watchEffect(() => {
 //handles highlighting when a vector is clicked
 const onClick = event => {
     if (!event.target?.parentNode?.id) {
-        return
+        return //do nothing if the click is not on a highlightable element (?)
     }
     highlight(event.target);
 }
@@ -99,9 +99,11 @@ const onClick = event => {
     <main>
         <header>
             <nav>
+                <!-- Up and down buttons are attached to a function in the building store that changes the building level loaded -->
                 <button @click="building.incrementLevel()">Up</button>
                 <button @click="building.decrementLevel()">Down</button>
-                <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span>
+                <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span> <!-- 'templated' in -->
+                <!-- building name, level and room are all stored via the building store -->
             </nav>
         </header>
         <component v-if="floorComponent" :is="floorComponent"
