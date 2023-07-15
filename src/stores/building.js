@@ -1,5 +1,5 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { ref, computed } from 'vue';
+import { defineStore } from 'pinia';
 
 //store of buildings and their info 
 //functionally this will become the database? 
@@ -21,27 +21,27 @@ const buildings = {
         name: 'Sir Ian Wood',
         levels: 6,
     },
-}
+};
 
 //a store of what filters can be applied 
 //Toilet refers to accessible toilet
-const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom']
+const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
 
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood'); //name is initialised as siwb but changes dynamically based on which demo is being viewed
     const name = computed(() => buildings[nameId.value].name);
     const level = ref(1);
-    const roomId = ref('');
+    const roomId = ref();
+
     const room = computed(() => {
-        let roomName = roomId.value;
         facilities.forEach(facility => {
-            if (roomId.value.toLowerCase().includes(facility.toLowerCase())) {
-                roomName = facility+'s'
-                return
-            }
-        })
-        return roomName;
-    })
+            if (roomId.value?.toLowerCase().includes(facility.toLowerCase())) {
+                roomId.value = facility+'s';
+                return;
+            };
+        });
+        return roomId.value;
+    });
 
     const setBuilding = newBuilding => {
         if (Object.keys(buildings).includes(newBuilding)) {
@@ -60,5 +60,5 @@ export const useBuildingStore = defineStore('building', () => {
     const decrementLevel = () => setLevel(level.value - 1);
     const setRoomId = newRoomId => roomId.value = newRoomId;
         
-    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId }
-})
+    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId };
+});
