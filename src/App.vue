@@ -10,7 +10,7 @@ const search = useSearchStore();
 const router = useRouter();
 
 watch(() => search.query, query => {
-    const regex = new RegExp("[Nn][Ss]?[0-9]{3}");
+    const regex = new RegExp("[Nn][Ss]?[0-9]{3}"); //find and match
     if (regex.test(query)) {
         const matched = regex.exec(query)[0];
         search.query = matched.toUpperCase();
@@ -44,6 +44,8 @@ watch(() => search.query, query => {
 </style>
 
 <style>
+/* styles across all maps including hover styles */
+
     g:hover {
         cursor: pointer;
         stroke: yellow;
@@ -72,6 +74,10 @@ watch(() => search.query, query => {
 
     .stair {
         fill: #b03a4f;
+    }
+
+    .entrance {
+        fill: #2dd4e7
     }
 
     .reception {

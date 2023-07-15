@@ -26,6 +26,11 @@ import BusinessSchoolLevel4 from '../components/BusinessSchool/BusinessSchoolLev
 import BusinessSchoolLevel5 from '../components/BusinessSchool/BusinessSchoolLevel5.vue';
 import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLevel6.vue';
 
+import Gatehouse from '../components/Gatehouse/Gatehouse.vue';
+
+import GH_GHALevel1 from '../components/GH_GHA/GH_GHALevel1.vue';
+import GH_GHALevel2 from '../components/GH_GHA/GH_GHALevel2.vue';
+
 </script>
 
 <template>
@@ -60,6 +65,13 @@ import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLev
         <BusinessSchoolLevel4 />
         <BusinessSchoolLevel5 />
         <BusinessSchoolLevel6 />
+
+        <h1>Gatehouse</h1>
+        <Gatehouse />
+
+        <h1>Garthedee House & Garthdee House Annexe</h1>
+        <GH_GHALevel1 />
+        <GH_GHALevel2 />
     </main>
 </template>
 
