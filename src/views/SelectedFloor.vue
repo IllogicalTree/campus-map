@@ -16,6 +16,9 @@ watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Lev
 
 const highlight = target => {
     const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`);
+    if (element?.parentNode?.id === 'around') {
+        return;
+    }
     if (!element || element === highlighted.highlightedElement) {
         highlighted.highlightedElement = null;
         building.roomId = null;
@@ -55,14 +58,13 @@ var offset = { x: 0, y: 0 };
 var factor = .1;
 var matrix = new DOMMatrix();
 
-let viewPortTransform = shallowRef();
-
 const style = ref();
 
 const pointerUp = event => drag = false;
 
 const wheel = event => {
 
+   
     //console.log("wheel")
     var zoom = event.deltaY > 0 ? -1 : 1;
     var scale = 1 + factor * zoom;
@@ -79,16 +81,34 @@ const wheel = event => {
     style.value = {
         transform: matrix.toString()
     };
-
 };
+
+function throttle (timer) {
+  let queuedCallback
+  return callback => {
+    if (!queuedCallback) {
+      timer(() => {
+        const cb = queuedCallback
+        queuedCallback = null
+        cb()
+      })
+    }
+    queuedCallback = callback
+  }
+}
+
+const throttledWrite = throttle(requestAnimationFrame)
+//const throttledRead = throttle(requestPostAnimationFrame)
 
 const pointerDown = event => {
     //console.log("pointer down")
     drag = true;
     offset = { x: event.offsetX, y: event.offsetY };
+    
 };
 
 const pointerMove = event =>{
+    throttledWrite(() => {
     //console.log("pointer move", drag)
     if (drag) {
         var tx = event.offsetX - offset.x;
@@ -97,14 +117,17 @@ const pointerMove = event =>{
             x: event.offsetX,
             y: event.offsetY
         };
+        
         matrix.preMultiplySelf(new DOMMatrix()
             .translateSelf(tx, ty));
+            
         // viewPort.style.transform = matrix.toString();
         //viewPortTransform.value = matrix.toString();
         style.value = {
-            transform: matrix.toString()
+            transform: matrix
         };
     }
+    });
 };
 
 </script>
@@ -119,11 +142,7 @@ const pointerMove = event =>{
             </nav>
         </header>
         <div id="around">
-            <svg id="canvas" style="background: pink" :style="style" @pointerup.passive="pointerUp" @wheel.passive="wheel" @pointerdown.passive="pointerDown" @pointermove.passive="pointerMove">
-                <g id="viewport">
-                    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
-                </g>
-            </svg>
+            <component id="canvas" v-if="floorComponent" :is="floorComponent"  @click="event => highlight(event?.target)" style="background: pink" :style="style" @pointerup="pointerUp" @wheel="wheel" @pointerdown="pointerDown" @pointermove="pointerMove"/>
         </div>
        
         <footer>
