@@ -1,5 +1,5 @@
 <script setup>
-import { watchEffect, shallowRef, watch, ref } from 'vue';
+import { watchEffect, shallowRef, watch, ref, markRaw } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
@@ -83,6 +83,7 @@ const wheel = event => {
     };
 };
 
+
 function throttle (timer) {
   let queuedCallback
   return callback => {
@@ -97,7 +98,7 @@ function throttle (timer) {
   }
 }
 
-const throttledWrite = throttle(requestAnimationFrame)
+//const throttledWrite = throttle(requestAnimationFrame)
 //const throttledRead = throttle(requestPostAnimationFrame)
 
 const pointerDown = event => {
@@ -108,7 +109,6 @@ const pointerDown = event => {
 };
 
 const pointerMove = event =>{
-    throttledWrite(() => {
     //console.log("pointer move", drag)
     if (drag) {
         var tx = event.offsetX - offset.x;
@@ -127,7 +127,6 @@ const pointerMove = event =>{
             transform: matrix
         };
     }
-    });
 };
 
 </script>
@@ -142,7 +141,7 @@ const pointerMove = event =>{
             </nav>
         </header>
         <div id="around">
-            <component id="canvas" v-if="floorComponent" :is="floorComponent"  @click="event => highlight(event?.target)" style="background: pink" :style="style" @pointerup="pointerUp" @wheel="wheel" @pointerdown="pointerDown" @pointermove="pointerMove"/>
+            <component id="canvas" v-if="floorComponent" :is="markRaw(floorComponent)"  @click="event => highlight(event?.target)" :style="style" @pointerup="pointerUp" @wheel="wheel" @pointerdown="pointerDown" @pointermove="pointerMove"/>
         </div>
        
         <footer>
