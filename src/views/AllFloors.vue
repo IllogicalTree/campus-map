@@ -33,6 +33,9 @@ import GH_GHALevel2 from '../components/GH_GHA/GH_GHALevel2.vue';
 import GH_GHALevel3 from '../components/GH_GHA/GH_GHALevel3.vue';
 import GH_GHALevel4 from '../components/GH_GHA/GH_GHALevel4.vue';
 
+import GraysLevel1 from '../components/Grays/GraysLevel1.vue';
+
+
 </script>
 
 <template>
@@ -76,6 +79,11 @@ import GH_GHALevel4 from '../components/GH_GHA/GH_GHALevel4.vue';
         <GH_GHALevel2 />
         <GH_GHALevel3 />
         <GH_GHALevel4 />
+
+        <h1>Gray's School of Art</h1>
+        <GraysLevel1 />
+        
+
     </main>
 </template>
 
