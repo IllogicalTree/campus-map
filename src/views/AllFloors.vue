@@ -30,6 +30,8 @@ import Gatehouse from '../components/Gatehouse/Gatehouse.vue';
 
 import GH_GHALevel1 from '../components/GH_GHA/GH_GHALevel1.vue';
 import GH_GHALevel2 from '../components/GH_GHA/GH_GHALevel2.vue';
+import GH_GHALevel3 from '../components/GH_GHA/GH_GHALevel3.vue';
+import GH_GHALevel4 from '../components/GH_GHA/GH_GHALevel4.vue';
 
 </script>
 
@@ -72,6 +74,8 @@ import GH_GHALevel2 from '../components/GH_GHA/GH_GHALevel2.vue';
         <h1>Garthedee House & Garthdee House Annexe</h1>
         <GH_GHALevel1 />
         <GH_GHALevel2 />
+        <GH_GHALevel3 />
+        <GH_GHALevel4 />
     </main>
 </template>
 

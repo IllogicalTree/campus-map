@@ -1,7 +1,7 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" id="svg2410" viewBox="0 0 437.47 421.97">
         <g id="_1st_Floor" data-name="1st Floor">
-            <path class="background"
+            <path class="background" style="pointer-events:none"
                 d="M68.18,421.91V288.38l-4.06-.3V276.59H58.64V269H0V196.53H66.33v2.24s33.77.82,34,0,0-34,0-34H75.63V147.36H96.34v-5l-86.89-.12L9.56,18.88l3.21.11-.13-10.4L17.82,0H28.35l6.39,8v3.84H154.82V35.73H151v2.19h1.46V62.6h14.68V86.08h-9.86v42.46H152v4h2.52v9.14H112.38v56.87H311.85v-38.8H437.51v92.81h-3.78V422Z"
                 transform="translate(-0.04)" />
         </g>
