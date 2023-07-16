@@ -1,6 +1,6 @@
 <template>
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122.6667 793.33331">
-      <g  id="level 4" style="pointer-events: none;">
+      <g  id="level 4" >
          <path class="background"
             d="m 621.82325,532.8268 h 21.99783 v 44.57173 H 346.9278 V 390.83934 h 279.85939 v 99.54838 h -4.80602 z" />
       </g>

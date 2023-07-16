@@ -1,8 +1,9 @@
 <script setup>
-import { watchEffect, shallowRef, watch, ref, markRaw } from 'vue';
+import { watchEffect, shallowRef, watch, ref} from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
+import DraggableComponent from '../components/DraggableComponent.vue';
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -53,81 +54,8 @@ watch(() => highlighted.highlightedElements,
 
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
 
-var drag = false;
-var offset = { x: 0, y: 0 };
-var factor = .1;
-var matrix = new DOMMatrix();
 
-const style = ref();
-
-const pointerUp = event => drag = false;
-
-const wheel = event => {
-
-   
-    //console.log("wheel")
-    var zoom = event.deltaY > 0 ? -1 : 1;
-    var scale = 1 + factor * zoom;
-    offset = {
-        x: event.offsetX,
-        y: event.offsetY
-    };
-    matrix.preMultiplySelf(new DOMMatrix()
-        .translateSelf(offset.x, offset.y)
-        .scaleSelf(scale, scale)
-        .translateSelf(-offset.x, -offset.y));
-    //viewPort.style.transform = matrix.toString();
-    //viewPortTransform.value = matrix.toString();
-    style.value = {
-        transform: matrix.toString()
-    };
-};
-
-
-function throttle (timer) {
-  let queuedCallback
-  return callback => {
-    if (!queuedCallback) {
-      timer(() => {
-        const cb = queuedCallback
-        queuedCallback = null
-        cb()
-      })
-    }
-    queuedCallback = callback
-  }
-}
-
-//const throttledWrite = throttle(requestAnimationFrame)
-//const throttledRead = throttle(requestPostAnimationFrame)
-
-const pointerDown = event => {
-    //console.log("pointer down")
-    drag = true;
-    offset = { x: event.offsetX, y: event.offsetY };
-    
-};
-
-const pointerMove = event =>{
-    //console.log("pointer move", drag)
-    if (drag) {
-        var tx = event.offsetX - offset.x;
-        var ty = event.offsetY - offset.y;
-        offset = {
-            x: event.offsetX,
-            y: event.offsetY
-        };
-        
-        matrix.preMultiplySelf(new DOMMatrix()
-            .translateSelf(tx, ty));
-            
-        // viewPort.style.transform = matrix.toString();
-        //viewPortTransform.value = matrix.toString();
-        style.value = {
-            transform: matrix
-        };
-    }
-};
+const map = ref({x: -100, y: -50});
 
 </script>
 
@@ -140,9 +68,15 @@ const pointerMove = event =>{
                 <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span>
             </nav>
         </header>
-        <div id="around">
-            <component id="canvas" v-if="floorComponent" :is="markRaw(floorComponent)"  @click="event => highlight(event?.target)" :style="style" @pointerup="pointerUp" @wheel="wheel" @pointerdown="pointerDown" @pointermove="pointerMove"/>
-        </div>
+        <svg viewBox="-100 -50 200 100" style="background: #eee">
+            <DraggableComponent v-model="map"  @click="event => console.log('clicked ', event)">
+                <component 
+                    v-if="floorComponent" 
+                    :is="floorComponent"  
+                    @click="event => console.log('clicked ', event)"
+                />
+            </DraggableComponent>
+        </svg>
        
         <footer>
             <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
@@ -164,23 +98,4 @@ const pointerMove = event =>{
         padding: .5rem;
         margin: .5rem;
     }
-</style>
-
-
-
-<style>
-
-#around{
-  display: flex;
-  width: 100%;
-  border: 1px dashed orange;
-  height: 50vh;
-  overflow: hidden;
-}
-
-#canvas{
-  flex: 1;
-  height: auto;
-}
-
 </style>
