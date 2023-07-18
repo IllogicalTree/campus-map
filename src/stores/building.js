@@ -42,10 +42,9 @@ const buildings = {
 const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom', 'Entrance'];
 
 export const useBuildingStore = defineStore('building', () => {
-    const defaultBuilding = 'SirIanWood'; //default building is Sir Ian Wood
-    const nameId = ref(defaultBuilding); //autos to this
-    const name = ref(buildings[defaultBuilding].name)
-    const level = ref(buildings[defaultBuilding].entranceLevel) //will set the autolevel for siwb specifically
+    const nameId = ref('SirIanWood'); //autos to this
+    const name = ref(buildings[nameId.value].name)
+    const level = ref(buildings[nameId.value].entranceLevel) //will set the autolevel for siwb specifically
     const roomId = ref();
 
     const room = computed(() => {
