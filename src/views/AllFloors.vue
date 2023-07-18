@@ -37,7 +37,8 @@ import GraysLevel1 from '../components/Grays/GraysLevel1.vue';
 import GraysLevel2 from '../components/Grays/GraysLevel2.vue';
 import GraysLevel3 from '../components/Grays/GraysLevel3.vue';
 import GraysLevel4 from '../components/Grays/GraysLevel4.vue';
-
+import GraysLevel5 from '../components/Grays/GraysLevel5.vue';
+import GraysLevel6 from '../components/Grays/GraysLevel6.vue';
 
 </script>
 
@@ -88,7 +89,8 @@ import GraysLevel4 from '../components/Grays/GraysLevel4.vue';
         <GraysLevel2 />
         <GraysLevel3 />
         <GraysLevel4 />
-        
+        <GraysLevel5 />
+        <GraysLevel6 />
 
     </main>
 </template>
