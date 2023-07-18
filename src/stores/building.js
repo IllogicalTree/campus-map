@@ -15,7 +15,7 @@ const buildings = {
     'RGUSport': {
         name: 'RGU Sport',
         levels: 5,
-        entranceLevel: 1,
+        entranceLevel: 3,
     },
     'SirIanWood': {
         name: 'Sir Ian Wood',
@@ -60,7 +60,6 @@ export const useBuildingStore = defineStore('building', () => {
     const setBuilding = newBuilding => { //newBuilding passed in from CampusOverview
         if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
             nameId.value = newBuilding; //name of building in store is the name passed in from the landing page
-            //level.value = 1;
             level.value = buildings[newBuilding].entranceLevel; //automatically goes to the right level
             console.log(level.value);
         };
