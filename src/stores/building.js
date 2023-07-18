@@ -32,10 +32,10 @@ const buildings = {
     },
 };
 
-const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
+const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom', 'Entrance'];
 
 export const useBuildingStore = defineStore('building', () => {
-    const nameId = ref('SirIanWood');
+    const nameId = ref('SirIanWood'); //autos to this
     const name = computed(() => buildings[nameId.value].name);
     const level = ref(1);
     const roomId = ref();

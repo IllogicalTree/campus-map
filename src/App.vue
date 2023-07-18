@@ -58,6 +58,7 @@ watch(() => search.query, query => {
 
     .background {
         opacity: 0.55;
+        pointer-events:none;
     }
 
     .lift {
