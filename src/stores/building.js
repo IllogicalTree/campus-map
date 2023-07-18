@@ -35,7 +35,7 @@ const buildings = {
     'GraysArt': {
         name: 'Grays School of Art',
         levels: 6,
-        entranceLevel: 1,
+        entranceLevel: 2,
     },
 };
 
