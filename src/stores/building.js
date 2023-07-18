@@ -42,11 +42,10 @@ const buildings = {
 const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom', 'Entrance'];
 
 export const useBuildingStore = defineStore('building', () => {
-    const nameId = ref('SirIanWood'); //autos to this
-    const name = computed(() => buildings[nameId.value].name);
-    //const level = ref(1); //building.level in the SelectedFloor view
-    const level = computed(() => buildings[nameId.value].entranceLevel); //will compute the autolevel for siwb specifically
-    //computed () is load bearing for reasons i dont understand
+    const defaultBuilding = 'SirIanWood'; //default building is Sir Ian Wood
+    const nameId = ref(defaultBuilding); //autos to this
+    const name = ref(buildings[defaultBuilding].name)
+    const level = ref(buildings[defaultBuilding].entranceLevel) //will set the autolevel for siwb specifically
     const roomId = ref();
 
     const room = computed(() => {
@@ -63,7 +62,7 @@ export const useBuildingStore = defineStore('building', () => {
         if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
             nameId.value = newBuilding; //name of building in store is the name passed in from the landing page
             //level.value = 1;
-            level.value =  buildings[newBuilding.value].entranceLevel; //automatically goes to the right level
+            level.value = buildings[newBuilding].entranceLevel; //automatically goes to the right level
             console.log(level.value);
         };
     };
