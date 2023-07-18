@@ -38,5 +38,6 @@
                 transform="translate(-115.1 -387.93)" />
             <path class="room" d="M1637.69,486.38" transform="translate(-115.1 -387.93)" />
         </g>
+        <!-- Missing the gatehouse ... i dont actually know what the gatehosue is -->
     </svg>
 </template>

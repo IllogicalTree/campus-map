@@ -28,17 +28,17 @@ import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLev
 
 import Gatehouse from '../components/Gatehouse/Gatehouse.vue';
 
-import GH_GHALevel1 from '../components/GH_GHA/GH_GHALevel1.vue';
-import GH_GHALevel2 from '../components/GH_GHA/GH_GHALevel2.vue';
-import GH_GHALevel3 from '../components/GH_GHA/GH_GHALevel3.vue';
-import GH_GHALevel4 from '../components/GH_GHA/GH_GHALevel4.vue';
+import GH_GHALevel1 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel1.vue';
+import GH_GHALevel2 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel2.vue';
+import GH_GHALevel3 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel3.vue';
+import GH_GHALevel4 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel4.vue';
 
-import GraysLevel1 from '../components/Grays/GraysLevel1.vue';
-import GraysLevel2 from '../components/Grays/GraysLevel2.vue';
-import GraysLevel3 from '../components/Grays/GraysLevel3.vue';
-import GraysLevel4 from '../components/Grays/GraysLevel4.vue';
-import GraysLevel5 from '../components/Grays/GraysLevel5.vue';
-import GraysLevel6 from '../components/Grays/GraysLevel6.vue';
+import GraysLevel1 from '../components/GraysArt/GraysArtLevel1.vue';
+import GraysLevel2 from '../components/GraysArt/GraysArtLevel2.vue';
+import GraysLevel3 from '../components/GraysArt/GraysArtLevel3.vue';
+import GraysLevel4 from '../components/GraysArt/GraysArtLevel4.vue';
+import GraysLevel5 from '../components/GraysArt/GraysArtLevel5.vue';
+import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
 
 </script>
 

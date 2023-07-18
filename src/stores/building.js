@@ -18,6 +18,18 @@ const buildings = {
         name: 'Sir Ian Wood',
         levels: 6,
     },
+    Gatehouse: {
+        name: 'Gatehouse',
+        levels: 1,
+    },
+    GarthdeeHouseAnnexe: {
+        name: 'Garthdee House & Garthdee House Annexe',
+        levels: 4,
+    },
+    GraysArt: {
+        name: 'Grays School of Art',
+        levels: 6,
+    },
 };
 
 const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
@@ -38,10 +50,10 @@ export const useBuildingStore = defineStore('building', () => {
         return roomId.value;
     });
 
-    const setBuilding = newBuilding => {
-        if (Object.keys(buildings).includes(newBuilding)) {
-            nameId.value = newBuilding;
-            level.value = 1;
+    const setBuilding = newBuilding => { //newBuilding passed in from CampusOverview
+        if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
+            nameId.value = newBuilding; //load the new building
+            level.value = 1; //automatically goes to the right level
         };
     };
 
