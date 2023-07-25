@@ -40,6 +40,9 @@ import GraysLevel4 from '../components/GraysArt/GraysArtLevel4.vue';
 import GraysLevel5 from '../components/GraysArt/GraysArtLevel5.vue';
 import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
 
+import EnergyTransitionLevel1 from '../components/EnergyTransition/EnergyTransitionLevel1.vue';
+import EnergyTransitionLevel2 from '../components/EnergyTransition/EnergyTransitionLevel2.vue';
+
 </script>
 
 <template>
@@ -91,6 +94,10 @@ import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
         <GraysLevel4 />
         <GraysLevel5 />
         <GraysLevel6 />
+
+        <h1>Energy Transition Institute</h1>
+        <EnergyTransitionLevel1/>
+        <EnergyTransitionLevel2/>
 
     </main>
 </template>
