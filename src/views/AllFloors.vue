@@ -43,6 +43,11 @@ import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
 import EnergyTransitionLevel1 from '../components/EnergyTransition/EnergyTransitionLevel1.vue';
 import EnergyTransitionLevel2 from '../components/EnergyTransition/EnergyTransitionLevel2.vue';
 
+import CentralServicesLevel1 from '../components/CentralServices/CentralServicesLevel1.vue';
+import CentralServicesLevel2 from '../components/CentralServices/CentralServicesLevel2.vue';
+import CentralServicesLevel3 from '../components/CentralServices/CentralServicesLevel3.vue';
+import CentralServicesLevel4 from '../components/CentralServices/CentralServicesLevel4.vue';
+
 </script>
 
 <template>
@@ -98,6 +103,12 @@ import EnergyTransitionLevel2 from '../components/EnergyTransition/EnergyTransit
         <h1>Energy Transition Institute</h1>
         <EnergyTransitionLevel1/>
         <EnergyTransitionLevel2/>
+
+        <h1>Central Services Building</h1>
+        <CentralServicesLevel1 />
+        <CentralServicesLevel2 />
+        <CentralServicesLevel3 />
+        <CentralServicesLevel4 />
 
     </main>
 </template>
