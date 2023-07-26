@@ -1,5 +1,5 @@
 <template>
-   <input v-model="search.query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?"/>
+   <input v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?"/>
    <datalist id="query">
     <option  v-for="result in results" :key="result">
         {{ result.item.roomId }}
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, watchEffect} from 'vue'
+import { ref, watchEffect, watch} from 'vue'
 import { useRouter } from 'vue-router'
 import Fuse from 'fuse.js'
 import { useBuildingStore } from '@/stores/building';
@@ -20,6 +20,7 @@ const router = useRouter();
 const building = useBuildingStore();
 const search = useSearchStore();
 const results = ref('');
+const query = ref('');
 const options = {
     keys: ['roomId'],
     threshold: 0.5,
@@ -29,10 +30,10 @@ const options = {
 
 const fuse = new Fuse(rooms, options)
 
-watchEffect(() => results.value = fuse.search(search.query).slice(0, 10));
+watchEffect(() => results.value = fuse.search(query.value).slice(0, 10));
 
-watchEffect(() => {
-    const room = rooms.find(room => room.roomId?.toLowerCase() === search.query?.toLowerCase());
+watch(query, () => {
+    const room = rooms.find(room => room.roomId?.toLowerCase() === query.value?.toLowerCase());
     if (room) {
         search.query = room.roomId;
         building.setRoom(room.roomId);
