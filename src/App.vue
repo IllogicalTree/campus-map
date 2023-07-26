@@ -1,23 +1,6 @@
 <script setup>
-import { RouterLink, RouterView, useRouter } from 'vue-router'
-import { watch } from 'vue'
-
-import { useSearchStore } from '@/stores/search';
-import { useBuildingStore } from '@/stores/building';
-import { rooms } from '@/data';
-
-const building = useBuildingStore();
-const search = useSearchStore();
-const router = useRouter();
-
-watch(() => search.query, query => {
-    const room = rooms.find(room => room.roomId?.toLowerCase() === query?.toLowerCase());
-    if (room) {
-        search.query = room.roomId;
-        building.setRoom(room.roomId);
-        router.push({ name: 'Floor' });
-    }
-});
+import { RouterLink, RouterView } from 'vue-router'
+import SearchBar from './components/SearchBar.vue';
 </script>
 
 <!-- template html loaded into every page -->
@@ -27,10 +10,9 @@ watch(() => search.query, query => {
         <nav>
             <RouterLink to="/">Overview</RouterLink>
             <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-            <input v-model="search.query" input-type="text" />
+            <SearchBar/>
         </nav>
     </header>
-
     <RouterView />
 </template>
 
