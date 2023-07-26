@@ -23,7 +23,7 @@ export const buildings = {
         entranceLevel: 3,
     },
     'Gatehouse': {
-        name: 'Gatehouse',
+        name: 'Gatehouse Graphics and Printing Facility',
         levels: 1,
         entranceLevel: 1,
     },
@@ -37,6 +37,16 @@ export const buildings = {
         levels: 6,
         entranceLevel: 2,
     },
+    'CentralServices':{
+        name: 'Central Services Building',
+        levels: 4,
+        entranceLevel: 1
+    },
+    'EnergyTransition': {
+        name: 'Energy Transition Institute',
+        levels: 2,
+        entranceLevel: 1
+    }
 };
 
 const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom', 'Entrance'];
@@ -61,6 +71,8 @@ export const useBuildingStore = defineStore('building', () => {
         if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
             nameId.value = newBuilding; //name of building in store is the name passed in from the landing page
             level.value = buildings[newBuilding].entranceLevel; //automatically goes to the right level
+            console.log(nameId.value);
+            console.log(level.value);
         };
     };
 

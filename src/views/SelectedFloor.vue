@@ -11,7 +11,7 @@ const floorComponent = shallowRef();
 
 
 watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Level${building.level}.vue`).then(val => {
-    //creates a string made up of the building name and level (default to 1) and import that component
+    //creates a string made up of the building name and level and import that component
     floorComponent.value = val.default;
     setTimeout(() => highlight(document.querySelector(`[id='${search.query}'] > *`)), 10);
 }));
