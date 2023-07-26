@@ -1,7 +1,7 @@
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 
-const buildings = {
+export const buildings = {
     'BusinessSchool': {
         name: 'Business School',
         levels: 6,
