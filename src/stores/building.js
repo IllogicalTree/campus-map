@@ -2,9 +2,6 @@ import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import { rooms, buildings, facilities } from '../data';
 
-import { useRouter } from 'vue-router'
-const router = useRouter();
-
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood');
     const name = computed(() => buildings[nameId.value].name);
