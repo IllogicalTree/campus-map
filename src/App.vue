@@ -51,6 +51,7 @@ watch(() => search.query, query => {
         stroke: yellow;
     }
 
+    .mainBuilding,
     .background,
     .room {
         fill: #75378f;
@@ -88,5 +89,18 @@ watch(() => search.query, query => {
     .highlight {
         fill: hsl(59, 100%, 50%, 0.2);
         stroke: yellow;
+    }
+
+    .road {
+        fill: #cde6ff;
+        pointer-events:none;
+    }
+
+    .parking {
+        fill: #8bbdf5
+    }
+
+    .otherBuilding{
+        fill: #977ca3;
     }
 </style>
