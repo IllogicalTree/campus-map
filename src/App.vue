@@ -44,6 +44,10 @@ import SearchBar from './components/SearchBar.vue';
         font-size: 20px;
     }
 
+    .small {
+        font-size: 17px;
+    }
+
     .labelLine{
         stroke:  #75378f;
         stroke-width:1px;

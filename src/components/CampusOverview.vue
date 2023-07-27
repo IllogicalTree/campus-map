@@ -73,7 +73,7 @@
         <g id="CentralServices">
             <path class="mainBuilding" d="M1447.38,372.51l10.34,23.81,131.61-58.4L1579,312.32Z"
                 transform="translate(-7.03 -312.32)" />
-                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(1290.21 20)">Central Services Building</text>
+                <text class="buildingLabel small" xmlns="http://www.w3.org/2000/svg" transform="translate(1290.21 20)">Central Services Building</text>
         </g>
         <g id="GarthdeeHouseAnnexe" data-name="GH GHA">
             <path class="mainBuilding"
@@ -116,6 +116,8 @@
         <g id="EnergyTransition">
             <polygon class="mainBuilding"
                 points="1442.6 255.92 1434.35 241.24 1438.47 239.35 1437.56 233.45 1449.02 227.68 1452 229.55 1465.76 222.9 1473.56 239.41 1442.6 255.92" />
+                <text class="buildingLabel small" xmlns="http://www.w3.org/2000/svg" transform="translate(1295.21 270)">Energy Transition</text>
+                <text class="buildingLabel small" xmlns="http://www.w3.org/2000/svg" transform="translate(1295.21 295)">Institute</text>
         </g>
         <g id="SquareTower" data-name="square tower">
             <polygon class="otherBuilding"
