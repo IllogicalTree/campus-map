@@ -1,4 +1,5 @@
 <script setup>
+import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import CampusOverview from '../components/CampusOverview.vue';
 import { useBuildingStore } from '@/stores/building';
@@ -6,19 +7,44 @@ import { buildings, } from '@/data';
 
 const selectedBuilding = useBuildingStore();
 const router = useRouter();
+const selected = ref('');
+const highlighted = ref();
 
 const handleClickEvent = event => {
     if (Object.keys(buildings).includes(event.target?.parentNode?.id)) { //if the clicked vector id is one of the set list of buildings (in buildingstore)
         selectedBuilding.setBuilding(event.target.parentNode.id); //get the selected building from the id of the clicked vector and set the building in the building store
         router.push({ name: 'Floor' }); //route to /floor
-    };
+    } else {
+        highlight(document.querySelector(`[id='${event?.target?.parentNode?.id}'] > *`))
 
-    
+    } 
 };
+
+const highlight = target => {
+    const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`);
+    if (!element || element === highlighted.value) {
+        highlighted.value = null;
+        selected.value = null;
+        return;
+    };
+    selected.value = element?.parentNode?.id;
+    highlighted.value = element;
+};
+
+watch(() => highlighted.value,
+    (highlightedElement, previouslyHighlighted) => {
+        highlightedElement?.classList.add('highlight');
+        previouslyHighlighted?.classList.remove('highlight');
+    }
+);
+
 </script>
 
 <template>
     <main>
-        <CampusOverview @click="event => handleClickEvent(event)" />
+        <div style="background-color: #B391C1">
+            <CampusOverview @click="event => handleClickEvent(event)" />
+        </div>
+        <span v-if="selected">Currently selected: {{ selected }}</span>
     </main>
 </template>

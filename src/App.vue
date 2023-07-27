@@ -68,11 +68,6 @@ import SearchBar from './components/SearchBar.vue';
         fill: #6c7f28
     }
 
-    .highlight {
-        fill: hsl(59, 100%, 50%, 0.2);
-        stroke: yellow;
-    }
-
     .road {
         fill: #cde6ff;
         pointer-events:none;
@@ -84,5 +79,10 @@ import SearchBar from './components/SearchBar.vue';
 
     .otherBuilding{
         fill: #977ca3;
+    }
+
+    .highlight {
+        fill: hsl(59, 100%, 50%, 0.2);
+        stroke: yellow;
     }
 </style>
