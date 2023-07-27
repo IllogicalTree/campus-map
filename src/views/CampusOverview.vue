@@ -41,9 +41,7 @@ watch(() => highlighted.value,
 
 <template>
     <main>
-        <div style="background-color: #B391C1">
-            <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
-        </div>
+        <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
         <span v-if="selected">Currently selected: {{ selected }}</span>
     </main>
 </template>

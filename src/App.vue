@@ -30,7 +30,7 @@ import SearchBar from './components/SearchBar.vue';
 
     g:hover {
         cursor: pointer;
-        stroke: yellow;
+        stroke: rgb(126, 244, 255);
     }
 
     .buildingLabel,
@@ -42,6 +42,7 @@ import SearchBar from './components/SearchBar.vue';
 
     .buildingLabel{
         font-size: 20px;
+        stroke:none;
     }
 
     .small {
@@ -54,7 +55,7 @@ import SearchBar from './components/SearchBar.vue';
     }
 
     .background {
-        opacity: 0.55;
+        opacity: 0.70;
         pointer-events:none;
     }
 
@@ -92,11 +93,11 @@ import SearchBar from './components/SearchBar.vue';
     }
 
     .otherBuilding{
-        fill: #977ca3;
+        fill: #bf92d2;
     }
 
     .highlight {
-        fill: hsl(59, 100%, 50%, 0.2);
-        stroke: yellow;
+        fill: hsla(184, 100%, 50%, 0.2);
+        stroke: rgb(126, 244, 255);
     }
 </style>
