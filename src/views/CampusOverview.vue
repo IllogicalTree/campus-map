@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import CampusOverview from '../components/CampusOverview.vue';
+import GUI from '../components/GUI/HomePageGUI.vue'
 import { useBuildingStore } from '@/stores/building';
 import { buildings, } from '@/data';
 
@@ -26,6 +27,7 @@ const handleClickEvent = event => {
 
 <template>
     <main>
+        <GUI />
         <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
     </main>
 </template>
