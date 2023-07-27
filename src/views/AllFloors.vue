@@ -27,6 +27,28 @@ import BusinessSchoolLevel4 from '../components/BusinessSchool/BusinessSchoolLev
 import BusinessSchoolLevel5 from '../components/BusinessSchool/BusinessSchoolLevel5.vue';
 import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLevel6.vue';
 
+import Gatehouse from '../components/Gatehouse/GatehouseLevel1.vue';
+
+import GH_GHALevel1 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel1.vue';
+import GH_GHALevel2 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel2.vue';
+import GH_GHALevel3 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel3.vue';
+import GH_GHALevel4 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel4.vue';
+
+import GraysLevel1 from '../components/GraysArt/GraysArtLevel1.vue';
+import GraysLevel2 from '../components/GraysArt/GraysArtLevel2.vue';
+import GraysLevel3 from '../components/GraysArt/GraysArtLevel3.vue';
+import GraysLevel4 from '../components/GraysArt/GraysArtLevel4.vue';
+import GraysLevel5 from '../components/GraysArt/GraysArtLevel5.vue';
+import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
+
+import EnergyTransitionLevel1 from '../components/EnergyTransition/EnergyTransitionLevel1.vue';
+import EnergyTransitionLevel2 from '../components/EnergyTransition/EnergyTransitionLevel2.vue';
+
+import CentralServicesLevel1 from '../components/CentralServices/CentralServicesLevel1.vue';
+import CentralServicesLevel2 from '../components/CentralServices/CentralServicesLevel2.vue';
+import CentralServicesLevel3 from '../components/CentralServices/CentralServicesLevel3.vue';
+import CentralServicesLevel4 from '../components/CentralServices/CentralServicesLevel4.vue';
+
 </script>
 
 <template>
@@ -62,6 +84,34 @@ import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLev
         <BusinessSchoolLevel4 />
         <BusinessSchoolLevel5 />
         <BusinessSchoolLevel6 />
+
+        <h1>Gatehouse</h1>
+        <GatehouseLevel1 />
+
+        <h1>Garthedee House & Garthdee House Annexe</h1>
+        <GH_GHALevel1 />
+        <GH_GHALevel2 />
+        <GH_GHALevel3 />
+        <GH_GHALevel4 />
+
+        <h1>Gray's School of Art</h1>
+        <GraysLevel1 />
+        <GraysLevel2 />
+        <GraysLevel3 />
+        <GraysLevel4 />
+        <GraysLevel5 />
+        <GraysLevel6 />
+
+        <h1>Energy Transition Institute</h1>
+        <EnergyTransitionLevel1/>
+        <EnergyTransitionLevel2/>
+
+        <h1>Central Services Building</h1>
+        <CentralServicesLevel1 />
+        <CentralServicesLevel2 />
+        <CentralServicesLevel3 />
+        <CentralServicesLevel4 />
+
     </main>
 </template>
 

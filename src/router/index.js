@@ -4,7 +4,7 @@ export default createRouter({
   routes: [
     {
       path: '/', //root routes you to the landing page
-      name: 'CampusOverview',
+      name: 'CampusOverview', //route.push({name:CampusOverview}) brings us here 
       component: () => import('../views/CampusOverview.vue') //templates in the page when routed
     },
     {
@@ -14,8 +14,8 @@ export default createRouter({
     },
     {
       path: '/floor',
-      name: 'Floor',
-      component: () => import('../views/SelectedFloor.vue')
+      name: 'Floor', 
+      component: () => import('../views/SelectedFloor.vue') 
     }
   ]
 });

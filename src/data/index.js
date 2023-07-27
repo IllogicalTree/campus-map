@@ -1,24 +1,49 @@
 export const buildings = {
-    SirIanWood: {
-        id: 'SirIanWood',
-        name: 'Sir Ian Wood',
-        levels: 6,
-    },
-    IshbelGordon: {
-        id: 'IshbelGordon',
-        name: 'Ishbel Gordon',
-        levels: 7,
-    },
-    RGUSport: {
-        id: 'RGUSport',
-        name: 'RGU Sport',
-        levels: 5,
-    },
-    BusinessSchool: {
-        id: 'BusinessSchool',
+    'BusinessSchool': {
         name: 'Business School',
         levels: 6,
+        entranceLevel: 1,
     },
+    'IshbelGordon': {
+        name: 'Ishbel Gordon',
+        levels: 7,
+        entranceLevel: 1,
+    },
+    'RGUSport': {
+        name: 'RGU Sport',
+        levels: 5,
+        entranceLevel: 3,
+    },
+    'SirIanWood': {
+        name: 'Sir Ian Wood',
+        levels: 6,
+        entranceLevel: 3,
+    },
+    'Gatehouse': {
+        name: 'Gatehouse Graphics and Printing Facility',
+        levels: 1,
+        entranceLevel: 1,
+    },
+    'GarthdeeHouseAnnexe': {
+        name: 'Garthdee House & Garthdee House Annexe',
+        levels: 4,
+        entranceLevel: 1,
+    },
+    'GraysArt': {
+        name: 'Grays School of Art',
+        levels: 6,
+        entranceLevel: 2,
+    },
+    'CentralServices':{
+        name: 'Central Services Building',
+        levels: 4,
+        entranceLevel: 1
+    },
+    'EnergyTransition': {
+        name: 'Energy Transition Institute',
+        levels: 2,
+        entranceLevel: 1
+    }
 };
 
 const SirIanWoodFloor1 = [

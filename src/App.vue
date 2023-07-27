@@ -26,11 +26,14 @@ import SearchBar from './components/SearchBar.vue';
 </style>
 
 <style>
+/* styles across all maps including hover styles */
+
     g:hover {
         cursor: pointer;
         stroke: yellow;
     }
 
+    .mainBuilding,
     .background,
     .room {
         fill: #75378f;
@@ -38,6 +41,7 @@ import SearchBar from './components/SearchBar.vue';
 
     .background {
         opacity: 0.55;
+        pointer-events:none;
     }
 
     .lift {
@@ -56,6 +60,10 @@ import SearchBar from './components/SearchBar.vue';
         fill: #b03a4f;
     }
 
+    .entrance {
+        fill: #2dd4e7
+    }
+
     .reception {
         fill: #6c7f28
     }
@@ -63,5 +71,18 @@ import SearchBar from './components/SearchBar.vue';
     .highlight {
         fill: hsl(59, 100%, 50%, 0.2);
         stroke: yellow;
+    }
+
+    .road {
+        fill: #cde6ff;
+        pointer-events:none;
+    }
+
+    .parking {
+        fill: #8bbdf5
+    }
+
+    .otherBuilding{
+        fill: #977ca3;
     }
 </style>

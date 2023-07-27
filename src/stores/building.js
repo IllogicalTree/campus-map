@@ -3,9 +3,9 @@ import { defineStore } from 'pinia';
 import { rooms, buildings, facilities } from '../data';
 
 export const useBuildingStore = defineStore('building', () => {
-    const nameId = ref('SirIanWood');
-    const name = computed(() => buildings[nameId.value].name);
-    const level = ref(1);
+    const nameId = ref('SirIanWood'); //autos to this
+    const name = computed(() => buildings[nameId.value].name)
+    const level = ref(buildings[nameId.value].entranceLevel) //will set the autolevel for siwb specifically
     const roomId = ref();
 
     const room = computed(() => {
@@ -18,10 +18,12 @@ export const useBuildingStore = defineStore('building', () => {
         return roomId.value;
     });
 
-    const setBuilding = newBuilding => {
-        if (Object.keys(buildings).includes(newBuilding)) {
-            nameId.value = newBuilding;
-            level.value = 1;
+    const setBuilding = newBuilding => { //newBuilding passed in from CampusOverview
+        if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
+            nameId.value = newBuilding; //name of building in store is the name passed in from the landing page
+            level.value = buildings[newBuilding].entranceLevel; //automatically goes to the right level
+            console.log(nameId.value);
+            console.log(level.value);
         };
     };
 
