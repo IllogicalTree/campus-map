@@ -9,8 +9,7 @@ const building = useBuildingStore();
 const highlighted = useHighlightStore();
 const floorComponent = shallowRef();
 
-
-watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Level${building.level}.vue`).then(val => {
+watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.level}.svg`).then(val => {
     //creates a string made up of the building name and level and import that component
     floorComponent.value = val.default;
     setTimeout(() => highlight(document.querySelector(`[id='${search.query}'] > *`)), 10);
@@ -62,7 +61,9 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span> <!-- templating updates on click via highlight function or search function -->
             </nav>
         </header>
-        <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" /> <!-- if the component is clicked run highlight function -->
+        <div class="floor">
+            <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        </div>
         <footer>
             <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
             <button @click="highlightCategory('lift')">Lifts</button>
@@ -83,5 +84,13 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
     span {
         padding: .5rem;
         margin: .5rem;
+    }
+
+    .floor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        min-height: 70vh;
     }
 </style>

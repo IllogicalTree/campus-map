@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
-import CampusOverview from '../components/CampusOverview.vue';
+import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
 import { buildings, } from '@/data';
 
@@ -41,9 +41,18 @@ watch(() => highlighted.value,
 
 <template>
     <main>
-        <div style="background-color: #B391C1">
+        <div class="container">
             <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
         </div>
         <span v-if="selected">Currently selected: {{ selected }}</span>
     </main>
 </template>
+
+<style scoped>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+</style>
