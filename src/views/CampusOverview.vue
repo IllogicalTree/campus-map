@@ -15,8 +15,7 @@ const handleClickEvent = event => {
         selectedBuilding.setBuilding(event.target.parentNode.id); //get the selected building from the id of the clicked vector and set the building in the building store
         router.push({ name: 'Floor' }); //route to /floor
     } else {
-        highlight(document.querySelector(`[id='${event?.target?.parentNode?.id}'] > *`))
-
+        highlight(event?.target)
     } 
 };
 
@@ -43,7 +42,7 @@ watch(() => highlighted.value,
 <template>
     <main>
         <div style="background-color: #B391C1">
-            <CampusOverview @click="event => handleClickEvent(event)" />
+            <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
         </div>
         <span v-if="selected">Currently selected: {{ selected }}</span>
     </main>
