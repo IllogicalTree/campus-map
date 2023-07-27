@@ -27,7 +27,7 @@ import BusinessSchoolLevel4 from '../components/BusinessSchool/BusinessSchoolLev
 import BusinessSchoolLevel5 from '../components/BusinessSchool/BusinessSchoolLevel5.vue';
 import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLevel6.vue';
 
-import Gatehouse from '../components/Gatehouse/GatehouseLevel1.vue';
+import GatehouseLevel1 from '../components/Gatehouse/GatehouseLevel1.vue';
 
 import GH_GHALevel1 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel1.vue';
 import GH_GHALevel2 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel2.vue';
