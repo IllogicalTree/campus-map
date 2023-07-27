@@ -17,10 +17,10 @@ watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Lev
 }));
 
 const highlight = target => {
-    const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`);
+    const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
     if (!element || element === highlighted.highlightedElement) {
         highlighted.highlightedElement = null;
-        building.roomId = null;
+        building.roomId = null; //unhighlight when clicking off or clicking the same object again 
         return;
     };
     building.roomId = element?.parentNode?.id;
@@ -59,10 +59,10 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
             <nav>
                 <button @click="building.incrementLevel()">Up</button>
                 <button @click="building.decrementLevel()">Down</button>
-                <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span>
+                <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span> <!-- templating updates on click via highlight function or search function -->
             </nav>
         </header>
-        <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" /> <!-- if the component is clicked run highlight function -->
         <footer>
             <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
             <button @click="highlightCategory('lift')">Lifts</button>
