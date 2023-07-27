@@ -22,8 +22,6 @@ export const useBuildingStore = defineStore('building', () => {
         if (Object.keys(buildings).includes(newBuilding)) { //if its in the predetermined list of buildings
             nameId.value = newBuilding; //name of building in store is the name passed in from the landing page
             level.value = buildings[newBuilding].entranceLevel; //automatically goes to the right level
-            console.log(nameId.value);
-            console.log(level.value);
         };
     };
 
@@ -36,8 +34,8 @@ export const useBuildingStore = defineStore('building', () => {
     const setRoom = newRoomId => {
         const room = rooms.find(room => room.roomId === newRoomId)
         if (rooms.find(room => room.roomId === newRoomId)) {
-            nameId.value = room.building.id;
-            roomId.value = room.id;
+            nameId.value = room.building.name.replaceAll(' ', '');
+            roomId.value = room.roomId;
             level.value = room.level;
         };
     }
