@@ -31,7 +31,7 @@
                 transform="translate(-7.03 -312.32)" />
             <path id="parking-10" data-name="parking" class="parking"
                 d="M1933.14,596.93q.24,18.81.46,37.61l26.14,13.75,48.15.46q-.45-25.68-.91-51.36l-54.58-.46.46-11.46-9.63.45-.46,10.55Z"
-                transform="translate(-7.03 -312.32)" />
+                transform="translate(-7.03 -312.32)" />class="buildingLabel"
         </g>
             
         <g id="road">
@@ -45,11 +45,13 @@
             <path class="mainBuilding"
                 d="M336.37,600l12.28-22.59,35.67,17.44,4.36-6.74c-1.3-1.13-9.61-8.63-9.12-19.81a21.17,21.17,0,0,1,4.36-12.29c4.14-5.23,9.73-6.73,12.68-7.53a28.78,28.78,0,0,1,13.08-.39c.92-2.91,1.85-5.81,2.77-8.72l-67,10.7-13.07-17c.92-2.24,1.85-4.49,2.77-6.74q52.13-9.09,105-17.83c18.23-3,29-5.89,51.11-8.32a103.79,103.79,0,0,1,19.42-.39,84.61,84.61,0,0,1,20.21,3.56,72.46,72.46,0,0,1,27.34,16.25l-5.94,5.94,16.24,18.63a25.87,25.87,0,0,1,10.7-9.51,26.45,26.45,0,0,1,17.44-1.59c2.61.61,9.64,2.24,14.66,8.72,7.82,10.1,3.45,22.6,3.17,23.38a25.23,25.23,0,0,1-6.74,9.9l9.51,13.87h4l18.63,24.17-61,9.12a43,43,0,0,1-30.52-13.48L511.51,561.6H498l-63.4,53.1a47.7,47.7,0,0,1-51.51,9.11Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(202.7 190.67)">Sir Ian Wood Building </text>
         </g>
         <g id="IshbelGordon">
             <path class="mainBuilding"
                 d="M624,495q25,87.63,50.08,175.27L783,638.88Q780.38,626,777.79,613l-24.24,7.55q-22.66-75.92-45.31-151.82Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(527.93 140.96)">Ishbel Gordon Building </text>
         </g>
         <g id="ICRGU">
             <path class="otherBuilding" d="M770.14,480.93q3.08,15.48,6.14,31l93.51-32.06q-4.26-14.19-8.53-28.38Z"
@@ -59,30 +61,39 @@
             <path class="mainBuilding"
                 d="M783,523.17l17.19,75.42,8.76-2.08,17.19,70.86,36.07,2.9,57-21.54L896.22,547.2l-7.08,1.24q-7.59-28.59-15.17-57.18Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(856.22 116.39)">RGU Sport </text>
+                <line xmlns="http://www.w3.org/2000/svg" class="labelLine" x1="877.27" y1="134.07" x2="869.19" y2="237.94"/>
         </g>
         <g id="BusinessSchool">
             <path class="mainBuilding"
                 d="M902.57,519.36Q920.27,585,938,650.61l87.52-21.55L986,488.43l-35.86,7.63q1.14,4.32,2.29,8.64Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(919.26 165.34)">Riverside Building </text>
         </g>
         <g id="CentralServices">
             <path class="mainBuilding" d="M1447.38,372.51l10.34,23.81,131.61-58.4L1579,312.32Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(1290.21 20)">Central Services Building</text>
         </g>
         <g id="GarthdeeHouseAnnexe" data-name="GH GHA">
             <path class="mainBuilding"
                 d="M1686.57,442.77l-19,7.33-4.32-6.47-16.38,5.61,3.88,8.62-12.94,6-14.22-32.34,44.84-19.84q-3.89-8.61-7.76-17.24l-36.65,15.09q-12.94-28.45-25.87-56.92L1468,409.57l35.79,94-9.92,6.46,12.07,28,116-48.29,4.74,13.8,6-3,5.61,13.36,66.4-28Q1695.62,464.32,1686.57,442.77Zm-134.31,41q-2.38-5-4.75-9.92l-14.23,5.61-21.12-50,67.26-26.3,17.68,41.82,19.83-8.19q3.67,8,7.33,16Z"
                 transform="translate(-7.03 -312.32)" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(1624.24 40)">Garthdee House & </text>
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(1624.24 65)">Garthdee House Annexe</text>
         </g>
         <g id="GraysArt">
             <path class="mainBuilding"
                 d="M1997.78,401.84l-.43-5.15L1892.79,398l.43,2.57h-49.71V548.82h88.71c.28,2.28.57,4.57.85,6.86l19.72.42v-7.71l87.84.43q.86-73.28,1.72-146.56Zm-1.5,103.87h-106.7V429.26h106.7Z"
                 transform="translate(-7.03 -312.32)" />
             <path class="room" d="M1898,486.38" transform="translate(-7.03 -312.32)" />
+            <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(1931.94 70.07)">Grays School of Art</text>
         </g>
         <g id="Gatehouse">
             <polygon class="mainBuilding"
                 points="2093.53 399.12 2109.57 390.74 2117.21 408.1 2134.02 403.91 2134.02 399.42 2140.9 396.12 2147.78 408.1 2157.71 403.31 2175.28 433.24 2164.58 438.03 2167.64 444.02 2175.28 444.02 2199.17 487.73 2182.92 493.71 2176.81 487.73 2169.17 490.72 2124.09 458.99 2143.19 452.4 2146.35 455.39 2153.89 453.6 2146.35 447.01 2121.8 454.8 2093.53 399.12" />
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(2130.02 360.87)">Gatehouse Graphics</text>
+                <text class="buildingLabel" xmlns="http://www.w3.org/2000/svg" transform="translate(2130.02 380.87)">& Printing</text>
         </g>
         <g id="GarthdeeMedical" data-name="garthdee medical practice">
             <polygon class="otherBuilding"

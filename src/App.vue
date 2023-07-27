@@ -33,10 +33,20 @@ import SearchBar from './components/SearchBar.vue';
         stroke: yellow;
     }
 
+    .buildingLabel,
     .mainBuilding,
     .background,
     .room {
         fill: #75378f;
+    }
+
+    .buildingLabel{
+        font-size: 20px;
+    }
+
+    .labelLine{
+        stroke:  #75378f;
+        stroke-width:1px;
     }
 
     .background {
