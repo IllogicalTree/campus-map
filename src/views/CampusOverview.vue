@@ -1,7 +1,8 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import CampusOverview from '../components/CampusOverview.vue';
-import { useBuildingStore, buildings } from '@/stores/building';
+import { useBuildingStore } from '@/stores/building';
+import { buildings, } from '@/data';
 
 const selectedBuilding = useBuildingStore();
 const router = useRouter();
