@@ -14,6 +14,9 @@ const handleClickEvent = event => {
     if (Object.keys(buildings).includes(event.target?.parentNode?.id)) { //if the clicked vector id is one of the set list of buildings (in buildingstore)
         selectedBuilding.setBuilding(event.target.parentNode.id); //get the selected building from the id of the clicked vector and set the building in the building store
         router.push({ name: 'Floor' }); //route to /floor
+    } else if (Object.keys(buildings).includes(event.target?.parentNode?.parentNode?.id)) {
+        selectedBuilding.setBuilding(event.target.parentNode.parentNode.id);
+        router.push({ name: 'Floor' });
     } else {
         highlight(event?.target)
     } 
