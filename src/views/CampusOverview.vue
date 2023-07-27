@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router';
-import CampusOverview from '../components/CampusOverview.vue';
+import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
 import { buildings, } from '@/data';
 
@@ -12,8 +12,6 @@ const handleClickEvent = event => {
         selectedBuilding.setBuilding(event.target.parentNode.id); //get the selected building from the id of the clicked vector and set the building in the building store
         router.push({ name: 'Floor' }); //route to /floor
     };
-
-    
 };
 </script>
 

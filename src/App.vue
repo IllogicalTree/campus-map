@@ -28,9 +28,17 @@ import SearchBar from './components/SearchBar.vue';
 <style>
 /* styles across all maps including hover styles */
 
-    g:hover {
+    g > g:hover {
         cursor: pointer;
         stroke: yellow;
+    }
+
+    path[opacity] {
+        pointer-events: none;
+    }
+
+    #road {
+        pointer-events:none;
     }
 
     .mainBuilding,
@@ -75,7 +83,6 @@ import SearchBar from './components/SearchBar.vue';
 
     .road {
         fill: #cde6ff;
-        pointer-events:none;
     }
 
     .parking {

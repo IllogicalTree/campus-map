@@ -1,55 +1,67 @@
 <script setup>
-import SirIanWoodLevel1 from '../components/SirIanWood/SirIanWoodLevel1.vue';
-import SirIanWoodLevel2 from '../components/SirIanWood/SirIanWoodLevel2.vue';
-import SirIanWoodLevel3 from '../components/SirIanWood/SirIanWoodLevel3.vue';
-import SirIanWoodLevel4 from '../components/SirIanWood/SirIanWoodLevel4.vue';
-import SirIanWoodLevel5 from '../components/SirIanWood/SirIanWoodLevel5.vue';
-import SirIanWoodLevel6 from '../components/SirIanWood/SirIanWoodLevel6.vue';
+import SirIanWoodLevel1 from '@/assets/floors/SirIanWoodLevel1.svg';
+import SirIanWoodLevel2 from '@/assets/floors/SirIanWoodLevel2.svg';
+import SirIanWoodLevel3 from '@/assets/floors/SirIanWoodLevel3.svg';
+import SirIanWoodLevel4 from '@/assets/floors/SirIanWoodLevel4.svg';
+import SirIanWoodLevel5 from '@/assets/floors/SirIanWoodLevel5.svg';
+import SirIanWoodLevel6 from '@/assets/floors/SirIanWoodLevel6.svg';
 
-import IshbelGordonLevel1 from '../components/IshbelGordon/IshbelGordonLevel1.vue';
-import IshbelGordonLevel2 from '../components/IshbelGordon/IshbelGordonLevel2.vue';
-import IshbelGordonLevel3 from '../components/IshbelGordon/IshbelGordonLevel3.vue';
-import IshbelGordonLevel4 from '../components/IshbelGordon/IshbelGordonLevel4.vue';
-import IshbelGordonLevel5 from '../components/IshbelGordon/IshbelGordonLevel5.vue';
-import IshbelGordonLevel6 from '../components/IshbelGordon/IshbelGordonLevel6.vue';
-import IshbelGordonLevel7 from '../components/IshbelGordon/IshbelGordonLevel7.vue';
+import IshbelGordonLevel1 from '@/assets/floors/IshbelGordonLevel1.svg';
+import IshbelGordonLevel2 from '@/assets/floors/IshbelGordonLevel2.svg';
+import IshbelGordonLevel3 from '@/assets/floors/IshbelGordonLevel3.svg';
+import IshbelGordonLevel4 from '@/assets/floors/IshbelGordonLevel4.svg';
+import IshbelGordonLevel5 from '@/assets/floors/IshbelGordonLevel5.svg';
+import IshbelGordonLevel6 from '@/assets/floors/IshbelGordonLevel6.svg';
+import IshbelGordonLevel7 from '@/assets/floors/IshbelGordonLevel7.svg';
 
-import RGUSportLevel1 from '../components/RGUSport/RGUSportLevel1.vue';
-import RGUSportLevel2 from '../components/RGUSport/RGUSportLevel2.vue';
-import RGUSportLevel3 from '../components/RGUSport/RGUSportLevel3.vue';
-import RGUSportLevel4 from '../components/RGUSport/RGUSportLevel4.vue';
-import RGUSportLevel5 from '../components/RGUSport/RGUSportLevel5.vue';
+import RGUSportLevel1 from '@/assets/floors/RGUSportLevel1.svg';
+import RGUSportLevel2 from '@/assets/floors/RGUSportLevel2.svg';
+import RGUSportLevel3 from '@/assets/floors/RGUSportLevel3.svg';
+import RGUSportLevel4 from '@/assets/floors/RGUSportLevel4.svg';
+import RGUSportLevel5 from '@/assets/floors/RGUSportLevel5.svg';
 
-import BusinessSchoolLevel1 from '../components/BusinessSchool/BusinessSchoolLevel1.vue';
-import BusinessSchoolLevel2 from '../components/BusinessSchool/BusinessSchoolLevel2.vue';
-import BusinessSchoolLevel3 from '../components/BusinessSchool/BusinessSchoolLevel3.vue';
-import BusinessSchoolLevel4 from '../components/BusinessSchool/BusinessSchoolLevel4.vue';
-import BusinessSchoolLevel5 from '../components/BusinessSchool/BusinessSchoolLevel5.vue';
-import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLevel6.vue';
+import BusinessSchoolLevel1 from '@/assets/floors/BusinessSchoolLevel1.svg';
+import BusinessSchoolLevel2 from '@/assets/floors/BusinessSchoolLevel2.svg';
+import BusinessSchoolLevel3 from '@/assets/floors/BusinessSchoolLevel3.svg';
+import BusinessSchoolLevel4 from '@/assets/floors/BusinessSchoolLevel4.svg';
+import BusinessSchoolLevel5 from '@/assets/floors/BusinessSchoolLevel5.svg';
+import BusinessSchoolLevel6 from '@/assets/floors/BusinessSchoolLevel6.svg';
 
-import GatehouseLevel1 from '../components/Gatehouse/GatehouseLevel1.vue';
+import GatehouseLevel1 from '@/assets/floors/GatehouseLevel1.svg';
 
-import GH_GHALevel1 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel1.vue';
-import GH_GHALevel2 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel2.vue';
-import GH_GHALevel3 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel3.vue';
-import GH_GHALevel4 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel4.vue';
+import GH_GHALevel1 from '@/assets/floors/GarthdeeHouseAnnexeLevel1.svg';
+import GH_GHALevel2 from '@/assets/floors/GarthdeeHouseAnnexeLevel2.svg';
+import GH_GHALevel3 from '@/assets/floors/GarthdeeHouseAnnexeLevel3.svg';
+import GH_GHALevel4 from '@/assets/floors/GarthdeeHouseAnnexeLevel4.svg';
 
-import GraysLevel1 from '../components/GraysArt/GraysArtLevel1.vue';
-import GraysLevel2 from '../components/GraysArt/GraysArtLevel2.vue';
-import GraysLevel3 from '../components/GraysArt/GraysArtLevel3.vue';
-import GraysLevel4 from '../components/GraysArt/GraysArtLevel4.vue';
-import GraysLevel5 from '../components/GraysArt/GraysArtLevel5.vue';
-import GraysLevel6 from '../components/GraysArt/GraysArtLevel6.vue';
+import GraysLevel1 from '@/assets/floors/GraysArtLevel1.svg';
+import GraysLevel2 from '@/assets/floors/GraysArtLevel2.svg';
+import GraysLevel3 from '@/assets/floors/GraysArtLevel3.svg';
+import GraysLevel4 from '@/assets/floors/GraysArtLevel4.svg';
+import GraysLevel5 from '@/assets/floors/GraysArtLevel5.svg';
+import GraysLevel6 from '@/assets/floors/GraysArtLevel6.svg';
 
-import EnergyTransitionLevel1 from '../components/EnergyTransition/EnergyTransitionLevel1.vue';
-import EnergyTransitionLevel2 from '../components/EnergyTransition/EnergyTransitionLevel2.vue';
+import EnergyTransitionLevel1 from '@/assets/floors/EnergyTransitionLevel1.svg';
+import EnergyTransitionLevel2 from '@/assets/floors/EnergyTransitionLevel2.svg';
 
-import CentralServicesLevel1 from '../components/CentralServices/CentralServicesLevel1.vue';
-import CentralServicesLevel2 from '../components/CentralServices/CentralServicesLevel2.vue';
-import CentralServicesLevel3 from '../components/CentralServices/CentralServicesLevel3.vue';
-import CentralServicesLevel4 from '../components/CentralServices/CentralServicesLevel4.vue';
+import CentralServicesLevel1 from '@/assets/floors/CentralServicesLevel1.svg';
+import CentralServicesLevel2 from '@/assets/floors/CentralServicesLevel2.svg';
+import CentralServicesLevel3 from '@/assets/floors/CentralServicesLevel3.svg';
+import CentralServicesLevel4 from '@/assets/floors/CentralServicesLevel4.svg';
 
 </script>
+
+<style>
+svg > g {
+    fill: red;
+    pointer-events: none;
+}
+
+svg > g > g {
+    fill: green;
+    pointer-events: auto;
+}
+</style>
 
 <template>
     <main>

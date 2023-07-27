@@ -9,8 +9,7 @@ const building = useBuildingStore();
 const highlighted = useHighlightStore();
 const floorComponent = shallowRef();
 
-
-watchEffect(() => import(`../components/${building.nameId}/${building.nameId}Level${building.level}.vue`).then(val => {
+watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.level}.svg`).then(val => {
     //creates a string made up of the building name and level and import that component
     floorComponent.value = val.default;
     setTimeout(() => highlight(document.querySelector(`[id='${search.query}'] > *`)), 10);
