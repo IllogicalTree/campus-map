@@ -30,7 +30,7 @@ import SearchBar from './components/SearchBar.vue';
 
     g > g:hover {
         cursor: pointer;
-        stroke: yellow;
+        stroke: rgb(126, 244, 255);
     }
 
     path[opacity] {
@@ -99,7 +99,7 @@ import SearchBar from './components/SearchBar.vue';
     }
 
     .highlight {
-        fill: hsl(59, 100%, 50%, 0.2);
-        stroke: yellow;
+        fill: hsla(184, 100%, 50%, 0.2);
+        stroke: rgb(126, 244, 255);
     }
 </style>
