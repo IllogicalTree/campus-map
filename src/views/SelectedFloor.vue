@@ -61,7 +61,9 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span>
             </nav>
         </header>
-        <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        <div class="floor">
+            <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        </div>
         <footer>
             <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
             <button @click="highlightCategory('lift')">Lifts</button>
@@ -82,5 +84,13 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
     span {
         padding: .5rem;
         margin: .5rem;
+    }
+
+    .floor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        min-height: 70vh;
     }
 </style>

@@ -20,3 +20,9 @@ const handleClickEvent = event => {
         <CampusOverview @click="event => handleClickEvent(event)" />
     </main>
 </template>
+
+<style scoped>
+main {
+    display: flex;
+}
+</style>
