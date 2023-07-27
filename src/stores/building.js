@@ -1,55 +1,6 @@
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
-
-export const buildings = {
-    'BusinessSchool': {
-        name: 'Business School',
-        levels: 6,
-        entranceLevel: 1,
-    },
-    'IshbelGordon': {
-        name: 'Ishbel Gordon',
-        levels: 7,
-        entranceLevel: 1,
-    },
-    'RGUSport': {
-        name: 'RGU Sport',
-        levels: 5,
-        entranceLevel: 3,
-    },
-    'SirIanWood': {
-        name: 'Sir Ian Wood',
-        levels: 6,
-        entranceLevel: 3,
-    },
-    'Gatehouse': {
-        name: 'Gatehouse Graphics and Printing Facility',
-        levels: 1,
-        entranceLevel: 1,
-    },
-    'GarthdeeHouseAnnexe': {
-        name: 'Garthdee House & Garthdee House Annexe',
-        levels: 4,
-        entranceLevel: 1,
-    },
-    'GraysArt': {
-        name: 'Grays School of Art',
-        levels: 6,
-        entranceLevel: 2,
-    },
-    'CentralServices':{
-        name: 'Central Services Building',
-        levels: 4,
-        entranceLevel: 1
-    },
-    'EnergyTransition': {
-        name: 'Energy Transition Institute',
-        levels: 2,
-        entranceLevel: 1
-    }
-};
-
-const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom', 'Entrance'];
+import { rooms, buildings, facilities } from '../data';
 
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood'); //autos to this
@@ -81,10 +32,19 @@ export const useBuildingStore = defineStore('building', () => {
             level.value = newLevel;
         };
     };
+
+    const setRoom = newRoomId => {
+        const room = rooms.find(room => room.roomId === newRoomId)
+        if (rooms.find(room => room.roomId === newRoomId)) {
+            nameId.value = room.building.id;
+            roomId.value = room.id;
+            level.value = room.level;
+        };
+    }
     
     const incrementLevel = () => setLevel(level.value + 1);
     const decrementLevel = () => setLevel(level.value - 1);
     const setRoomId = newRoomId => roomId.value = newRoomId;
         
-    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId };
+    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom };
 });

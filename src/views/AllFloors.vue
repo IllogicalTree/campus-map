@@ -12,6 +12,7 @@ import IshbelGordonLevel3 from '../components/IshbelGordon/IshbelGordonLevel3.vu
 import IshbelGordonLevel4 from '../components/IshbelGordon/IshbelGordonLevel4.vue';
 import IshbelGordonLevel5 from '../components/IshbelGordon/IshbelGordonLevel5.vue';
 import IshbelGordonLevel6 from '../components/IshbelGordon/IshbelGordonLevel6.vue';
+import IshbelGordonLevel7 from '../components/IshbelGordon/IshbelGordonLevel7.vue';
 
 import RGUSportLevel1 from '../components/RGUSport/RGUSportLevel1.vue';
 import RGUSportLevel2 from '../components/RGUSport/RGUSportLevel2.vue';
@@ -67,6 +68,7 @@ import CentralServicesLevel4 from '../components/CentralServices/CentralServices
         <IshbelGordonLevel4 />
         <IshbelGordonLevel5 />
         <IshbelGordonLevel6 />
+        <IshbelGordonLevel7 />
 
         <h1>RGU Sport</h1>
         <RGUSportLevel1 />
