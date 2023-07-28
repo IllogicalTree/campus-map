@@ -1,19 +1,28 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import SearchBar from './components/SearchBar.vue';
+
+import { useScreenOrientation } from '@vueuse/core'
+const { orientation } = useScreenOrientation()
+
 </script>
 
 <!-- template html loaded into every page -->
 <!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
-    <header>
-        <nav>
-            <RouterLink to="/">Overview</RouterLink>
-            <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-            <SearchBar/>
-        </nav>
-    </header>
-    <RouterView />
+    <div class='orientation-message' v-if="orientation.includes('portrait')">
+        <span>Please rotate your device and view this site in landscape for the best user experience</span>
+    </div>
+    <div v-else>
+        <header>
+            <nav>
+                <RouterLink to="/">Overview</RouterLink>
+                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
+                <SearchBar/>
+            </nav>
+        </header>
+        <RouterView />
+    </div>
 </template>
 
 <style scoped>
@@ -22,6 +31,14 @@ import SearchBar from './components/SearchBar.vue';
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-bottom: 1rem;
+    }
+    .orientation-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 4rem);
+        text-align: center;
+        padding: 1rem;
     }
 </style>
 

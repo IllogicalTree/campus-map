@@ -5,7 +5,7 @@ import { rooms, buildings, facilities } from '../data';
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood'); //autos to this
     const name = computed(() => buildings[nameId.value].name)
-    const level = ref(buildings[nameId.value].entranceLevel) //will set the autolevel for siwb specifically
+    const level = ref(buildings[nameId.value]?.entranceLevel ?? 1) //will set the autolevel for siwb specifically
     const roomId = ref();
 
     const room = computed(() => {
