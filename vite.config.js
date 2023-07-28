@@ -17,12 +17,16 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      devOptions: {
+        enabled: false
+      },
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg','../assets/floors/*.svg'],
       manifest: {
         name: 'RGU Campus Map',
         short_name: 'RGU Map',
         description: 'An interactive map of the Robert Gordon University campus.',
         theme_color: '#ffffff',
+        orientation: "landscape",
         icons: [
           {
             src: 'pwa-192x192.png',
