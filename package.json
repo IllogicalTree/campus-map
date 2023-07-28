@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg"
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
+    "pages": "vite build && wrangler pages dev dist"
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
