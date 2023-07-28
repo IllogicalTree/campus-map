@@ -91,6 +91,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        min-height: 70vh;
+        max-height: 65vh;
+        margin-bottom: 2rem;
     }
 </style>

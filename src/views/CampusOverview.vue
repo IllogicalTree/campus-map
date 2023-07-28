@@ -56,6 +56,7 @@ watch(() => highlighted.value,
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    max-height: 65vh;
+    overflow: hidden;
 }
 </style>
