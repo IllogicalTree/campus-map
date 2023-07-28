@@ -41,6 +41,11 @@ import SearchBar from './components/SearchBar.vue';
         pointer-events:none;
     }
 
+    svg {
+        width: 100vw;
+        max-height: 65vh;
+    }
+
     .buildingLabel,
     .mainBuilding,
     .background,
