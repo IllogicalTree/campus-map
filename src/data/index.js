@@ -34,7 +34,7 @@ export const buildings = {
         levels: 6,
         entranceLevel: 2,
     },
-    'CentralServices':{
+    'CentralServices': {
         name: 'Central Services Building',
         levels: 4,
         entranceLevel: 1
@@ -60,7 +60,7 @@ const SirIanWoodFloor1 = [
     {
         roomId: "N107",
         building: buildings.SirIanWood,
-        level: 1
+        level: 1,
     },
     {
         roomId: "N108",
@@ -6348,6 +6348,2309 @@ const BusinessSchoolFloor6 = [
 
 const BusinessSchool = [...BusinessSchoolFloor1, ...BusinessSchoolFloor2, ...BusinessSchoolFloor3, ...BusinessSchoolFloor4, ...BusinessSchoolFloor5, ...BusinessSchoolFloor6];
 
-export const rooms = [...SirIanWood, ...IshbelGordon, ...RGUSport, ...BusinessSchool];
+const CentralServicesLevel1 = [
+    {
+        roomId: "G107f",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107e",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G106",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "Accessible Toilet 1",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G103",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G101",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107g",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107a",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107b",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107c",
+        building: buildings.CentralServices,
+        level: 1
+    },
+    {
+        roomId: "G107d",
+        building: buildings.CentralServices,
+        level: 1
+    }
+]
+
+const CentralServicesLevel2 = [
+    {
+        roomId: "stairs 2",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G201",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G202",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "Accessible Toilet 1",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G204",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G207a",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G207b",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G207c",
+        building: buildings.CentralServices,
+        level: 2
+    },
+    {
+        roomId: "G207d",
+        building: buildings.CentralServices,
+        level: 2
+    }
+];
+
+const CentralServicesLevel3 = [
+    {
+        roomId: "G301",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G302",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "Accessible Toilet 1",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G304",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307a",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307b",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307c",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307d",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.CentralServices,
+        level: 3
+    },
+    {
+        roomId: "G307e",
+        building: buildings.CentralServices,
+        level: 3
+    }
+];
+
+const CentralServicesLevel4 = [
+    {
+        roomId: "stairs 2",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G405",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G406",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G407",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G408",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G408a",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G409",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G410",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G404",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "Accessible Toilet 1",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.CentralServices,
+        level: 4
+    },
+    {
+        roomId: "G401",
+        building: buildings.CentralServices,
+        level: 4
+    }
+];
+
+const CentralServices = [...CentralServicesLevel1, ...CentralServicesLevel2, ...CentralServicesLevel3, ...CentralServicesLevel4];
+
+const GarthdeeHouseAnnexeLevel1 = [
+    {
+        roomId: "SA18",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "3cr",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA23",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA24",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA25",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA26",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA27",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA28-29",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA30",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA31",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA31a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA30a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA30b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA30c",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA32",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA33",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA34",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA35",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA36",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA37",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA38",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA39",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA40",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA41",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA41a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA36a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA38a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA44",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA43",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA43a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA46",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA46a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA47",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA47a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA47b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA47c",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA48",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA49",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA50",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA48a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA21",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA1a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA1b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA5",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA6",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA7",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA8",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA9",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA10",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA13",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA14",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "SA12",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    },
+    {
+        roomId: "stairs 5",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 1
+    }
+];
+
+const GarthdeeHouseAnnexeLevel2 = [
+    {
+        roomId: "SB3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB2a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB2b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB4a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB5",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB6b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB6a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB6",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB7",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB8",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB9",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB10",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB11",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB12",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB12a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB13",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB14",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB14a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB15",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB18",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB19",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB20",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB21",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB21a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB22",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB22a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB22b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB23",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB24",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB25",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 5",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB26",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB27",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB28",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB29",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB30",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB31",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB32",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB33",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB34",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB34a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB35",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB36",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB37a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB37b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB37",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB38",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39c",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39d",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39e",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB39f",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 1_2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB40c",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB40d",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB40",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB40a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB40b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB43",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB42",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "SB41",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 8",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 9",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 10",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "stairs 11",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "entrance 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "entrance 2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    },
+    {
+        roomId: "entrance 3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 2
+    }
+];
+
+const GarthdeeHouseAnnexeLevel3 = [
+    {
+        roomId: "SC1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC5",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC6",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC7",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC7a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC8",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC9",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC10",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC11",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC12b",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC14",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC15",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC16",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC17",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC18",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC20",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC20a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC22",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC22a",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC24",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC25",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC26",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC27",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC28",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC29",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC30",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC31",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "SC32",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 3
+    }
+];
+
+const GarthdeeHouseAnnexeLevel4 = [
+    {
+        roomId: "stairs 1",
+        building: buildings.GarthdeeHouseAnnexe,
+        level: 4
+    }
+];
+
+const GarthdeeHouseAnnexe = [...GarthdeeHouseAnnexeLevel1, ...GarthdeeHouseAnnexeLevel2, ...GarthdeeHouseAnnexeLevel3, ...GarthdeeHouseAnnexeLevel4];
+
+const EnergyTransitionLevel1 = [
+    {
+        roomId: "EA8",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA7",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA6",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA5",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA4",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA3",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA2",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA1",
+        building: buildings.EnergyTransition,
+        level: 1
+    },
+    {
+        roomId: "EA1c/EA1a",
+        building: buildings.EnergyTransition,
+        level: 1
+    }
+];
+
+const EnergyTransitionLevel2 = [
+    {
+        roomId: "EB2",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB3",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB4",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB5",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB6",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB7",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB8",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.EnergyTransition,
+        level: 2
+    },
+    {
+        roomId: "EB1",
+        building: buildings.EnergyTransition,
+        level: 2
+    }
+];
+
+const EnergyTransition = [...EnergyTransitionLevel1, ...EnergyTransitionLevel2];
+
+const GraysArtLevel1 = [
+    {
+        roomId: "GP1a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP1",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHST01",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP1",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP2",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP3",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP4",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP18",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP9",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP10",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP11",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP12",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP13",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP14",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP15",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP16",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP17",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP7",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP8",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP1a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP6",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP7",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP3",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP3a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP4",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP4a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP5a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "GP5",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP6",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP5",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP4a",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHP4b",
+        building: buildings.GraysArt,
+        level: 1
+    },
+    {
+        roomId: "DHST02",
+        building: buildings.GraysArt,
+        level: 1
+    }
+];
+
+const GraysArtLevel2 = [
+    {
+        roomId: "GA1",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA5",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA6a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA7",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA8",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA9",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA10a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA11",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA12",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA13",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA13a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA15",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA16a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA17",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA18",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA19",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA20",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA23",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA20a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA29",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA24",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA25",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA26",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA27",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA28",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA30",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA31",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA32",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA33",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA34",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA34a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA34b",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA35",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA36",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA39",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA39_2",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA43",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA43a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA46",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA47",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA47a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA45",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA44",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA48",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA49",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 4",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA56",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA57",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 3",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA54",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA53",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA53b",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA53c",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA59",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 6",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 11",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 8",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 10",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA6",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA5",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA2",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA3",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA4",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA4a",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 9",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "DHA1",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 5",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 7",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA41",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA3",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA4",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA16",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA10",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA15_2",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA22",
+        building: buildings.GraysArt,
+        level: 2
+    },
+    {
+        roomId: "GA21",
+        building: buildings.GraysArt,
+        level: 2
+    }
+];
+
+const GraysArtLevel3 = [
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GM1a",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GMA1b",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GM1c",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA34m",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA35m",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA38m",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA50m",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA51m",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "stairs 5",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA38m_2",
+        building: buildings.GraysArt,
+        level: 3
+    },
+    {
+        roomId: "GA43m",
+        building: buildings.GraysArt,
+        level: 3
+    }
+];
+
+const GraysArtLevel4 = [
+    {
+        roomId: "GB1",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB2",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB3",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB4",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB5",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB7",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB8",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB9",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB9a",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB9b",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB10",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB11",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB11a",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB12",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB13",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB14",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB14a",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB15a",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB16",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB17",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB18",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB19",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB20",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB21",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "stairs 4",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB22",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "stairs 5",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "stairs 3",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "GB15",
+        building: buildings.GraysArt,
+        level: 4
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 4
+    }
+];
+
+const GraysArtLevel5 = [
+    {
+        roomId: "GB21m",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "GM2a",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "GM2b",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "GM2c",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "GB15m",
+        building: buildings.GraysArt,
+        level: 5
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 5
+    }
+];
+
+const GraysArtLevel6 = [
+    {
+        roomId: "GC1",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC2",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC3",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC4/GC5",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC6",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC7",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "GC8",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "stairs 2",
+        building: buildings.GraysArt,
+        level: 6
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.GraysArt,
+        level: 6
+    }
+];
+
+const GraysArt = [...GraysArtLevel1, ...GraysArtLevel2, ...GraysArtLevel3, ...GraysArtLevel4, ...GraysArtLevel5, ...GraysArtLevel6];
+
+const GatehouseLevel1 = [
+    {
+        roomId: "GH108",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH107",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH106",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH105",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GHST01",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "stairs 1",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH114",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "Accessible Toilet 1",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "Bathroom 1",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "Bathroom 2",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH110",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH109",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH102",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH103",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH104",
+        building: buildings.Gatehouse,
+        level: 1
+    },
+    {
+        roomId: "GH101",
+        building: buildings.Gatehouse,
+        level: 1
+    }
+];
+
+const Gatehouse = [...GatehouseLevel1];
+
+export const rooms = [...SirIanWood, ...IshbelGordon, ...RGUSport, ...BusinessSchool, ...CentralServices, ...GarthdeeHouseAnnexe, ...EnergyTransition, ...GraysArt, ...Gatehouse];
 
 export const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
+
+/*
+let a = []; 
+document.getElementById("CentralServicesLevel1").childNodes.forEach(b => {
+    a.push({
+        roomId: b.id,
+        building: 'CentralServices',
+        level: 1
+    }) 
+})
+a
+*/
