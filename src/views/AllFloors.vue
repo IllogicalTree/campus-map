@@ -12,6 +12,7 @@ import IshbelGordonLevel3 from '../components/IshbelGordon/IshbelGordonLevel3.vu
 import IshbelGordonLevel4 from '../components/IshbelGordon/IshbelGordonLevel4.vue';
 import IshbelGordonLevel5 from '../components/IshbelGordon/IshbelGordonLevel5.vue';
 import IshbelGordonLevel6 from '../components/IshbelGordon/IshbelGordonLevel6.vue';
+import IshbelGordonLevel7 from '../components/IshbelGordon/IshbelGordonLevel7.vue';
 
 import RGUSportLevel1 from '../components/RGUSport/RGUSportLevel1.vue';
 import RGUSportLevel2 from '../components/RGUSport/RGUSportLevel2.vue';
@@ -26,7 +27,7 @@ import BusinessSchoolLevel4 from '../components/BusinessSchool/BusinessSchoolLev
 import BusinessSchoolLevel5 from '../components/BusinessSchool/BusinessSchoolLevel5.vue';
 import BusinessSchoolLevel6 from '../components/BusinessSchool/BusinessSchoolLevel6.vue';
 
-import Gatehouse from '../components/Gatehouse/Gatehouse.vue';
+import GatehouseLevel1 from '../components/Gatehouse/GatehouseLevel1.vue';
 
 import GH_GHALevel1 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel1.vue';
 import GH_GHALevel2 from '../components/GarthdeeHouseAnnexe/GarthdeeHouseAnnexeLevel2.vue';
@@ -67,6 +68,7 @@ import CentralServicesLevel4 from '../components/CentralServices/CentralServices
         <IshbelGordonLevel4 />
         <IshbelGordonLevel5 />
         <IshbelGordonLevel6 />
+        <IshbelGordonLevel7 />
 
         <h1>RGU Sport</h1>
         <RGUSportLevel1 />
@@ -84,7 +86,7 @@ import CentralServicesLevel4 from '../components/CentralServices/CentralServices
         <BusinessSchoolLevel6 />
 
         <h1>Gatehouse</h1>
-        <Gatehouse />
+        <GatehouseLevel1 />
 
         <h1>Garthedee House & Garthdee House Annexe</h1>
         <GH_GHALevel1 />
