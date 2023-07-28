@@ -1,4 +1,4 @@
-import { rooms } from '../data';
+import { rooms } from '../../data';
 
 export const onRequest = () => {
   return new Response(JSON.stringify(rooms, null, 2), {

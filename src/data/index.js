@@ -16,7 +16,7 @@ if (import.meta.env.DEV) {
     buildings = buildingsData;
     facilities = facilitiesData;
 } else {
-    Promise.all([fetch('rooms'), fetch('buildings'), fetch('facilities')]).then((values) => {
+    Promise.all([fetch('data/rooms'), fetch('data/buildings'), fetch('data/facilities')]).then((values) => {
         Promise.all([values[0].json(), values[1].json(), values[2].json()]).then((values) => {
             rooms = values[0];
             buildings = values[1];
