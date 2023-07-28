@@ -5,6 +5,21 @@ import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
 import { VitePWA } from 'vite-plugin-pwa'
 
+const getCache = ({ name, pattern }) => ({
+  urlPattern: pattern,
+  handler: "CacheFirst",
+  options: {
+    cacheName: name,
+    expiration: {
+      maxEntries: 500,
+      maxAgeSeconds: 60 * 60 * 24 * 365 * 2 
+    },
+    cacheableResponse: {
+      statuses: [200]
+    }
+  }
+});
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -15,7 +30,13 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        runtimeCaching: [
+          getCache({
+            pattern: /^https?:\/\/[a-zA-Z0-9.-]+(:[0-9]+)?(\/data\/[a-zA-Z0-9_/.-]+)?$/,
+            name: "data" 
+          }),
+        ],
       },
       devOptions: {
         enabled: false
