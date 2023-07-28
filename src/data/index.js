@@ -2,12 +2,12 @@ export const buildings = {
     'BusinessSchool': {
         name: 'Business School',
         levels: 6,
-        entranceLevel: 1,
+        entranceLevel: 3,
     },
     'IshbelGordon': {
         name: 'Ishbel Gordon',
         levels: 7,
-        entranceLevel: 1,
+        entranceLevel: 4,
     },
     'RGUSport': {
         name: 'RGU Sport',
@@ -27,7 +27,7 @@ export const buildings = {
     'GarthdeeHouseAnnexe': {
         name: 'Garthdee House & Garthdee House Annexe',
         levels: 4,
-        entranceLevel: 1,
+        entranceLevel: 2,
     },
     'GraysArt': {
         name: 'Grays School of Art',
