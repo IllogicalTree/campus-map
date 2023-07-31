@@ -45,7 +45,7 @@ export default defineConfig({
       manifest: {
         name: 'RGU Campus Map',
         short_name: 'RGU Map',
-        description: 'An interactive map of the Robert Gordon University campus.',
+        description: 'An interactive map of the Robert Gordon University campus',
         theme_color: '#ffffff',
         orientation: "landscape",
         icons: [
