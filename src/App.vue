@@ -1,7 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import SearchBar from './components/SearchBar.vue';
-
+import { RouterView } from 'vue-router'
 import { useScreenOrientation } from '@vueuse/core'
 const { orientation } = useScreenOrientation()
 
@@ -14,24 +12,11 @@ const { orientation } = useScreenOrientation()
         <span>Please rotate your device and view this site in landscape for the best user experience</span>
     </div>
     <div v-else>
-        <header>
-            <nav>
-                <RouterLink to="/">Overview</RouterLink>
-                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-                <SearchBar/>
-            </nav>
-        </header>
         <RouterView />
     </div>
 </template>
 
 <style scoped>
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 1rem;
-    }
     .orientation-message {
         display: flex;
         justify-content: center;
