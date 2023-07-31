@@ -28,9 +28,7 @@ const options = {
     minMatchCharLength: 2,
 }
 
-const fuse = new Fuse(rooms, options)
-
-watchEffect(() => results.value = fuse.search(query.value).slice(0, 10));
+watchEffect(() => results.value = new Fuse(rooms, options).search(query.value).slice(0, 10));
 
 watch(query, () => {
     const room = rooms.find(room => room.roomId?.toLowerCase() === query.value?.toLowerCase());

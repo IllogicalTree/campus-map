@@ -34,7 +34,7 @@ export const useBuildingStore = defineStore('building', () => {
     const setRoom = newRoomId => {
         const room = rooms.find(room => room.roomId === newRoomId)
         if (rooms.find(room => room.roomId === newRoomId)) {
-            nameId.value = Object.keys(buildings).filter(name => buildings[name] === room.building)[0];
+            nameId.value = Object.keys(buildings).filter(name => buildings[name].name === room.building.name)[0];
             roomId.value = room.roomId;
             level.value = room.level;
         };

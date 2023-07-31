@@ -13,7 +13,7 @@ watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.lev
     //creates a string made up of the building name and level and import that component
     floorComponent.value = val.default;
     setTimeout(() => highlight(document.querySelector(`[id='${search.query}'] > *`)), 10);
-}));
+}).catch(() => floorComponent.value = null));
 
 const highlight = target => {
     const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
