@@ -3,8 +3,8 @@ import { watchEffect, shallowRef, watch } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
-import LevelSelector from '../components/LevelSelector.vue';
-import BuildingSelector from '../components/BuildingSelector.vue';
+import LevelSelector from '@/components/LevelSelector.vue';
+import BuildingSelector from '@/components/BuildingSelector.vue';
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -18,14 +18,25 @@ watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.lev
 }).catch(() => floorComponent.value = null));
 
 const highlight = target => {
-    const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
-    if (!element || element === highlighted.highlightedElement) {
-        highlighted.highlightedElement = null;
-        building.roomId = null; //unhighlight when clicking off or clicking the same object again 
-        return;
-    };
-    building.roomId = element?.parentNode?.id;
-    highlighted.highlightedElement = element;
+    //code for library redirect .. for now 
+    if (target?.parentNode?.id === "Library") { //if the clicked vector id is one of the set list of buildings (in buildingstore)
+        console.log("library");
+        console.log(target.parentNode.id);
+        building.setBuilding(target.parentNode.id);
+        //building.setBuilding(target.parentNode.id); 
+        //router.push({ name: 'Floor' }); 
+    } else {
+        const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
+        if (!element || element === highlighted.highlightedElement) {
+            highlighted.highlightedElement = null;
+            building.roomId = null; //unhighlight when clicking off or clicking the same object again 
+            return;
+        };
+        
+        building.roomId = element?.parentNode?.id;
+        highlighted.highlightedElement = element;
+    }
+    
 };
 
 watch(() => highlighted.highlightedElement,

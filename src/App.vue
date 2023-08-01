@@ -48,6 +48,11 @@ const { orientation } = useScreenOrientation()
         max-height: 65vh;
     }
 
+    svg text{
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    }
+
     .buildingLabel,
     .mainBuilding,
     .background,
@@ -94,7 +99,7 @@ const { orientation } = useScreenOrientation()
     }
 
     .road {
-        fill: #cde6ff;
+        fill: #f8cdff;
     }
 
     .parking {
