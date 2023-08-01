@@ -38,7 +38,7 @@
         <polygon class="lift"
             points="126.88 159.25 157.14 188.83 191.54 150.31 159.21 124.17 126.88 159.25" />
     </g>
-    <g id="Accessible_Toilet" data-name="Accessible Toilet">
+    <g id="accessible_toilet" data-name="Accessible Toilet">
         <path class="accessible-toilet"
             d="M771.32,437.31a107.58,107.58,0,0,1,41.27-50.91l29.58,8.94c.23,13.3.46,28.44.69,41.74C819,437.76,795.17,436.62,771.32,437.31Z"
             transform="translate(-613.49 -223.71)" />

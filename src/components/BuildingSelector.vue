@@ -13,7 +13,7 @@
 <script setup>
 import { useBuildingStore } from '@/stores/building';
 
-const building = useBuildingStore();
+const building = useBuildingStore(); //needed so that the templating {{ building.name }} will link to the data in building store (which is the data in data)
 </script>
 
 <style scoped>
