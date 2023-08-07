@@ -43,6 +43,14 @@ const { orientation } = useScreenOrientation()
         pointer-events:none;
     }
 
+    .unionArea{
+        fill:#72891c;
+    }
+
+    .union{
+        fill:#94b226;
+    }
+
     svg {
         width: 100vw;
         max-height: 65vh;
