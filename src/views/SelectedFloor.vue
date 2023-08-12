@@ -5,6 +5,7 @@ import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
 import LevelSelector from '@/components/LevelSelector.vue';
 import BuildingSelector from '@/components/BuildingSelector.vue';
+import GUI from '@/components/GUI/HomePageGUI.vue';
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -66,18 +67,28 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 </script>
 
 <template>
+    <GUI></GUI>
     <main>
-        <nav style="display: flex; justify-content: start;">
-            <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
-                <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
-                <span style="padding-left: .5rem">Home</span>
-            </RouterLink>
-        </nav>
-        <BuildingSelector></BuildingSelector>
-        <LevelSelector></LevelSelector>
-        <div class="floor">
-            <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+
+        <div class="container">
+            <nav style="display: flex; justify-content: start;">
+                <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
+                    <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
+                    <span style="padding-left: .5rem">Home</span>
+                </RouterLink>
+                <BuildingSelector></BuildingSelector>
+            </nav>
         </div>
+       
+
+        <!-- horizontal section with the floor and level toggle -->
+        <div class="container">
+            <LevelSelector></LevelSelector>
+            <div class="floor">
+                <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+            </div>
+        </div>
+
         <div class="filters">
             <button @click="highlightCategory('accessible_toilet')">
                 <v-icon name="fa-wheelchair" scale="1.2" />
@@ -96,6 +107,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <span>Bathrooms</span>
             </button>
         </div>
+
     </main>
 </template>
 
@@ -112,7 +124,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        max-height: 65vh;
+        max-height: 85vh;
         margin-bottom: 2rem;
     }
 

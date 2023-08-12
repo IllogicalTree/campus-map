@@ -53,10 +53,8 @@ watch(() => highlighted.value,
                 <SearchBar/>
             </nav>
         </header>
-        <div> 
-            <GUI />
-        </div>
-        <div class="container">
+        
+        <div class="container right">
             <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
         </div>
         <span v-if="selected">Currently selected: {{ selected }}</span>
@@ -64,13 +62,16 @@ watch(() => highlighted.value,
 </template>
 
 <style scoped>
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 65vh;
-    overflow: hidden;
+
+
+.right{
+    flex: 65%
 }
+
+.left{
+    flex: 35%;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;

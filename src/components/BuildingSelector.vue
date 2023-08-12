@@ -18,8 +18,8 @@ const building = useBuildingStore(); //needed so that the templating {{ building
 
 <style scoped>
     .level-selector {
-        position: absolute;
-        z-index: 2;
+        /*position: absolute;
+        z-index: 2; */ /* i am keeping the overlay off for now */
         top: 0;
         left: 0;
         right: 0;

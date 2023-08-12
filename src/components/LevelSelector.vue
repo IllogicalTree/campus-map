@@ -18,8 +18,8 @@ const building = useBuildingStore();
 
 <style scoped>
     .level-selector {
-        position: absolute;
-        z-index: 2;
+        /*position: absolute;
+        z-index: 2;*/
         top: 35vh;
         right: 5vw;
         display: flex;

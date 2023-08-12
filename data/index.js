@@ -1,8 +1,8 @@
 export const buildings = {
     'BusinessSchool': {
-        name: 'Business School',
+        name: 'Riverside Building',
         levels: 6,
-        entranceLevel: 1,
+        entranceLevel: 3,
     },
     'IshbelGordon': {
         name: 'Ishbel Gordon',
@@ -23,7 +23,6 @@ export const buildings = {
         name: 'RGU Library',
         levels: 9,
         entranceLevel: 5 //although there are 4 floors in the library, the level is still considered level 6 as its part of the siwb
-        //i just remembered floor 5 is the entrance to the library, will fix later
         //encountered a problem where since the Library levels do not start at 1, the level toggle will glitch if trying to go to levels below 5
     },
     'Gatehouse': {

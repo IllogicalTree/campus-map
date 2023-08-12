@@ -1,92 +1,82 @@
 <template>
 
-    <div class="">
-        <button onclick="showHideMenu()" id="collapse-menu"> button </button>
+    <div id="GUI">
+        <button @click="showHideMenu()" id="collapse-menu"> button </button>
         <div id="centered-div">
-            <div class="building-nav">
-                <button class = "switch-building-button"> </button>
-                    <h3> Sir Ian Wood Building </h3>
-                <button class = "switch-building-button"> </button>
-            </div>
+                <div class="container">
+                    <BuildingSelector></BuildingSelector>
+                </div>
+
+            <RouterLink to="/">Overview</RouterLink>
+            <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
 
         <SearchBar />
 
-        <h4 class="inner-heading"> Favourites </h4>
-
+        <!-- 
+        <h4 class="inner-heading"> Favourites </h4>        
         <div class = "favourites"> ♥ ♥ ♥ </div>
+        -->
            
-        <h4 class ="inner-heading"> Points of Interest in the Sir Ian Wood Building</h4>
+        <h4 class ="inner-heading"> Points of Interest in {{ building.name }} </h4>
 
         <ul class= "recommended-places"> <li> Toilets </li> <li> Gender Neutral Toilets </li> <li> Accessible Toilets </li> <li> etc </li></ul>
         </div>
     </div>
-    
+
 </template>
 
 <script setup>
 
 import SearchBar from '@/components/SearchBar.vue';
+import LevelSelector from '@/components/LevelSelector.vue';
+import BuildingSelector from '@/components/BuildingSelector.vue';
+import { useBuildingStore } from '@/stores/building';
 
-function showHideMenu() {
-    console.log("click");
-      var x = document.getElementById("centered-div");
-      if (x.style.display === "none") {
-        x.style.display = "flex";
-      } else {
-        x.style.display = "none";
-      }
-}
+const building = useBuildingStore(); 
 
 </script>
 
+<script> 
+function showHideMenu() {
+    console.log("click");
+    var x = document.getElementById("centered-div");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
 <style>
 
-body, html {
-    height: 100%;
-    margin: 0%;
-}
-
-div {
-    display: flex;
-} 
-
-#navigation{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    height: 100%;
-    width: 100%;
-}
 
 #collapse-menu{
 background-color: chocolate;
 margin:0px;
 margin-left: 10px;
-width: 3%;
-height: 5%;
 }
 
 .switch-building-button {
     height: 20px;
     margin-top: 4%;
     margin-inline: 50px;
+    background-color: black;
 }
 
 #centered-div {
     display: flex;
-    width: 30%;
-    height: 90%; 
-    margin-left: 10px;
     flex-direction: column;
 
 
-    border-color: blue;
     border-width: 1px;
     border-style: solid;
-    background-color: red;
+    background-color: rgb(201, 150, 197);
 
     border-radius: 30px;
     border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .building-nav {
@@ -97,8 +87,6 @@ height: 5%;
     margin-right: 0px;
 
     border-top-right-radius: 30px;
-
-
 }
 
 .searchbar {

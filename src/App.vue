@@ -28,6 +28,11 @@ const { orientation } = useScreenOrientation()
 </style>
 
 <style>
+
+/*formatting for maps alongside gui*/
+/*later include media queries*/
+
+
 /* styles across all maps including hover styles */
 
     g > g:hover {
