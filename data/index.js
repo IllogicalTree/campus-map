@@ -8654,6 +8654,7 @@ let roomsMissing = [];
 spaceFunctionData.forEach(space => {
     delete space['Modified'];
     delete space['Modified By'];
+    delete space['Task Assigned to'];
     const room = rooms.find(room => room.roomId === space.Room);
     room ? room.data = space : roomsMissing.push(space.Room);
 })
