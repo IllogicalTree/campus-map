@@ -1,34 +1,35 @@
-<svg width="766" height="501" viewBox="0 0 766 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="EnergyTransitionLevel1">
-<g id="1st Floor">
-<path id="Vector" opacity="0.55" d="M0 0.553223H765.196V421.935L686.577 500.553H418.448L402.585 483.645L414.166 472.064L366.734 423.692L356.267 436.691L341.033 423.367H0V0.553223Z" fill="#75378F"/>
-</g>
-<g id="EA8">
-<path id="Vector_2" d="M503.48 340.244H460.331V481.749H503.48V340.244Z" fill="#75378F"/>
-</g>
-<g id="EA7">
-<path id="Vector_3" d="M516.646 343.254H749.36V413.197L681.306 481.743H516.646V343.254Z" fill="#75378F"/>
-</g>
-<g id="EA6">
-<path id="Vector_4" d="M516.646 260.823H574.703V331.361H749.36V104.831H740.318V30.1147H516.646V260.823Z" fill="#75378F"/>
-</g>
-<g id="EA5">
-<path id="Vector_5" d="M503.48 204.772H416.705V260.83H503.48V204.772Z" fill="#75378F"/>
-</g>
-<g id="EA4">
-<path id="Vector_6" d="M503.48 155.272H471.912V186.681H503.48V155.272Z" fill="#75378F"/>
-</g>
-<g id="EA3">
-<path id="Vector_7" d="M503.48 37.7247H418.607V112.441H503.48V37.7247Z" fill="#75378F"/>
-</g>
-<g id="EA2">
-<path id="Vector_8" d="M405.76 24.8777H350.553V114.344H405.76V24.8777Z" fill="#75378F"/>
-</g>
-<g id="EA1">
-<path id="Vector_9" d="M342.466 402.266H30.2744L27.8945 28.2123H259.184V155.272H342.466V402.266Z" fill="#75378F"/>
-</g>
-<g id="EA1c/EA1a">
-<path id="Vector_10" d="M271.235 28.2123L342.465 30.1148V142.902H271.235V28.2123Z" fill="#75378F"/>
-</g>
-</g>
+<svg width="766" height="501" viewBox="0 0 766 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="EnergyTransitionLevel1">
+        <g id="1st Floor">
+            <path id="Vector" opacity="0.55" d="M0 0.553223H765.196V421.935L686.577 500.553H418.448L402.585 483.645L414.166 472.064L366.734 423.692L356.267 436.691L341.033 423.367H0V0.553223Z" class="room"/>
+        </g>
+        <g id="EA8">
+            <path id="Vector_2" d="M503.48 340.244H460.331V481.749H503.48V340.244Z" class="room"/>
+        </g>
+        <g id="EA7">
+            <path id="Vector_3" d="M516.646 343.254H749.36V413.197L681.306 481.743H516.646V343.254Z" class="room"/>
+        </g>
+        <g id="EA6">
+            <path id="Vector_4" d="M516.646 260.823H574.703V331.361H749.36V104.831H740.318V30.1147H516.646V260.823Z" class="room"/>
+        </g>
+        <g id="EA5">
+            <path id="Vector_5" d="M503.48 204.772H416.705V260.83H503.48V204.772Z" class="room"/>
+        </g>
+        <g id="EA4">
+            <path id="Vector_6" d="M503.48 155.272H471.912V186.681H503.48V155.272Z" class="room"/>
+        </g>
+        <g id="EA3">
+            <path id="Vector_7" d="M503.48 37.7247H418.607V112.441H503.48V37.7247Z" class="room"/>
+        </g>
+        <g id="EA2">
+            <path id="Vector_8" d="M405.76 24.8777H350.553V114.344H405.76V24.8777Z" class="room"/>
+        </g>
+        <g id="EA1">
+            <path id="Vector_9" d="M342.466 402.266H30.2744L27.8945 28.2123H259.184V155.272H342.466V402.266Z" class="room"/>
+        </g>
+        <g id="EA1c/EA1a">
+            <path id="Vector_10" d="M271.235 28.2123L342.465 30.1148V142.902H271.235V28.2123Z" class="room"/>
+        </g>
+    </g>
 </svg>

@@ -1,46 +1,47 @@
-<svg width="1192" height="351" viewBox="0 0 1192 351" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="CentralServicesLevel4">
-<g id="4th Floor">
-<path id="Vector" opacity="0.55" d="M76.6977 0.71814V107.393H0V339.261H845.469V350.718H1117.89V339.261H1191.06V107.393H1116.12V0.71814H842.822V24.524H349.122V0.71814H76.6977Z" fill="#75378F"/>
-</g>
-<g id="stairs 2">
-<path id="Vector_2" d="M333.839 12.7653H147.525V95.0507H333.839V12.7653Z" fill="#B03A4F"/>
-</g>
-<g id="stairs 1">
-<path id="Vector_3" d="M1045.6 11.5925H856.343V96.2297H1045.6V11.5925Z" fill="#B03A4F"/>
-</g>
-<g id="G405">
-<path id="Vector_4" d="M893.369 159.977H755.25V329.559H893.369V159.977Z" fill="#75378F"/>
-</g>
-<g id="G406">
-<path id="Vector_5" d="M745.26 159.977H597.734V329.559H745.26V159.977Z" fill="#75378F"/>
-</g>
-<g id="G407">
-<path id="Vector_6" d="M587.072 159.977H446.685V329.559H587.072V159.977Z" fill="#75378F"/>
-</g>
-<g id="G408">
-<path id="Vector_7" d="M432.58 115.037V325.445H19.9805V125.611L83.4584 125.027L84.6375 115.037H432.58Z" fill="#75378F"/>
-</g>
-<g id="G408a">
-<path id="Vector_8" d="M439.046 35.6868H350.295V103.862H439.046V35.6868Z" fill="#75378F"/>
-</g>
-<g id="G409">
-<path id="Vector_9" d="M593.563 35.6868H449.036V103.862H593.563V35.6868Z" fill="#75378F"/>
-</g>
-<g id="G410">
-<path id="Vector_10" d="M742.908 35.6868H604.2V103.862H742.908V35.6868Z" fill="#75378F"/>
-</g>
-<g id="G404">
-<path id="Vector_11" d="M843.412 35.6868H755.25V103.862H843.412V35.6868Z" fill="#75378F"/>
-</g>
-<g id="Accessible Toilet 1">
-<path id="Vector_12" d="M975.506 220.238H902.775V277.545H975.506V220.238Z" fill="#C26700"/>
-</g>
-<g id="Bathroom 1">
-<path id="Vector_13" d="M975.506 159.977H902.775V214.951H975.506V159.977Z" fill="#4B337F"/>
-</g>
-<g id="G401">
-<path id="Vector_14" d="M902.775 284.158V333.968H1096.29V244.768H1035.01L1035.51 284.69L902.775 284.158Z" fill="#75378F"/>
-</g>
-</g>
+<svg width="1192" height="351" viewBox="0 0 1192 351"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="CentralServicesLevel4">
+        <g id="4th Floor">
+            <path id="Vector" opacity="0.55" d="M76.6977 0.71814V107.393H0V339.261H845.469V350.718H1117.89V339.261H1191.06V107.393H1116.12V0.71814H842.822V24.524H349.122V0.71814H76.6977Z" class="room"/>
+        </g>
+        <g id="stairs 2">
+            <path id="Vector_2" d="M333.839 12.7653H147.525V95.0507H333.839V12.7653Z" class="stair"/>
+        </g>
+        <g id="stairs 1">
+            <path id="Vector_3" d="M1045.6 11.5925H856.343V96.2297H1045.6V11.5925Z" class="stair"/>
+        </g>
+        <g id="G405">
+            <path id="Vector_4" d="M893.369 159.977H755.25V329.559H893.369V159.977Z" class="room"/>
+        </g>
+        <g id="G406">
+            <path id="Vector_5" d="M745.26 159.977H597.734V329.559H745.26V159.977Z" class="room"/>
+        </g>
+        <g id="G407">
+            <path id="Vector_6" d="M587.072 159.977H446.685V329.559H587.072V159.977Z" class="room"/>
+        </g>
+        <g id="G408">
+            <path id="Vector_7" d="M432.58 115.037V325.445H19.9805V125.611L83.4584 125.027L84.6375 115.037H432.58Z" class="room"/>
+        </g>
+        <g id="G408a">
+            <path id="Vector_8" d="M439.046 35.6868H350.295V103.862H439.046V35.6868Z" class="room"/>
+        </g>
+        <g id="G409">
+            <path id="Vector_9" d="M593.563 35.6868H449.036V103.862H593.563V35.6868Z" class="room"/>
+        </g>
+        <g id="G410">
+            <path id="Vector_10" d="M742.908 35.6868H604.2V103.862H742.908V35.6868Z" class="room"/>
+        </g>
+        <g id="G404">
+            <path id="Vector_11" d="M843.412 35.6868H755.25V103.862H843.412V35.6868Z" class="room"/>
+        </g>
+        <g id="Accessible Toilet 1">
+            <path id="Vector_12" d="M975.506 220.238H902.775V277.545H975.506V220.238Z" class="accessible-toilet"/>
+        </g>
+        <g id="Bathroom 1">
+            <path id="Vector_13" d="M975.506 159.977H902.775V214.951H975.506V159.977Z" class="bathroom"/>
+        </g>
+        <g id="G401">
+            <path id="Vector_14" d="M902.775 284.158V333.968H1096.29V244.768H1035.01L1035.51 284.69L902.775 284.158Z" class="room"/>
+        </g>
+    </g>
 </svg>

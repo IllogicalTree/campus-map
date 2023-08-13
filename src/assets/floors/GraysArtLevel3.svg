@@ -1,52 +1,53 @@
-<svg width="670" height="501" viewBox="0 0 670 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="GraysArtLevel3">
-<g id="3rd floor">
-<path id="Vector" opacity="0.55" d="M0.379883 0.621826H669.03V500.311H516.959V386.459H148.663V500.622H0.789746L0.379883 0.621826Z" fill="#75378F"/>
-</g>
-<g id="stairs 1">
-<path id="Vector_2" d="M10.9383 157.583H46.797V225.427H10.8394L10.9383 157.583Z" fill="#75378F"/>
-</g>
-<g id="GM1a">
-<path id="Vector_3" d="M35.1362 138.728V67.8303H139.122V89.4275H62.4154V138.643L35.1362 138.728Z" fill="#75378F"/>
-</g>
-<g id="GMA1b">
-<path id="Vector_4" d="M67.772 94.6148V109.371H77.2561V157.555H107.574V94.9964L67.772 94.6148Z" fill="#75378F"/>
-</g>
-<g id="GM1c">
-<path id="Vector_5" d="M112.917 94.6006H160.111V157.583H112.422C112.422 157.583 111.786 93.5264 112.917 94.6006Z" fill="#75378F"/>
-</g>
-<g id="stairs 2">
-<path id="Vector_6" d="M10.8394 137.753V67.1943H28.8182V137.866L10.8394 137.753Z" fill="#B03A4F"/>
-</g>
-<g id="stairs 3">
-<path id="Vector_7" d="M251.744 27.3922H259.305V64.636H251.871L251.744 27.3922Z" fill="#B03A4F"/>
-</g>
-<g id="GA34m">
-<path id="Vector_8" d="M246.797 10.6431H188.041V72.6925H246.627L246.797 10.6431Z" fill="#75378F"/>
-</g>
-<g id="GA35m">
-<path id="Vector_9" d="M255.532 10.9399V20.8339H264.012V69.7102H292.507V10.7703L255.532 10.9399Z" fill="#75378F"/>
-</g>
-<g id="GA38m">
-<path id="Vector_10" d="M348.662 24.4522H369.044V67.5617H348.634L348.662 24.4522Z" fill="#75378F"/>
-</g>
-<g id="stairs 4">
-<path id="Vector_11" d="M646.726 10.1907H657.624V53.2579H646.599L646.726 10.1907Z" fill="#B03A4F"/>
-</g>
-<g id="GA50m">
-<path id="Vector_12" d="M540.394 264.692V235.901H605.836V265.173H603.207V271.604H605.793V280.636H598.995V282.869H605.765V301.583H585.977V282.784H589.567V281.06H585.751V264.763L540.394 264.692Z" fill="#75378F"/>
-</g>
-<g id="GA51m">
-<path id="Vector_13" d="M567.588 270.035V283.378H540.394V270.163L567.588 270.035Z" fill="#75378F"/>
-</g>
-<g id="stairs 5">
-<path id="Vector_14" d="M540.422 288.056V295.124H579.193V288.184L540.422 288.056Z" fill="#B03A4F"/>
-</g>
-<g id="GA38m_2">
-<path id="Vector_15" d="M465.821 33.484H374.203V66.8268H465.821V33.484Z" fill="#75378F"/>
-</g>
-<g id="GA43m">
-<path id="Vector_16" d="M640.818 10.1907H588.535V39.6748H640.818V10.1907Z" fill="#75378F"/>
-</g>
-</g>
+<svg width="670" height="501" viewBox="0 0 670 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="GraysArtLevel3">
+        <g id="3rd floor">
+            <path id="Vector" opacity="0.55" d="M0.379883 0.621826H669.03V500.311H516.959V386.459H148.663V500.622H0.789746L0.379883 0.621826Z" class="room"/>
+        </g>
+        <g id="stairs 1">
+            <path id="Vector_2" d="M10.9383 157.583H46.797V225.427H10.8394L10.9383 157.583Z" class="room"/>
+        </g>
+        <g id="GM1a">
+            <path id="Vector_3" d="M35.1362 138.728V67.8303H139.122V89.4275H62.4154V138.643L35.1362 138.728Z" class="room"/>
+        </g>
+        <g id="GMA1b">
+            <path id="Vector_4" d="M67.772 94.6148V109.371H77.2561V157.555H107.574V94.9964L67.772 94.6148Z" class="room"/>
+        </g>
+        <g id="GM1c">
+            <path id="Vector_5" d="M112.917 94.6006H160.111V157.583H112.422C112.422 157.583 111.786 93.5264 112.917 94.6006Z" class="room"/>
+        </g>
+        <g id="stairs 2">
+            <path id="Vector_6" d="M10.8394 137.753V67.1943H28.8182V137.866L10.8394 137.753Z" class="stair"/>
+        </g>
+        <g id="stairs 3">
+            <path id="Vector_7" d="M251.744 27.3922H259.305V64.636H251.871L251.744 27.3922Z" class="stair"/>
+        </g>
+        <g id="GA34m">
+            <path id="Vector_8" d="M246.797 10.6431H188.041V72.6925H246.627L246.797 10.6431Z" class="room"/>
+        </g>
+        <g id="GA35m">
+            <path id="Vector_9" d="M255.532 10.9399V20.8339H264.012V69.7102H292.507V10.7703L255.532 10.9399Z" class="room"/>
+        </g>
+        <g id="GA38m">
+            <path id="Vector_10" d="M348.662 24.4522H369.044V67.5617H348.634L348.662 24.4522Z" class="room"/>
+        </g>
+        <g id="stairs 4">
+            <path id="Vector_11" d="M646.726 10.1907H657.624V53.2579H646.599L646.726 10.1907Z" class="stair"/>
+        </g>
+        <g id="GA50m">
+            <path id="Vector_12" d="M540.394 264.692V235.901H605.836V265.173H603.207V271.604H605.793V280.636H598.995V282.869H605.765V301.583H585.977V282.784H589.567V281.06H585.751V264.763L540.394 264.692Z" class="room"/>
+        </g>
+        <g id="GA51m">
+            <path id="Vector_13" d="M567.588 270.035V283.378H540.394V270.163L567.588 270.035Z" class="room"/>
+        </g>
+        <g id="stairs 5">
+            <path id="Vector_14" d="M540.422 288.056V295.124H579.193V288.184L540.422 288.056Z" class="stair"/>
+        </g>
+        <g id="GA38m_2">
+            <path id="Vector_15" d="M465.821 33.484H374.203V66.8268H465.821V33.484Z" class="room"/>
+        </g>
+        <g id="GA43m">
+            <path id="Vector_16" d="M640.818 10.1907H588.535V39.6748H640.818V10.1907Z" class="room"/>
+        </g>
+    </g>
 </svg>
