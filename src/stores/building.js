@@ -7,6 +7,7 @@ export const useBuildingStore = defineStore('building', () => {
     const name = computed(() => buildings[nameId.value].name)
     const level = ref(buildings[nameId.value]?.entranceLevel ?? 1) //will set the autolevel for siwb specifically
     const roomId = ref();
+    const roomData = computed(() => rooms.find(room => room.roomId === roomId.value));
 
     const room = computed(() => {
         facilities.forEach(facility => {
@@ -48,5 +49,5 @@ export const useBuildingStore = defineStore('building', () => {
     const decrementLevel = () => setLevel(level.value - 1);
     const setRoomId = newRoomId => roomId.value = newRoomId;
         
-    return { nameId, name, level, roomId, room, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom };
+    return { nameId, name, level, roomId, room, roomData, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom };
 });
