@@ -27,7 +27,11 @@ export const useBuildingStore = defineStore('building', () => {
 
     const setLevel = newLevel => {
         if (newLevel >= 1 && newLevel <= buildings[nameId.value].levels) {
-            level.value = newLevel;
+            if (nameId.value === 'Library') {
+                level.value = Math.min(5, newLevel);
+            } else {
+                level.value = newLevel;
+            }
         };
     };
 
