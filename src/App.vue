@@ -47,7 +47,6 @@ const { orientation } = useScreenOrientation()
         width: 100vw;
         max-height: 65vh;
     }
-
     .buildingLabel,
     .mainBuilding,
     .background,
@@ -108,5 +107,12 @@ const { orientation } = useScreenOrientation()
     .highlight {
         fill: hsla(184, 100%, 50%, 0.2);
         stroke: rgb(126, 244, 255);
+    }
+
+    text {
+        user-select: none;
+        -moz-user-select: none; 
+        -webkit-text-select: none;
+        -webkit-user-select: none;
     }
 </style>
