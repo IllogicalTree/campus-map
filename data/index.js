@@ -1,3 +1,5 @@
+import spaceFunctionData from './teachingSpaceFunction.csv';
+
 export const buildings = {
     'BusinessSchool': {
         name: 'Business School',
@@ -8647,6 +8649,19 @@ const GatehouseLevel1 = [
 const Gatehouse = [...GatehouseLevel1];
 
 export const rooms = [...SirIanWood, ...IshbelGordon, ...RGUSport, ...BusinessSchool, ...CentralServices, ...GarthdeeHouseAnnexe, ...EnergyTransition, ...GraysArt, ...Gatehouse];
+
+let roomsMissing = [];
+spaceFunctionData.forEach(space => {
+    delete space['Modified'];
+    delete space['Modified By'];
+    delete space['Task Assigned to'];
+    const room = rooms.find(room => room.roomId === space.Room);
+    room ? room.data = space : roomsMissing.push(space.Room);
+})
+
+console.log(`${roomsMissing.length} rooms in spaceFunctionData are not in the rooms array:`, roomsMissing)
+console.log(`${rooms.length} rooms in the rooms array`, rooms)
+console.log(`${(rooms.filter(room => room.data)).length} rooms with additional data`, rooms.filter(room => room.data))
 
 export const facilities = ['Toilet', 'Lift', 'Stair', 'Bathroom'];
 
