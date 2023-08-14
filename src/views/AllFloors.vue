@@ -6,6 +6,12 @@ import SirIanWoodLevel4 from '@/assets/floors/SirIanWoodLevel4.svg';
 import SirIanWoodLevel5 from '@/assets/floors/SirIanWoodLevel5.svg';
 import SirIanWoodLevel6 from '@/assets/floors/SirIanWoodLevel6.svg';
 
+import LibraryLevel5 from '@/assets/floors/LibraryLevel5.svg';
+import LibraryLevel6 from '@/assets/floors/LibraryLevel6.svg';
+import LibraryLevel7 from '@/assets/floors/LibraryLevel7.svg';
+import LibraryLevel8 from '@/assets/floors/LibraryLevel8.svg';
+import LibraryLevel9 from '@/assets/floors/LibraryLevel9.svg';
+
 import IshbelGordonLevel1 from '@/assets/floors/IshbelGordonLevel1.svg';
 import IshbelGordonLevel2 from '@/assets/floors/IshbelGordonLevel2.svg';
 import IshbelGordonLevel3 from '@/assets/floors/IshbelGordonLevel3.svg';
@@ -73,6 +79,14 @@ svg > g > g {
         <SirIanWoodLevel5 />
         <SirIanWoodLevel6 />
 
+        <h1>Library</h1>
+        <LibraryLevel5 />
+        <LibraryLevel6 />
+        <LibraryLevel7 />
+        <LibraryLevel8 />
+        <LibraryLevel9 />
+
+
         <h1>Ishbel Gordon Building</h1>
         <IshbelGordonLevel1 />
         <IshbelGordonLevel2 />
@@ -123,6 +137,8 @@ svg > g > g {
         <CentralServicesLevel2 />
         <CentralServicesLevel3 />
         <CentralServicesLevel4 />
+
+        
 
     </main>
 </template>

@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
 import { buildings, } from '@/data';
+import SearchBar from '@/components/SearchBar.vue';
 
 const selectedBuilding = useBuildingStore();
 const router = useRouter();
@@ -44,6 +45,13 @@ watch(() => highlighted.value,
 
 <template>
     <main>
+        <header>
+            <nav>
+                <RouterLink to="/">Overview</RouterLink>
+                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
+                <SearchBar/>
+            </nav>
+        </header>
         <div class="container">
             <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
         </div>
@@ -58,5 +66,11 @@ watch(() => highlighted.value,
     align-items: center;
     max-height: 65vh;
     overflow: hidden;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 </style>

@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
 import { VitePWA } from 'vite-plugin-pwa'
+import legacy from '@vitejs/plugin-legacy'
 
 const getCache = ({ name, pattern }) => ({
   urlPattern: pattern,
@@ -61,11 +62,15 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  transpileDependencies: true,
 })

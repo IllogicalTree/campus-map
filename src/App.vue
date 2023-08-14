@@ -1,37 +1,22 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import SearchBar from './components/SearchBar.vue';
-
+import { RouterView } from 'vue-router'
 import { useScreenOrientation } from '@vueuse/core'
-const { orientation } = useScreenOrientation()
+const { orientation, isSupported } = useScreenOrientation()
 
 </script>
 
 <!-- template html loaded into every page -->
 <!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
-    <div class='orientation-message' v-if="orientation.includes('portrait')">
+    <div class='orientation-message' v-if="isSupported && orientation.includes('portrait')">
         <span>Please rotate your device and view this site in landscape for the best user experience</span>
     </div>
     <div v-else>
-        <header>
-            <nav>
-                <RouterLink to="/">Overview</RouterLink>
-                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-                <SearchBar/>
-            </nav>
-        </header>
         <RouterView />
     </div>
 </template>
 
 <style scoped>
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 1rem;
-    }
     .orientation-message {
         display: flex;
         justify-content: center;
@@ -61,6 +46,11 @@ const { orientation } = useScreenOrientation()
     svg {
         width: 100vw;
         max-height: 65vh;
+    }
+
+    svg text{
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     }
 
     .buildingLabel,
@@ -109,7 +99,7 @@ const { orientation } = useScreenOrientation()
     }
 
     .road {
-        fill: #cde6ff;
+        fill: #f8cdff;
     }
 
     .parking {

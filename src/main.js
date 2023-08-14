@@ -11,12 +11,37 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router) //web server
 
-app.mount('#app') //mounts the js onto the div with id 'app' in index.html.. ie the whole app 
+import { addIcons, OhVueIcon } from 'oh-vue-icons'
+import {
+  FaArrowUp,
+  FaArrowDown,
+  FaArrowLeft,
+  FaArrowRight,
+  FaWheelchair,
+  MdElevator,
+  MdStairs,
+  BiBadgeWcFill
+} from 'oh-vue-icons/icons'
+
+addIcons(
+  FaArrowUp,
+  FaArrowDown,
+  FaArrowLeft,
+  FaArrowRight,
+  FaWheelchair,
+  MdElevator,
+  MdStairs,
+  BiBadgeWcFill
+)
+
+app.component('v-icon', OhVueIcon)
 
 import { registerSW } from 'virtual:pwa-register'
 
-const updateSW = registerSW({
+registerSW({
   onOfflineReady() {
     console.log('App is offline ready')
   },
 })
+
+app.mount('#app')

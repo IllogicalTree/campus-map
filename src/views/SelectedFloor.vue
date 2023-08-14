@@ -3,6 +3,8 @@ import { watchEffect, shallowRef, watch } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
+import LevelSelector from '@/components/LevelSelector.vue';
+import BuildingSelector from '@/components/BuildingSelector.vue';
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -16,14 +18,23 @@ watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.lev
 }).catch(() => floorComponent.value = null));
 
 const highlight = target => {
-    const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
-    if (!element || element === highlighted.highlightedElement) {
-        highlighted.highlightedElement = null;
-        building.roomId = null; //unhighlight when clicking off or clicking the same object again 
-        return;
-    };
-    building.roomId = element?.parentNode?.id;
-    highlighted.highlightedElement = element;
+    //code for library redirect .. for now 
+    if (target?.parentNode?.id === "Library") { //if the clicked vector id is one of the set list of buildings (in buildingstore)
+        building.setBuilding(target.parentNode.id);
+        //building.setBuilding(target.parentNode.id); 
+        //router.push({ name: 'Floor' }); 
+    } else {
+        const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
+        if (!element || element === highlighted.highlightedElement) {
+            highlighted.highlightedElement = null;
+            building.roomId = null; //unhighlight when clicking off or clicking the same object again 
+            return;
+        };
+        
+        building.roomId = element?.parentNode?.id;
+        highlighted.highlightedElement = element;
+    }
+    
 };
 
 watch(() => highlighted.highlightedElement,
@@ -54,22 +65,35 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 
 <template>
     <main>
-        <header>
-            <nav>
-                <button @click="building.incrementLevel()">Up</button>
-                <button @click="building.decrementLevel()">Down</button>
-                <span>{{ building.name }} - Level {{ building.level }}, {{ building.room }}</span> <!-- templating updates on click via highlight function or search function -->
-            </nav>
-        </header>
+        <nav style="display: flex; justify-content: start;">
+            <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
+                <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
+                <span style="padding-left: .5rem">Home</span>
+            </RouterLink>
+        </nav>
+        <BuildingSelector></BuildingSelector>
+        <LevelSelector></LevelSelector>
         <div class="floor">
             <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
         </div>
-        <footer>
-            <button @click="highlightCategory('accessible_toilet')">Accessible Toilets</button>
-            <button @click="highlightCategory('lift')">Lifts</button>
-            <button @click="highlightCategory('stair')">Stairs</button>
-            <button @click="highlightCategory('bathroom')">Bathrooms</button>
-        </footer>
+        <div class="filters">
+            <button @click="highlightCategory('accessible_toilet')">
+                <v-icon name="fa-wheelchair" scale="1.2" />
+                <span>Accessible Toilets</span>
+            </button>
+            <button @click="highlightCategory('lift')">
+                <v-icon name="md-elevator" scale="1.2" />
+                <span>Lifts</span>
+            </button>
+            <button @click="highlightCategory('stair')">
+                <v-icon name="md-stairs" scale="1.2" />
+                <span>Stairs</span>
+            </button>
+            <button @click="highlightCategory('bathroom')">
+                <v-icon name="bi-badge-wc-fill" scale="1.2" />
+                <span>Bathrooms</span>
+            </button>
+        </div>
     </main>
 </template>
 
@@ -81,11 +105,6 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         margin-bottom: 1rem;
     }
 
-    span {
-        padding: .5rem;
-        margin: .5rem;
-    }
-
     .floor {
         display: flex;
         justify-content: center;
@@ -94,4 +113,23 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         max-height: 65vh;
         margin-bottom: 2rem;
     }
+
+    svg {
+        width: auto;
+        height: auto;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: center;
+    }
+    .filters button {
+        display: flex;
+        align-items: center;
+    }
+
+    .filters button span {
+       padding-left: .2rem
+    }
+
 </style>
