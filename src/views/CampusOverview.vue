@@ -49,6 +49,7 @@ watch(() => highlighted.value,
             <nav>
                 <RouterLink to="/">Overview</RouterLink>
                 <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
+                <RouterLink to="/admin">Admin</RouterLink>
                 <SearchBar/>
             </nav>
         </header>

@@ -16,6 +16,11 @@ export default createRouter({
       path: '/floor',
       name: 'Floor', 
       component: () => import('../views/SelectedFloor.vue') 
+    },
+    {
+      path: '/admin',
+      name: 'Admin',
+      component: () => import('../views/Admin.vue')
     }
   ]
 });
