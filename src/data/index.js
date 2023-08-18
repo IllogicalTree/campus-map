@@ -11,7 +11,7 @@ let facilities = [];
 
 console.log(import.meta.env.DEV ? 'Using locally stored data' : 'Fetching data from cloud functions')
 
-if (import.meta.env /* import.meta.env.DEV */) {
+if (import.meta.env === import.meta.env.DEV ) {
     rooms = roomsData;
     buildings = buildingsData;
     facilities = facilitiesData;

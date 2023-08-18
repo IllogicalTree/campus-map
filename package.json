@@ -9,10 +9,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
-    "pages": "vite build && wrangler pages dev dist"
+    "pages": "vite build && wrangler pages dev dist --kv=campus_map"
   },
   "dependencies": {
     "@vueuse/core": "^10.2.1",
+    "csv-parse": "^5.4.0",
     "fuse.js": "^6.6.2",
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.1.3",
