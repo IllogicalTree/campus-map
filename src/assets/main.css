@@ -1,15 +1,21 @@
 @import './base.css';
 
 *{
+  /*
   border-style:dotted;
   border-width: 1px;
+  */
 } /*temporary style to help with formatting*/
+
+.pageHeight{
+  height:100vh;
+}
 
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-height: 85vh;
   overflow: hidden;
 }
 
@@ -18,18 +24,22 @@
   font-weight: normal;
 }
 
+#appContent {
+  height:100vh;
+}
+
 main{
   margin: 0 auto;
   padding: 2rem;
+
 }
 
 a, button {
   text-decoration: none;
   color: hsla(278, 56%, 37%, 1);
   transition: 0.4s;
-  padding: .5rem;
-  margin: .5rem;
-  text-align: center;
+  padding: .2rem;
+  margin: .2rem;
   border: none;
   background: none
 }

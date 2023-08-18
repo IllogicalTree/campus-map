@@ -11,7 +11,7 @@ const { orientation } = useScreenOrientation()
     <div class='orientation-message' v-if="orientation.includes('portrait')">
         <span>Please rotate your device and view this site in landscape for the best user experience</span>
     </div>
-    <div v-else>
+    <div id="appContent" v-else>
         <RouterView />
     </div>
 </template>

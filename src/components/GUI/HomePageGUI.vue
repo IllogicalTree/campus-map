@@ -1,14 +1,12 @@
 <template>
-
-    <div id="GUI">
-        <button @click="showHideMenu()" id="collapse-menu"> button </button>
+        
         <div id="centered-div">
-                <div class="container">
+            
+                <div id="GUIHeader">
                     <BuildingSelector></BuildingSelector>
                 </div>
 
             <RouterLink to="/">Overview</RouterLink>
-            <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
 
         <SearchBar />
 
@@ -21,8 +19,7 @@
 
         <ul class= "recommended-places"> <li> Toilets </li> <li> Gender Neutral Toilets </li> <li> Accessible Toilets </li> <li> etc </li></ul>
         </div>
-    </div>
-
+        <button @click="showHideMenu()" id="collapse-menu"> >> </button>
 </template>
 
 <script setup>
@@ -46,6 +43,17 @@ function showHideMenu() {
         x.style.display = "none";
     }
 }
+
+function growDiv() {
+  var growDiv = document.getElementById('grow');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button").value = document.getElementById("more-button").value == 'Read more' ? 'Read less' : 'Read more';
+}
 </script>
 
 
@@ -53,9 +61,13 @@ function showHideMenu() {
 
 
 #collapse-menu{
-background-color: chocolate;
+background-color: rgb(111, 68, 121);
 margin:0px;
-margin-left: 10px;
+height:10vh;
+margin-top:60%;
+border-radius: 15px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
 }
 
 .switch-building-button {
@@ -68,22 +80,27 @@ margin-left: 10px;
 #centered-div {
     display: flex;
     flex-direction: column;
+    width:100%;
+    padding:.5rem;
 
-
-    border-width: 1px;
-    border-style: solid;
     background-color: rgb(201, 150, 197);
 
+    /* border styles */
     border-radius: 30px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
 
+#GUIHeader{
+    border-top-right-radius: 30px;
+    background-color: rgb(222, 181, 219);
+    padding:.5rem;
+    margin: -.5rem;
+}
+
 .building-nav {
     background-color: violet;
     justify-content: center;
-    height: 10%;
-    width: 100%;
     margin-right: 0px;
 
     border-top-right-radius: 30px;
@@ -107,9 +124,6 @@ margin-left: 10px;
 }
 
 .recommended-places {
-    margin-left: 45px; margin-right: 45px;
-    background-color: aqua;
-    margin-top: 0px;
 }
 
 </style>
