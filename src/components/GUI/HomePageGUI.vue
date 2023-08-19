@@ -70,17 +70,10 @@ border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
 }
 
-.switch-building-button {
-    height: 20px;
-    margin-top: 4%;
-    margin-inline: 50px;
-    background-color: black;
-}
-
 #centered-div {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width:20vw;
     padding:.5rem;
 
     background-color: rgb(201, 150, 197);

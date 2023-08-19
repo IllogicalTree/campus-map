@@ -121,13 +121,8 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 <style scoped>
 
     #GUI{
-        flex:30%;
         height:100vh;
         display:flex;
-    }
-
-    #map{
-        flex:100%
     }
 
     nav {
