@@ -18,12 +18,10 @@
         if (resp.ok) {
             console.log("file uploaded")
             try {
-                const rooms = await fetch('/data/rooms')
-                caches.delete('data');
-                caches.put('data', rooms)
+                await fetch('/data/rooms', {Cache: 'reload'})
                 console.log("Cache refreshed")
-            } catch {
-                console.log("Failed to clear cache")
+            } catch (err) {
+                console.log("Failed to clear cache ", err)
             }
             
         } else {
