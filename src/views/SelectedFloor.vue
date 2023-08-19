@@ -67,51 +67,69 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 </script>
 
 <template>
-    <GUI></GUI>
-    <main>
-
-        <div class="container">
-            <nav style="display: flex; justify-content: start;">
-                <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
-                    <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
-                    <span style="padding-left: .5rem">Home</span>
-                </RouterLink>
-                <BuildingSelector></BuildingSelector>
-            </nav>
+    <div class="pageHeight container">
+        <div id="GUI">
+            <GUI></GUI>
         </div>
-       
+        
+        <main id="map">
 
-        <!-- horizontal section with the floor and level toggle -->
-        <div class="container">
-            <LevelSelector></LevelSelector>
-            <div class="floor">
-                <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+            <div class="container ">
+                <nav style="display: flex; justify-content: start;">
+                    <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
+                        <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
+                        <span style="padding-left: .5rem">Home</span>
+                    </RouterLink>
+                    <BuildingSelector></BuildingSelector>
+                </nav>
             </div>
-        </div>
+        
 
-        <div class="filters">
-            <button @click="highlightCategory('accessible_toilet')">
-                <v-icon name="fa-wheelchair" scale="1.2" />
-                <span>Accessible Toilets</span>
-            </button>
-            <button @click="highlightCategory('lift')">
-                <v-icon name="md-elevator" scale="1.2" />
-                <span>Lifts</span>
-            </button>
-            <button @click="highlightCategory('stair')">
-                <v-icon name="md-stairs" scale="1.2" />
-                <span>Stairs</span>
-            </button>
-            <button @click="highlightCategory('bathroom')">
-                <v-icon name="bi-badge-wc-fill" scale="1.2" />
-                <span>Bathrooms</span>
-            </button>
-        </div>
+            <!-- horizontal section with the floor and level toggle -->
+            <div class="container">
+                <div class="floor">
+                    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+                </div>
+                <LevelSelector></LevelSelector>
+            </div>
+            
 
-    </main>
+            <div class="filters">
+                <button @click="highlightCategory('accessible_toilet')">
+                    <v-icon name="fa-wheelchair" scale="1.2" />
+                    <div>Accessible Toilets</div>
+                </button>
+                <button @click="highlightCategory('lift')">
+                    <v-icon name="md-elevator" scale="1.2" />
+                    <span>Lifts</span>
+                </button>
+                <button @click="highlightCategory('stair')">
+                    <v-icon name="md-stairs" scale="1.2" />
+                    <span>Stairs</span>
+                </button>
+                <button @click="highlightCategory('bathroom')">
+                    <v-icon name="bi-badge-wc-fill" scale="1.2" />
+                    <span>Bathrooms</span>
+                </button>
+            </div>
+
+        </main>
+    </div>
+
 </template>
 
 <style scoped>
+
+    #GUI{
+        flex:30%;
+        height:100vh;
+        display:flex;
+    }
+
+    #map{
+        flex:100%
+    }
+
     nav {
         display: flex;
         flex-wrap: wrap;
