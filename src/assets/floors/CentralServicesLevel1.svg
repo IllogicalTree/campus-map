@@ -1,55 +1,56 @@
-<svg width="1245" height="351" viewBox="0 0 1245 351" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="CentralServicesLevel1">
-<g id="1st floor">
-<path id="Vector" opacity="0.55" d="M0 21.0033V350.553H1244.18C1244.18 263.788 1244.37 30.5546 1244.37 18.4343H1116.95V1.44373H892.01V20.6487H495.743V0.553223H272.936V21.1925L0 21.0033Z" fill="#75378F"/>
-</g>
-<g id="G107f">
-<path id="Vector_2" d="M775.11 228.444H616.458V337.952H775.11V228.444Z" fill="#75378F"/>
-</g>
-<g id="G107e">
-<path id="Vector_3" d="M616.458 132.852V220.319H775.11V201.161H790.288V134.302L616.458 132.852Z" fill="#75378F"/>
-</g>
-<g id="G106">
-<path id="Vector_4" d="M800.769 135.382H891.12V335.966H786.316V212.367H800.769V135.382Z" fill="#75378F"/>
-</g>
-<g id="Bathroom 1">
-<path id="Vector_5" d="M1002.43 137.195H909.189V220.319H1002.43V137.195Z" fill="#4B337F"/>
-</g>
-<g id="Bathroom 2">
-<path id="Vector_6" d="M1000.63 229.713H909.189V335.966H1000.63V229.713Z" fill="#4B337F"/>
-</g>
-<g id="Accessible Toilet 1">
-<path id="Vector_7" d="M1107.6 202.966H1050.86V255.734H1107.6V202.966Z" fill="#C26700"/>
-</g>
-<g id="G103">
-<path id="Vector_8" d="M1007.31 274.884V335.966H1110.67V277.059H1097.66V262.598H1051.4V275.246L1007.31 274.884Z" fill="#75378F"/>
-</g>
-<g id="G101">
-<path id="Vector_9" d="M1231.92 28.5923H1121.33V88.9496H1231.92V28.5923Z" fill="#75378F"/>
-</g>
-<g id="stairs 1">
-<path id="Vector_10" d="M1032.06 14.6752H909.189V78.2793H1032.06V14.6752Z" fill="#B03A4F"/>
-</g>
-<g id="stairs 2">
-<path id="Vector_11" d="M482.741 12.1455H355.162V81.8965H482.741V12.1455Z" fill="#B03A4F"/>
-</g>
-<g id="G107">
-<path id="Vector_12" d="M15.4463 33.6516H268.066V99.7854L833.474 99.2416V124.727H606.34V337.952H89.7128V227.727H15.4463V33.6516Z" fill="#75378F"/>
-</g>
-<g id="G107g">
-<path id="Vector_13" d="M78.6879 235.678H15.4463V337.952H78.6879V235.678Z" fill="#75378F"/>
-</g>
-<g id="G107a">
-<path id="Vector_14" d="M891.12 29.4907H802.937V88.0355H891.12V29.4907Z" fill="#75378F"/>
-</g>
-<g id="G107b">
-<path id="Vector_15" d="M792.818 29.4907H703.373V88.0355H792.818V29.4907Z" fill="#75378F"/>
-</g>
-<g id="G107c">
-<path id="Vector_16" d="M695.784 29.4907H597.276V88.0355H695.784V29.4907Z" fill="#75378F"/>
-</g>
-<g id="G107d">
-<path id="Vector_17" d="M586.819 29.4907H498.636V88.0355H586.819V29.4907Z" fill="#75378F"/>
-</g>
-</g>
+<svg width="1245" height="351" viewBox="0 0 1245 351"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="CentralServicesLevel1">
+        <g id="1st floor">
+            <path id="Vector" opacity="0.55" d="M0 21.0033V350.553H1244.18C1244.18 263.788 1244.37 30.5546 1244.37 18.4343H1116.95V1.44373H892.01V20.6487H495.743V0.553223H272.936V21.1925L0 21.0033Z" class="room"/>
+        </g>
+        <g id="G107f">
+            <path id="Vector_2" d="M775.11 228.444H616.458V337.952H775.11V228.444Z" class="room"/>
+        </g>
+        <g id="G107e">
+            <path id="Vector_3" d="M616.458 132.852V220.319H775.11V201.161H790.288V134.302L616.458 132.852Z" class="room"/>
+        </g>
+        <g id="G106">
+            <path id="Vector_4" d="M800.769 135.382H891.12V335.966H786.316V212.367H800.769V135.382Z" class="room"/>
+        </g>
+        <g id="Bathroom 1">
+            <path id="Vector_5" d="M1002.43 137.195H909.189V220.319H1002.43V137.195Z" class="bathroom"/>
+        </g>
+        <g id="Bathroom 2">
+            <path id="Vector_6" d="M1000.63 229.713H909.189V335.966H1000.63V229.713Z" class="bathroom"/>
+        </g>
+        <g id="Accessible Toilet 1">
+            <path id="Vector_7" d="M1107.6 202.966H1050.86V255.734H1107.6V202.966Z" class="accessible-toilet"/>
+        </g>
+        <g id="G103">
+            <path id="Vector_8" d="M1007.31 274.884V335.966H1110.67V277.059H1097.66V262.598H1051.4V275.246L1007.31 274.884Z" class="room"/>
+        </g>
+        <g id="G101">
+            <path id="Vector_9" d="M1231.92 28.5923H1121.33V88.9496H1231.92V28.5923Z" class="room"/>
+        </g>
+        <g id="stairs 1">
+            <path id="Vector_10" d="M1032.06 14.6752H909.189V78.2793H1032.06V14.6752Z" class="stair"/>
+        </g>
+        <g id="stairs 2">
+            <path id="Vector_11" d="M482.741 12.1455H355.162V81.8965H482.741V12.1455Z" class="stair"/>
+        </g>
+        <g id="G107">
+            <path id="Vector_12" d="M15.4463 33.6516H268.066V99.7854L833.474 99.2416V124.727H606.34V337.952H89.7128V227.727H15.4463V33.6516Z" class="room"/>
+        </g>
+        <g id="G107g">
+            <path id="Vector_13" d="M78.6879 235.678H15.4463V337.952H78.6879V235.678Z" class="room"/>
+        </g>
+        <g id="G107a">
+            <path id="Vector_14" d="M891.12 29.4907H802.937V88.0355H891.12V29.4907Z" class="room"/>
+        </g>
+        <g id="G107b">
+            <path id="Vector_15" d="M792.818 29.4907H703.373V88.0355H792.818V29.4907Z" class="room"/>
+        </g>
+        <g id="G107c">
+            <path id="Vector_16" d="M695.784 29.4907H597.276V88.0355H695.784V29.4907Z" class="room"/>
+        </g>
+        <g id="G107d">
+            <path id="Vector_17" d="M586.819 29.4907H498.636V88.0355H586.819V29.4907Z" class="room"/>
+        </g>
+    </g>
 </svg>

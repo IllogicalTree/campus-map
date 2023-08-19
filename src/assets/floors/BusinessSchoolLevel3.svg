@@ -1,278 +1,184 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810.53 500">
-    <g id="level3" data-name="level 3">
-        <path id="Vector" class="background"
-            d="M313.39,498.06v-73H295.5v29.19H210.15v-30H191.8v76.05H53.56V304.13H.08V194.22H53.67V.46H810.61v500H313.11Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="Student_Union" data-name="Student Union">
-        <polygon id="Student_Union-2" data-name="Student Union" class="union"
-            points="452.06 85.3 452.06 197.05 380.82 197.05 380.82 300.2 453 300.2 453 398.29 588.92 398.83 588.92 494.42 807.71 495.61 807.71 4.59 482.79 4.93 482.79 85.3 452.06 85.3" />
-    </g>
-    <g id="Meeting_Space" data-name="Meeting Space">
-        <rect class="unionArea" x="511.35" y="89.53" width="65.23" height="86.87" />
-    </g>
-    <g id="Computer_Area" data-name="Computer Area">
-        <rect class="unionArea" x="457.69" y="89.53" width="47.69" height="87.46" />
-        <rect class="unionArea" x="458.95" y="301.4" width="47.69" height="87.46" />
-    </g>
-    <g id="Collaborate_Space" data-name="Collaborate Space">
-        <polygon class="unionArea"
-            points="598.85 85.3 599.9 176.39 797.05 178.85 797.05 14.31 725.51 14.31 723.54 85.3 598.85 85.3" />
-    </g>
-    <g id="IT_Help_Desk" data-name="IT Help Desk">
-        <rect class="unionArea" x="609.41" y="245.45" width="50.52" height="46.55" />
-    </g>
-    <g id="Group_Study_Pods" data-name="Group Study Pods">
-        <rect class="unionArea" x="511.35" y="301.4" width="200.98" height="87.46" />
-    </g>
-    <g id="Gallery">
-        <rect class="unionArea" x="720.01" y="300.2" width="81.63" height="88.66" />
-    </g>
-    <g id="Welcome_Area" data-name="Welcome Area">
-        <rect class="unionArea" x="386.47" y="200.51" width="149.64" height="94.24" />
-    </g>
-    <g id="301" data-name="301">
-        <path id="Vector_2" data-name="Vector 2" class="room"
-            d="M121,447.72v50.63H60V447.42h60.87Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="302" data-name="302">
-        <path id="Vector3" data-name="Vector 3" class="room"
-            d="M60.81,419.73v24.66H125v9.74h13.33V419.49H60.09Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="303" data-name="303">
-        <path id="Vector_4" data-name="Vector 4" class="room" d="M60.33,395.71V416.8h58.53V395.9Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="304" data-name="304">
-        <path id="Vector_5" data-name="Vector 5" class="room" d="M89.7,383.85h34.17v9.87H89.25Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="305" data-name="305">
-        <path id="Vector_6" data-name="Vector 6" class="room" d="M87,393.67V373.94H60.62v19.78Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="306" data-name="306">
-        <path id="Vector_7" data-name="Vector 7" class="room" d="M60.35,349.37v19.41H87.42V349.6Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="307" data-name="307">
-        <path id="Vector_8" data-name="Vector 8" class="room"
-            d="M90.32,349v9.92h11.29v11.37h21.32V348.41Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="308" data-name="308">
-        <path id="Vector_9" data-name="Vector 9" class="room"
-            d="M140.41,349.82H151.3v32.43H139.66Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="309" data-name="309">
-        <path id="Vector_10" data-name="Vector 10" class="room"
-            d="M124.71,348.54h13.61v68.84c0,.68-17.93,0-17.93,0V400.57h4.37V381.8H88.54V360.88H99.82v11.37H125Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="310" data-name="310">
-        <path id="Vector_11" data-name="Vector 11" class="room" d="M153.62,370.61h20.47v46.67H154Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="311" data-name="311">
-        <path id="Vector_12" data-name="Vector 12" class="room" d="M176.86,349.64h7.8V387.5h-8.2Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="312" data-name="312">
-        <path id="Vector_13" data-name="Vector 13" class="room"
-            d="M317.68,496.07s-.95-76.66,0-76.92,46.62,0,46.62,0v76.46"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="313" data-name="313">
-        <path id="Vector_14" data-name="Vector 14" class="room"
-            d="M386.55,300.65v18.77H447V300.84Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="314" data-name="314">
-        <path id="Vector_15" data-name="Vector 15" class="room"
-            d="M383.21,371.07v27.68h28.46V371.07Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="315" data-name="315">
-        <path id="Vector_16" data-name="Vector 16" class="room"
-            d="M413.85,371.47h13.43v18.77h6.33v7H413.23V371.7Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="316" data-name="316">
-        <path id="Vector_17" data-name="Vector 17" class="room" d="M436,390.29v9h12.49v-9.37Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="317" data-name="317">
-        <path id="Vector_18" data-name="Vector 18" class="room"
-            d="M366.62,494.88h147.6V418H366.93Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="318" data-name="318">
-        <path id="Vector_19" data-name="Vector 19" class="room" d="M516,418.78h30.78v77.05H516Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="319" data-name="319">
-        <path id="Vector_20" data-name="Vector 20" class="room" d="M600,397.77v97.56h77.88V397.59Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="320" data-name="320">
-        <path id="Vector_21" data-name="Vector 21" class="room"
-            d="M685.1,397.86v97.79h98.36V397.41Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="321" data-name="321">
-        <path id="Vector_22" data-name="Vector 22" class="room" d="M600,5.05H712.29V79.66H599.86Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="322" data-name="322">
-        <path id="Vector_23" data-name="Vector 23" class="unionArea" d="M516.65,5.2h30.11V79.37H516.37Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="323" data-name="323">
-        <path id="Vector_24" data-name="Vector 24" class="unionArea" d="M482.87,5.39h31.4V79.07H483.11Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="324" data-name="324">
-        <path id="Vector_25" data-name="Vector 25" class="room"
-            d="M367.2,5.15H480.67V79.76H469V40.23H367Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="325" data-name="325">
-        <path id="Vector_26" data-name="Vector 26" class="room" d="M466.1,44V80h-26V43.85Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="326" data-name="326">
-        <path id="Vector_27" data-name="Vector 27" class="room" d="M412.16,43.53H438V79.6H411.54Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="327" data-name="327">
-        <path id="Vector_28" data-name="Vector 28" class="room" d="M383.71,43.72V80H409.2V43.62Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="328" data-name="328">
-        <path id="Vector_29" data-name="Vector 29" class="room" d="M416.18,99.6v10.52H427.3V99.6Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="329" data-name="329">
-        <path id="Vector30" data-name="Vector 30" class="room"
-            d="M402.33,100.05h12.16v10.41H402.16Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="330" data-name="330">
-        <path id="Vector31" data-name="Vector 31" class="room"
-            d="M400.23,100.53v9.69H382.89v-9.31Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="331" data-name="331">
-        <path id="Vector32" data-name="Vector 32" class="room" d="M380.9,43.88V79H354.71V44.09Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="332" data-name="332">
-        <path id="Vector33" data-name="Vector 33" class="room"
-            d="M353.22,44c-.15.55,0,34.3,0,34.3H325.58V44.36Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="333" data-name="333">
-        <path id="Vector34" data-name="Vector 34" class="room"
-            d="M364.41,5.09H252.24V50.7h37.37v3.08H251.53V65h2.87V77.35h68.88V41h41.57Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="334" data-name="334">
-        <path id="Vector35" data-name="Vector 35" class="room" d="M260,86.28v19.1h19.53V85.76Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="335" data-name="335">
-        <path id="Vector36" data-name="Vector 36" class="room"
-            d="M381,111l-61.41,6.68-9.8-1.42-26.4-3.77V82.11H315.1v25.65h6.76V82.49h59.07Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="336" data-name="336">
-        <path id="Vector37" data-name="Vector 37" class="room"
-            d="M383.36,112.55h43.77v13.67H383.36Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="336b" data-name="336b">
-        <path id="Vector38" data-name="Vector 38" class="room"
-            d="M429.36,101.24h20.78v25.29s-20.75.41-20.64,0S429.36,101.24,429.36,101.24Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="336c" data-name="336c">
-        <path id="Vector39" data-name="Vector 39" class="room"
-            d="M447.41,129v48.45H417.77V128.57Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="336d" data-name="336d">
-        <path id="Vector_40" data-name="Vector 40" class="room" d="M383,129.13v47.72H415.4V129.09Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="337" data-name="337">
-        <path id="Vector_41" data-name="Vector 41" class="room"
-            d="M446.9,180.52v17H382.82v-18.2h64.05Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="338" data-name="338">
-        <path id="Vector_42" data-name="Vector 42" class="room" d="M188.36,100.64H176v6.47h12.41Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="339" data-name="339">
-        <path id="Vector_43" data-name="Vector 43" class="room" d="M153.65,101.2H137.39v12.56H154Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340" data-name="340">
-        <path id="Vector_44" data-name="Vector 44" class="room"
-            d="M104.92,40.39V82.2H60.57V141H108v9h10.37v-52h27.51V83.24H138V40.39Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340a" data-name="340a">
-        <path id="Vector_45" data-name="Vector 45" class="room"
-            d="M120.19,117.36v23.7h17.54V116.91Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340b" data-name="340b">
-        <path id="Vector_46" data-name="Vector 46" class="room"
-            d="M120.46,101.2s-.63,13.14,0,13,15.41,0,15.41,0V101Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340c" data-name="340c">
-        <path id="Vector_47" data-name="Vector 47" class="room" d="M80.38,32.05v47.1H59.9V32Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340d" data-name="340d">
-        <path id="Vector_48" data-name="Vector 48" class="room"
-            d="M82.74,56.8h19.94V79.57s-20.5.22-20.27,0S82.74,56.8,82.74,56.8Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340e" data-name="340e">
-        <path id="Vector_49" data-name="Vector 49" class="room" d="M82.71,32.23V53.92h19.84v-22Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="340f" data-name="340f">
-        <path id="Vector_50" data-name="Vector 50" class="room"
-            d="M105.15,37.62h16.7V7.52H60.34V29.25h45Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="lift_A_level3" data-name="lift A level 3">
-        <path id="Vector_51" data-name="Vector 51" class="lift"
-            d="M154.06,349.35v19.31h19.56V349.74Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_A_level3" data-name="stairs A level 3">
-        <path id="Vector_52" data-name="Vector 52" class="stair" d="M141.94,420H186.8v71.43H142.06Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_B_level3" data-name="stairs B level 3">
-        <path id="Vector_53" data-name="Vector 53" class="stair" d="M549.5,419.51h27v78.57H549.65Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_C_level3" data-name="stairs C level 3">
-        <path id="Vector_54" data-name="Vector 54" class="stair"
-            d="M447.77,327.38V368H382.5V326.78Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="lift_B_level3" data-name="lift B level 3">
-        <path id="Vector_55" data-name="Vector 55" class="lift"
-            d="M429.92,373.23v14.08h19.33V372.44Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_D_level3" data-name="stairs D level 3">
-        <path id="Vector_56" data-name="Vector 56" class="stair" d="M746.82,267.79v12.69h61V267.59Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_E_level3" data-name="stairs E level 3">
-        <path id="Vector_57" data-name="Vector 57" class="stair"
-            d="M557.71,213.45V239H677.13V212.89Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_F_level3" data-name="stairs F level 3">
-        <path id="Vector_58" data-name="Vector 58" class="stair" d="M549.5,5.69h27.15V79.74H549Z"
-            transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="stairs_G_level3" data-name="stairs G level 3">
-        <path id="Vector_59" data-name="Vector 59" class="stair"
-            d="M141.35,6.44h45.32V80.33H141.08Z" transform="translate(-0.08 -0.46)" />
-    </g>
-    <g id="lift_C_level3" data-name="lift C level 3">
-        <path id="Vector_60" data-name="Vector 60" class="lift"
-            d="M154.91,122.2h18.74v26.53H155.18Z" transform="translate(-0.08 -0.46)" />
-    </g>
+<svg width="811" height="501" viewBox="0 0 811 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BusinessSchoolLevel3">
+<g id="level 3">
+<path id="Vector" opacity="0.55" d="M313.39 498.061V425.103H295.5V454.286H210.153V424.31H191.798V500.361H53.5558V304.132H0.0803223V194.219H53.6735V0.455566H810.608V500.456H313.111L313.39 498.061Z" fill="#75378F"/>
+</g>
+<g id="301">
+<path id="Vector_2" d="M120.966 447.716V498.354H59.9502V447.423H120.823L120.966 447.716Z" fill="#75378F"/>
+</g>
+<g id="302">
+<path id="Vector_3" d="M60.8102 419.731V444.389H125.028V454.126H138.358V419.486H60.0935L60.8102 419.731Z" fill="#75378F"/>
+</g>
+<g id="303">
+<path id="Vector_4" d="M60.3324 395.708V416.795H118.864V395.904L60.3324 395.708Z" fill="#75378F"/>
+</g>
+<g id="304">
+<path id="Vector_5" d="M89.6984 383.85H123.866V393.716H89.2523L89.6984 383.85Z" fill="#75378F"/>
+</g>
+<g id="305">
+<path id="Vector_6" d="M86.9774 393.67V373.939H60.6156V393.716L86.9774 393.67Z" fill="#75378F"/>
+</g>
+<g id="306">
+<path id="Vector_7" d="M60.348 349.366V368.778H87.4235V349.595L60.348 349.366Z" fill="#75378F"/>
+</g>
+<g id="307">
+<path id="Vector_8" d="M90.3229 348.955V358.866H101.608V370.239H122.929V348.407L90.3229 348.955Z" fill="#75378F"/>
+</g>
+<g id="308">
+<path id="Vector_9" d="M140.415 349.823H151.299V382.252H139.656L140.415 349.823Z" fill="#75378F"/>
+</g>
+<g id="309">
+<path id="Vector_10" d="M124.714 348.544H138.318C138.318 348.544 138.318 416.69 138.318 417.375C138.318 418.06 120.387 417.375 120.387 417.375V400.567H124.758V381.795H88.5387V360.876H99.8239V372.249H124.981L124.714 348.544Z" fill="#75378F"/>
+</g>
+<g id="310">
+<path id="Vector_11" d="M153.618 370.605H174.092V417.284H154.019L153.618 370.605Z" fill="#75378F"/>
+</g>
+<g id="311">
+<path id="Vector_12" d="M176.857 349.64H184.663V387.504H176.456L176.857 349.64Z" fill="#75378F"/>
+</g>
+<g id="312">
+<path id="Vector_13" d="M317.682 496.067C317.682 496.067 316.732 419.407 317.682 419.152C318.632 418.898 364.295 419.152 364.295 419.152V495.611" fill="#75378F"/>
+</g>
+<g id="313">
+<path id="Vector_14" d="M386.553 300.653V319.425H447.038V300.836L386.553 300.653Z" fill="#75378F"/>
+</g>
+<g id="314">
+<path id="Vector_15" d="M383.208 371.07V398.749H411.666V371.07H383.208Z" fill="#75378F"/>
+</g>
+<g id="315">
+<path id="Vector_16" d="M413.854 371.473H427.281V390.245H433.615V397.233H413.23V371.701L413.854 371.473Z" fill="#75378F"/>
+</g>
+<g id="316">
+<path id="Vector_17" d="M435.979 390.29V399.288H448.468V389.925L435.979 390.29Z" fill="#75378F"/>
+</g>
+<g id="317">
+<path id="Vector_18" d="M366.617 494.876H514.217V417.96H366.929L366.617 494.876Z" fill="#75378F"/>
+</g>
+<g id="318">
+<path id="Vector_19" d="M515.964 418.782H546.741V495.835H515.964V418.782Z" fill="#75378F"/>
+</g>
+<g id="319">
+<path id="Vector_20" d="M599.979 397.772V495.332H677.86V397.59L599.979 397.772Z" fill="#75378F"/>
+</g>
+<g id="320">
+<path id="Vector_21" d="M679.599 397.864V495.652H777.954V397.407L679.599 397.864Z" fill="#75378F"/>
+</g>
+<g id="321">
+<path id="Vector_22" d="M599.96 5.0484H712.292V79.6599H599.864L599.96 5.0484Z" fill="#75378F"/>
+</g>
+<g id="322">
+<path id="Vector_23" d="M516.654 5.19513H546.755V79.3663H516.367L516.654 5.19513Z" fill="#75378F"/>
+</g>
+<g id="323">
+<path id="Vector_24" d="M482.873 5.39093H514.265V79.0728H483.111L482.873 5.39093Z" fill="#75378F"/>
+</g>
+<g id="324">
+<path id="Vector_25" d="M367.195 5.14624H480.675V79.7577H468.968V40.2259H367.004L367.195 5.14624Z" fill="#75378F"/>
+</g>
+<g id="325">
+<path id="Vector_26" d="M466.101 43.9931V80.0023H440.061V43.8464L466.101 43.9931Z" fill="#75378F"/>
+</g>
+<g id="326">
+<path id="Vector_27" d="M412.16 43.5266H437.976V79.6045H411.538L412.16 43.5266Z" fill="#75378F"/>
+</g>
+<g id="327">
+<path id="Vector_28" d="M383.715 43.7224V79.9471H409.196V43.6245L383.715 43.7224Z" fill="#75378F"/>
+</g>
+<g id="328">
+<path id="Vector_29" d="M416.184 99.5961V110.116H427.303V99.5961H416.184Z" fill="#75378F"/>
+</g>
+<g id="329">
+<path id="Vector_30" d="M402.327 100.046H414.494V110.462H402.158L402.327 100.046Z" fill="#75378F"/>
+</g>
+<g id="330">
+<path id="Vector_31" d="M400.232 100.53V110.22H382.894V100.911L400.232 100.53Z" fill="#75378F"/>
+</g>
+<g id="331">
+<path id="Vector_32" d="M380.9 43.8801V79.0054H354.708V44.0878L380.9 43.8801Z" fill="#75378F"/>
+</g>
+<g id="332">
+<path id="Vector_33" d="M353.221 43.984C353.074 44.5344 353.221 78.2787 353.221 78.2787H325.576V44.3647L353.221 43.984Z" fill="#75378F"/>
+</g>
+<g id="333">
+<path id="Vector_34" d="M364.406 5.09045H252.236V50.7014H289.615V53.7813H251.526V64.9937H254.399V77.3481H323.276V40.977H364.845L364.406 5.09045Z" fill="#75378F"/>
+</g>
+<g id="334">
+<path id="Vector_35" d="M259.975 86.2764V105.379H279.509V85.7573L259.975 86.2764Z" fill="#75378F"/>
+</g>
+<g id="335">
+<path id="Vector_36" d="M380.966 111.01L319.558 117.689L309.757 116.27L283.362 112.498V82.114H315.097V107.757H321.856V82.4946H380.932L380.966 111.01Z" fill="#75378F"/>
+</g>
+<g id="336">
+<path id="Vector_37" d="M383.364 112.551H427.13V126.221H383.364V112.551Z" fill="#75378F"/>
+</g>
+<g id="336b">
+<path id="Vector_38" d="M429.361 101.235H450.145V126.532C450.145 126.532 429.385 126.945 429.496 126.532C429.606 126.119 429.361 101.235 429.361 101.235Z" fill="#75378F"/>
+</g>
+<g id="336c">
+<path id="Vector_39" d="M447.408 128.989V177.438H417.768V128.574L447.408 128.989Z" fill="#75378F"/>
+</g>
+<g id="336d">
+<path id="Vector_40" d="M382.958 129.127V176.849H415.403V129.093L382.958 129.127Z" fill="#75378F"/>
+</g>
+<g id="337">
+<path id="Vector_41" d="M446.901 180.518V197.509H382.823V179.306H446.867L446.901 180.518Z" fill="#75378F"/>
+</g>
+<g id="338">
+<path id="Vector_42" d="M188.358 100.643H176.023V107.114H188.426L188.358 100.643Z" fill="#75378F"/>
+</g>
+<g id="339">
+<path id="Vector_43" d="M153.65 101.196H137.394V113.758H153.988L153.65 101.196Z" fill="#75378F"/>
+</g>
+<g id="340">
+<path id="Vector_44" d="M104.915 40.3932V82.1974H60.5743V141.028H107.957V150.06H118.332V98.0816H145.843V83.2356H138.036V40.3932H104.915Z" fill="#75378F"/>
+</g>
+<g id="340a">
+<path id="Vector_45" d="M120.191 117.357V141.063H137.732V116.907L120.191 117.357Z" fill="#75378F"/>
+</g>
+<g id="340b">
+<path id="Vector_46" d="M120.461 101.196C120.461 101.196 119.828 114.343 120.461 114.174C121.095 114.004 135.873 114.174 135.873 114.174V100.989L120.461 101.196Z" fill="#75378F"/>
+</g>
+<g id="340c">
+<path id="Vector_47" d="M80.3789 32.0532V79.1522H59.8983V31.9494L80.3789 32.0532Z" fill="#75378F"/>
+</g>
+<g id="340d">
+<path id="Vector_48" d="M82.7447 56.7964H102.685V79.5673C102.685 79.5673 82.1842 79.7898 82.4067 79.5673C82.6292 79.3448 82.7447 56.7964 82.7447 56.7964Z" fill="#75378F"/>
+</g>
+<g id="340e">
+<path id="Vector_49" d="M82.7109 32.2262V53.9243H102.549V31.8802L82.7109 32.2262Z" fill="#75378F"/>
+</g>
+<g id="340f">
+<path id="Vector_50" d="M105.152 37.6247H121.847V7.51733H60.3376V29.25H105.321L105.152 37.6247Z" fill="#75378F"/>
+</g>
+<g id="elevator A level 3">
+<path id="Vector_51" d="M154.064 349.346V368.662H173.625V349.742L154.064 349.346Z" fill="#2D6D9C"/>
+</g>
+<g id="stairs A level 3">
+<path id="Vector_52" d="M141.939 419.987H186.796V491.422H142.056L141.939 419.987Z" fill="#B03A4F"/>
+</g>
+<g id="stairs B level 3">
+<path id="Vector_53" d="M549.5 419.511H576.46V498.085H549.654L549.5 419.511Z" fill="#B03A4F"/>
+</g>
+<g id="stairs C level 3">
+<path id="Vector_54" d="M447.774 327.377V367.954H382.504V326.782L447.774 327.377Z" fill="#B03A4F"/>
+</g>
+<g id="elevator B level 3">
+<path id="Vector_55" d="M429.917 373.229V387.31H449.246V372.436L429.917 373.229Z" fill="#2D6D9C"/>
+</g>
+<g id="stairs D level 3">
+<path id="Vector_56" d="M746.82 267.788V280.481H807.79V267.59L746.82 267.788Z" fill="#B03A4F"/>
+</g>
+<g id="stairs E level 3">
+<path id="Vector_57" d="M557.711 219.391V238.946H677.134V218.955L557.711 219.391Z" fill="#B03A4F"/>
+</g>
+<g id="stairs F level 3">
+<path id="Vector_58" d="M549.499 5.69031H576.653V79.7429H548.957L549.499 5.69031Z" fill="#B03A4F"/>
+</g>
+<g id="stairs G level 3">
+<path id="Vector_59" d="M141.348 6.44019H186.669V80.3342H141.077L141.348 6.44019Z" fill="#B03A4F"/>
+</g>
+<g id="elevator C level 3">
+<path id="Vector_60" d="M154.906 122.197H173.654V148.732H155.177L154.906 122.197Z" fill="#2D6D9C"/>
+</g>
+</g>
 </svg>
