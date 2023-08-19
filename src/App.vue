@@ -132,6 +132,6 @@ const { orientation } = useScreenOrientation()
 
     .highlight {
         fill: hsla(184, 100%, 50%, 0.2);
-        animation: blink 1.5s infinite;
+        animation: blink 1.6s infinite;
     }
 </style>
