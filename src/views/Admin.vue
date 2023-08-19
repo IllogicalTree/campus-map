@@ -17,6 +17,13 @@
 
         if (resp.ok) {
             console.log("file uploaded")
+            try {
+                caches.delete('data');
+                console.log("Cache cleared")
+            } catch {
+                console.log("Failed to clear cache")
+            }
+            
         } else {
             console.log("file upload failed")
         }
