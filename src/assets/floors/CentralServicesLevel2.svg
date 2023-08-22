@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="CentralServicesLevel2">
         <g id="2nd Floor">
-            <path id="Vector" opacity="0.55" d="M1092.44 0.893188H0V350.893H1092.44V0.893188Z" class="room"/>
+            <path id="Vector"   d="M1092.44 0.893188H0V350.893H1092.44V0.893188Z" class="background"/>
         </g>
         <g id="stairs 2">
             <path id="Vector_2" d="M421.996 9.5694H288.937V69.6723H421.996V9.5694Z" class="stair"/>

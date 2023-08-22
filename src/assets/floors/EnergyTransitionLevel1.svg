@@ -1,8 +1,9 @@
+
 <svg width="766" height="501" viewBox="0 0 766 501"
     xmlns="http://www.w3.org/2000/svg">
     <g id="EnergyTransitionLevel1">
         <g id="1st Floor">
-            <path id="Vector" opacity="0.55" d="M0 0.553223H765.196V421.935L686.577 500.553H418.448L402.585 483.645L414.166 472.064L366.734 423.692L356.267 436.691L341.033 423.367H0V0.553223Z" class="room"/>
+            <path id="Vector"   d="M0 0.553223H765.196V421.935L686.577 500.553H418.448L402.585 483.645L414.166 472.064L366.734 423.692L356.267 436.691L341.033 423.367H0V0.553223Z" class="background"/>
         </g>
         <g id="EA8">
             <path id="Vector_2" d="M503.48 340.244H460.331V481.749H503.48V340.244Z" class="room"/>

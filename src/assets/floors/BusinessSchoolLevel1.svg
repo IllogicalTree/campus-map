@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="BusinessSchoolLevel1">
         <g id="level 1">
-            <path id="path960" opacity="0.55" d="M81.9643 307.527H0.0803223V500.236H992.242V245.924H932.136V122.727H910.288V0.235596H82.4947L81.9643 307.527Z" class="room"/>
+            <path id="path960"   d="M81.9643 307.527H0.0803223V500.236H992.242V245.924H932.136V122.727H910.288V0.235596H82.4947L81.9643 307.527Z" class="background"/>
         </g>
         <g id="101">
             <path id="path964" d="M9.36022 490.023H24.7735V316.155H9.10754L9.36022 490.023Z" class="room"/>

@@ -20,8 +20,7 @@ watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.lev
 
 const highlight = target => {
     //code for library redirect .. for now 
-    if (target?.parentNode?.id === "Library") { //if the clicked vector id is one of the set list of buildings (in buildingstore)
-        console.log("library");
+    if (target?.parentNode?.id === "Library") { //if the clicked vector id is Library redirect instead of higlighting
         console.log(target.parentNode.id);
         building.setBuilding(target.parentNode.id);
         //building.setBuilding(target.parentNode.id); 

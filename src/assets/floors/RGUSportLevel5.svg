@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="RGUSportLevel5">
         <g id="level 4">
-            <path id="Vector" opacity="0.55" d="M737.364 381.273H796.321V500.731H0.612671V0.730713H750.668V267.532H737.787L737.364 381.273Z" class="room"/>
+            <path id="Vector"   d="M737.364 381.273H796.321V500.731H0.612671V0.730713H750.668V267.532H737.787L737.364 381.273Z" class="background"/>
         </g>
         <g id="S404 disabled toilet">
             <path id="Vector_2" d="M286.409 436.704V466.135H314.714V436.654L286.409 436.704Z" class="accessible-toilet"/>

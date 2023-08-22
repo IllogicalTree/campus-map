@@ -68,7 +68,6 @@ const { orientation } = useScreenOrientation()
 
     .buildingLabel,
     .mainBuilding,
-    .background,
     .room {
         fill: #75378f;
     }
@@ -83,16 +82,17 @@ const { orientation } = useScreenOrientation()
     }
 
     .background {
-        opacity: 0.55;
+        /*opacity: 0.55; */
+        fill: #370e48;
         pointer-events:none;
     }
 
     .lift {
-        fill: #2d6d9c;
+        fill: #4289bb;
     }
 
     .bathroom {
-        fill: #4b337f;
+        fill: #5036a5;
     }
 
     .accessible-toilet {
@@ -125,14 +125,15 @@ const { orientation } = useScreenOrientation()
 
     @keyframes blink {
         0% {
-            stroke: rgba(255, 251, 24, 0.8);
+            stroke: rgb(48, 238, 255);
             stroke-width: 2px;
         }
     }
 
     .highlight {
-        fill: hsla(184, 100%, 50%, 0.2);
-        stroke: rgb(126, 244, 255);
+        fill: hsla(188, 47%, 65%, 0.903);
+        stroke: rgb(255, 253, 200);
+        stroke-width: 0.2%;
         animation: blink 1.6s infinite;
     }
 

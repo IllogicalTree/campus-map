@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="CentralServicesLevel3">
         <g id="3rd Floor">
-            <path id="Vector" opacity="0.55" d="M1075.05 0.378174H0V350.378H1075.05V0.378174Z" class="room"/>
+            <path id="Vector"   d="M1075.05 0.378174H0V350.378H1075.05V0.378174Z" class="background"/>
         </g>
         <g id="G301">
             <path id="Vector_2" d="M1066.08 10.5877H970.766V79.2881H1066.08V10.5877Z" class="room"/>

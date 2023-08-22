@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="IshbelGordonLevel7">
         <g id="level 7">
-            <path id="Vector" opacity="0.55" d="M0.296143 10.4027H209.935V6.14899H492.791V0.755859H885.332V7.74413H1035.7V493.92H885.109V500.756H492.167V493.54H0.40422L0.296143 10.4027Z" class="room"/>
+            <path id="Vector"   d="M0.296143 10.4027H209.935V6.14899H492.791V0.755859H885.332V7.74413H1035.7V493.92H885.109V500.756H492.167V493.54H0.40422L0.296143 10.4027Z" class="background"/>
         </g>
         <g id="AHU 15 RET">
             <path id="Vector_2" d="M35.4539 255.064V285.889H123.238V254.746L35.4539 255.064Z" class="room"/>

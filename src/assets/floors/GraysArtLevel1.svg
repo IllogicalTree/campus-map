@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="GraysArtLevel1">
         <g id="1st Floor">
-            <path id="Vector" opacity="0.55" d="M0.505829 0H663.417V125H0.379883L0.505829 0Z" class="room"/>
+            <path id="Vector"   d="M0.505829 0H663.417V125H0.379883L0.505829 0Z" class="background"/>
         </g>
         <g id="GP1a">
             <path id="Vector_2" d="M106.991 5.70984H134.771V21.2019H106.865L106.991 5.70984Z" class="room"/>

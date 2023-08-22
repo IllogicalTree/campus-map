@@ -3,12 +3,12 @@
         <div id="centered-div">
             
                 <div id="GUIHeader">
-                    <BuildingSelector></BuildingSelector>
+                    <SearchBar/>
                 </div>
 
             <RouterLink to="/">Overview</RouterLink>
 
-        <SearchBar />
+        
 
         <!-- 
         <h4 class="inner-heading"> Favourites </h4>        
@@ -58,7 +58,6 @@ function growDiv() {
 
 
 <style>
-
 
 #collapse-menu{
 background-color: rgb(111, 68, 121);

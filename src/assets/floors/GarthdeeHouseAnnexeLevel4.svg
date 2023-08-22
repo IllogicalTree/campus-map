@@ -2,7 +2,7 @@
     xmlns="http://www.w3.org/2000/svg">
     <g id="GarthdeeHouseAnnexeLevel4">
         <g id="4th Floor">
-            <path id="Vector" opacity="0.55" d="M250.152 0.326416H464.843V81.9813H649.345V500.326H242.882V312.386H0.40918V74.8352H250.811L250.152 0.326416Z" class="room"/>
+            <path id="Vector"   d="M250.152 0.326416H464.843V81.9813H649.345V500.326H242.882V312.386H0.40918V74.8352H250.811L250.152 0.326416Z" class="background"/>
         </g>
         <g id="stairs 1">
             <path id="Vector_2" d="M268.769 20.1584H447.256V69.5839H269.16L268.769 20.1584Z" class="stair"/>
