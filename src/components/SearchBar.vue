@@ -1,5 +1,5 @@
 <template>
-   <input v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?"/>
+   <input v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?" /> 
    <datalist id="query">
     <option  v-for="result in results" :key="result">
         {{ result.item.roomId }}

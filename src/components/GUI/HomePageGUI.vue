@@ -3,21 +3,25 @@
         <div id="centered-div">
             
                 <div id="GUIHeader">
-                    <SearchBar/>
+                    <SearchBar id="searchbar"/>
                 </div>
 
-            <RouterLink to="/">Overview</RouterLink>
-
-        
-
-        <!-- 
-        <h4 class="inner-heading"> Favourites </h4>        
-        <div class = "favourites"> ♥ ♥ ♥ </div>
-        -->
-           
-        <h4 class ="inner-heading"> Points of Interest in {{ building.name }} </h4>
-
-        <ul class= "recommended-places"> <li> Toilets </li> <li> Gender Neutral Toilets </li> <li> Accessible Toilets </li> <li> etc </li></ul>
+            <div v-if="building.room">
+                <span>
+                    {{ building.room }} 
+                </span>
+                <div>
+                    This room contains: 
+                    <ul>
+                        <li v-for="(prop, label) in building.roomData?.data" :key="label">
+                            <span v-if="prop">{{ label }} - {{ prop }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
+            
+            
         </div>
         <button @click="showHideMenu()" id="collapse-menu"> >> </button>
 </template>
@@ -59,23 +63,35 @@ function growDiv() {
 
 <style>
 
+ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+}
+
 #collapse-menu{
-background-color: rgb(111, 68, 121);
-margin:0px;
-height:10vh;
-margin-top:60%;
-border-radius: 15px;
-border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
+    background-color: rgb(51, 121, 186);
+    color: white;
+    margin:0px;
+    height:10vh;
+    margin-top:60%;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 #centered-div {
     display: flex;
     flex-direction: column;
-    width:20vw;
     padding:.5rem;
+    color: white;
+    -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+    width:25vw;
 
-    background-color: rgb(201, 150, 197);
+    background-color: #75378f;
 
     /* border styles */
     border-radius: 30px;
@@ -86,36 +102,10 @@ border-bottom-left-radius: 0px;
 #GUIHeader{
     border-top-right-radius: 30px;
     background-color: rgb(222, 181, 219);
-    padding:.5rem;
+    padding:1rem;
     margin: -.5rem;
-}
-
-.building-nav {
-    background-color: violet;
-    justify-content: center;
-    margin-right: 0px;
-
-    border-top-right-radius: 30px;
-}
-
-.searchbar {
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.inner-heading {
-    margin-left: 10%; margin-bottom: 5px; margin-top: 5px;
-}
-
-.favourites {
-    justify-content: center;
-    background-color: blueviolet;
-    padding: 5%;
-    margin-left: 45px; margin-right: 45px;
-    border-radius: 30px;
-}
-
-.recommended-places {
+    margin-bottom:2rem;
+    height:20vh;
 }
 
 </style>

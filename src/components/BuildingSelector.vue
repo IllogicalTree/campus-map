@@ -7,11 +7,7 @@
         <button>
             <v-icon name="fa-arrow-right" scale="1.5" />
         </button>
-        <ul>
-            <li v-for="(prop, label) in building.roomData?.data" :key="label">
-                <span v-if="prop">{{ label }} - {{ prop }}</span>
-            </li>
-        </ul>
+        
     </div>
 </template>
 
@@ -40,14 +36,5 @@ const building = useBuildingStore(); //needed so that the templating {{ building
     .heading {
         padding: .5rem;
         margin: .5rem;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 </style>
