@@ -9,7 +9,7 @@ export const buildings = {
     'IshbelGordon': {
         name: 'Ishbel Gordon',
         levels: 7,
-        entranceLevel: 1,
+        entranceLevel: 4,
     },
     'RGUSport': {
         name: 'RGU Sport',

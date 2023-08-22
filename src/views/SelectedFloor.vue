@@ -6,6 +6,7 @@ import { useHighlightStore } from '@/stores/highlight';
 import LevelSelector from '@/components/LevelSelector.vue';
 import BuildingSelector from '@/components/BuildingSelector.vue';
 import GUI from '@/components/GUI/HomePageGUI.vue';
+import SearchBar from '@/components/SearchBar.vue';
 
 const search = useSearchStore();
 const building = useBuildingStore();
@@ -72,15 +73,33 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         
         <main id="map">
 
-            <div class="container ">
-                <nav style="display: flex; justify-content: start;">
-                    <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
-                        <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
-                        <span style="padding-left: .5rem">Home</span>
-                    </RouterLink>
-                    <BuildingSelector></BuildingSelector>
-                </nav>
+            <div id="topSection"> 
+                
+                <div class="filters">
+                    <button @click="highlightCategory('accessible_toilet')">
+                        <v-icon name="fa-wheelchair" scale="1.2" />
+                        <div>Accessible Toilets</div>
+                    </button>
+                    <button @click="highlightCategory('lift')">
+                        <v-icon name="md-elevator" scale="1.2" />
+                        <span>Lifts</span>
+                    </button>
+                    <button @click="highlightCategory('stair')">
+                        <v-icon name="md-stairs" scale="1.2" />
+                        <span>Stairs</span>
+                    </button>
+                    <button @click="highlightCategory('bathroom')">
+                        <v-icon name="bi-badge-wc-fill" scale="1.2" />
+                        <span>Bathrooms</span>
+                    </button>
+                </div>
+
+                <div>
+                    <SearchBar />
+                </div>
+
             </div>
+            
         
 
             <!-- horizontal section with the floor and level toggle -->
@@ -91,32 +110,96 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <LevelSelector></LevelSelector>
             </div>
             
-
-            <div class="filters">
-                <button @click="highlightCategory('accessible_toilet')">
-                    <v-icon name="fa-wheelchair" scale="1.2" />
-                    <div>Accessible Toilets</div>
-                </button>
-                <button @click="highlightCategory('lift')">
-                    <v-icon name="md-elevator" scale="1.2" />
-                    <span>Lifts</span>
-                </button>
-                <button @click="highlightCategory('stair')">
-                    <v-icon name="md-stairs" scale="1.2" />
-                    <span>Stairs</span>
-                </button>
-                <button @click="highlightCategory('bathroom')">
-                    <v-icon name="bi-badge-wc-fill" scale="1.2" />
-                    <span>Bathrooms</span>
-                </button>
+            <div class="container ">
+                <nav style="display: flex; justify-content: start;">
+                    <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
+                        <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
+                        <span style="padding-left: .5rem">Home</span>
+                    </RouterLink>
+                    <BuildingSelector></BuildingSelector>
+                </nav>
             </div>
+
+           
 
         </main>
     </div>
 
 </template>
 
-<style scoped>
+<style>
+
+    /*GUI styles*/
+
+    #roomInfo{
+        margin:1rem;
+
+    }
+
+    ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+    }
+
+    #collapse-menu{
+        background-color: rgb(235, 235, 235);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.318);
+        margin:0px;
+        margin-top:40vh;
+        margin-bottom: 40vh;
+        border-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding:0;
+    }
+
+    #collapse-menu p{
+        -webkit-transform: rotate(-90deg);
+    }
+
+    #centered-div {
+        z-index:1;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        width:25vw;
+
+        background-color: #341b3f;
+
+        /* border styles */
+        border-radius: 30px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #GUIHeader{
+        border-top-right-radius: 30px;
+        background-color: #75378f;
+        height:10vh;
+    }
+
+    #GUIMain{
+        margin-bottom:2rem;
+        padding:0;
+        height:100%;
+        overflow:auto;
+    }
+
+    /* formatting styles */
+
+    #topSection{
+        display:flex;
+        justify-content: space-between;
+        height:7.5vh;
+    }
+
+    #topSection div{
+        display: flex;
+    }
 
     #GUI{
         height:100vh;
@@ -134,9 +217,8 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 1rem;
         max-height: 85vh;
-        margin-bottom: 2rem;
     }
 
     svg {
@@ -144,13 +226,13 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         height: auto;
     }
 
-    .filters {
-        display: flex;
-        justify-content: center;
-    }
     .filters button {
         display: flex;
         align-items: center;
+        margin-right:1rem;
+        background-color:  rgb(235, 235, 235);
+        padding:1rem;
+        border-radius:2rem;
     }
 
     .filters button span {
