@@ -3,14 +3,14 @@
         <div id="centered-div">
             
                 <div id="GUIHeader">
-                    <SearchBar id="searchbar"/>
+                    <SearchBar/>
                 </div>
 
-            <div v-if="building.room">
+            <div id="roomInfo" v-if="building.room">
                 <span>
                     {{ building.room }} 
                 </span>
-                <div>
+                <div v-if="building.roomData?.data">
                     This room contains: 
                     <ul>
                         <li v-for="(prop, label) in building.roomData?.data" :key="label">
@@ -18,8 +18,11 @@
                         </li>
                     </ul>
                 </div>
+                <div v-else>
+                    No additional info for this room
+                </div>
             </div>
-            <div v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
+            <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
             
             
         </div>
@@ -35,11 +38,12 @@ import { useBuildingStore } from '@/stores/building';
 
 const building = useBuildingStore(); 
 
+
 </script>
 
 <script> 
+
 function showHideMenu() {
-    console.log("click");
     var x = document.getElementById("centered-div");
     if (x.style.display === "none") {
         x.style.display = "flex";
@@ -62,6 +66,10 @@ function growDiv() {
 
 
 <style>
+
+#roomInfo{
+    margin:1rem;
+}
 
 ul {
         list-style-type: none;
@@ -91,7 +99,7 @@ ul {
     -webkit-box-shadow: 0 0 30px 5px #999;
     width:25vw;
 
-    background-color: #75378f;
+    background-color: #370e48;
 
     /* border styles */
     border-radius: 30px;
@@ -101,11 +109,15 @@ ul {
 
 #GUIHeader{
     border-top-right-radius: 30px;
-    background-color: rgb(222, 181, 219);
+    background-color: #75378f;
     padding:1rem;
     margin: -.5rem;
     margin-bottom:2rem;
     height:20vh;
+}
+
+#GUIHeader SearchBar{
+
 }
 
 </style>
