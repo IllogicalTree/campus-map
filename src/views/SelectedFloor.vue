@@ -73,7 +73,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         
         <main id="map">
 
-            <div id="topSection"> 
+            <div id="topSection" class="wrap"> 
                 
                 <div class="filters">
                     <button @click="highlightCategory('accessible_toilet')">
@@ -103,7 +103,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         
 
             <!-- horizontal section with the floor and level toggle -->
-            <div class="container">
+            <div class="container wrap">
                 <div class="floor">
                     <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
                 </div>
@@ -195,6 +195,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         display:flex;
         justify-content: space-between;
         height:7.5vh;
+        flex-wrap: wrap;
     }
 
     #topSection div{
@@ -206,9 +207,12 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         display:flex;
     }
 
+    .wrap{
+        flex-wrap: wrap;
+    }
+
     nav {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
         margin-bottom: 1rem;
     }
