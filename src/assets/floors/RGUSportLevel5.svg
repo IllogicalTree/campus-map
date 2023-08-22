@@ -1,55 +1,56 @@
-<svg width="797" height="501" viewBox="0 0 797 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="RGUSportLevel5">
-<g id="level 4">
-<path id="Vector" opacity="0.55" d="M737.364 381.273H796.321V500.731H0.612671V0.730713H750.668V267.532H737.787L737.364 381.273Z" fill="#75378F"/>
-</g>
-<g id="S404 disabled toilet">
-<path id="Vector_2" d="M286.409 436.704V466.135H314.714V436.654L286.409 436.704Z" fill="#C26700"/>
-</g>
-<g id="S403 disabled toilet">
-<path id="Vector_3" d="M318.118 436.904H346.861V465.638H317.973L318.118 436.904Z" fill="#C26700"/>
-</g>
-<g id="SST02">
-<path id="Vector_4" d="M225.617 386.008H280.816V467.878H225.762L225.617 386.008Z" fill="#75378F"/>
-</g>
-<g id="S402 G2">
-<path id="Vector_5" d="M286.409 433.822H348.953V452.994H442.622V288.378H447.582V248.34H297.109V274.136H286.604L286.409 433.822Z" fill="#75378F"/>
-</g>
-<g id="S408 G2 store">
-<path id="Vector_6" d="M306.933 171.254V193.166H285.193V218.763H306.447V244.509H443.157L369.53 170.883L306.933 171.254Z" fill="#75378F"/>
-</g>
-<g id="S408a">
-<path id="Vector_7" d="M285.631 190.726H303.723V171.006H285.388L285.631 190.726Z" fill="#75378F"/>
-</g>
-<g id="S407 cleaner cupboad">
-<path id="Vector_8" d="M303.869 222.249H284.804V245.356H303.966L303.869 222.249Z" fill="#75378F"/>
-</g>
-<g id="S409 G2 plant room">
-<path id="Vector_9" d="M335.141 167.149H282.178V190.654H256.354V78.307C256.354 78.307 346.715 61.6243 335.141 167.149Z" fill="#75378F"/>
-</g>
-<g id="S406">
-<path id="Vector_10" d="M255.867 193.669H282.665V312.44H255.916L255.867 193.669Z" fill="#75378F"/>
-</g>
-<g id="S405">
-<path id="Vector_11" d="M255.624 381.903H264.816V343.857H255.867L255.624 381.903Z" fill="#75378F"/>
-</g>
-<g id="SST04">
-<path id="Vector_12" d="M736.827 388.459H790.568V494.88H708.863V460.867H736.779L736.827 388.459Z" fill="#75378F"/>
-</g>
-<g id="S401 studio1">
-<path id="Vector_13" d="M611.838 451.653H714.553V456.384H731.332V248.062H583.776V431.037H611.449L611.838 451.653Z" fill="#75378F"/>
-</g>
-<g id="S401b studio1 store">
-<path id="Vector_14" d="M608.385 217.229V244.719H729.581H730.164V216.881L608.385 217.229Z" fill="#75378F"/>
-</g>
-<g id="S401a studio1 store">
-<path id="Vector_15" d="M584.116 244.569H605.224V216.98H583.533L584.116 244.569Z" fill="#75378F"/>
-</g>
-<g id="SST03">
-<path id="Vector_16" d="M577.113 328.638H556.93V425.647H577.697L577.113 328.638Z" fill="#75378F"/>
-</g>
-<g id="COMMS PLANT ROOM">
-<path id="Vector_17" d="M581.15 8.61279H483.784V83.8097H511.846V187.143L538.617 213.914H731.477V171.656H581.004L581.15 8.61279Z" fill="#75378F"/>
-</g>
-</g>
+<svg width="797" height="501" viewBox="0 0 797 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="RGUSportLevel5">
+        <g id="level 4">
+            <path id="Vector" opacity="0.55" d="M737.364 381.273H796.321V500.731H0.612671V0.730713H750.668V267.532H737.787L737.364 381.273Z" class="room"/>
+        </g>
+        <g id="S404 disabled toilet">
+            <path id="Vector_2" d="M286.409 436.704V466.135H314.714V436.654L286.409 436.704Z" class="accessible-toilet"/>
+        </g>
+        <g id="S403 disabled toilet">
+            <path id="Vector_3" d="M318.118 436.904H346.861V465.638H317.973L318.118 436.904Z" class="accessible-toilet"/>
+        </g>
+        <g id="SST02">
+            <path id="Vector_4" d="M225.617 386.008H280.816V467.878H225.762L225.617 386.008Z" class="room"/>
+        </g>
+        <g id="S402 G2">
+            <path id="Vector_5" d="M286.409 433.822H348.953V452.994H442.622V288.378H447.582V248.34H297.109V274.136H286.604L286.409 433.822Z" class="room"/>
+        </g>
+        <g id="S408 G2 store">
+            <path id="Vector_6" d="M306.933 171.254V193.166H285.193V218.763H306.447V244.509H443.157L369.53 170.883L306.933 171.254Z" class="room"/>
+        </g>
+        <g id="S408a">
+            <path id="Vector_7" d="M285.631 190.726H303.723V171.006H285.388L285.631 190.726Z" class="room"/>
+        </g>
+        <g id="S407 cleaner cupboad">
+            <path id="Vector_8" d="M303.869 222.249H284.804V245.356H303.966L303.869 222.249Z" class="room"/>
+        </g>
+        <g id="S409 G2 plant room">
+            <path id="Vector_9" d="M335.141 167.149H282.178V190.654H256.354V78.307C256.354 78.307 346.715 61.6243 335.141 167.149Z" class="room"/>
+        </g>
+        <g id="S406">
+            <path id="Vector_10" d="M255.867 193.669H282.665V312.44H255.916L255.867 193.669Z" class="room"/>
+        </g>
+        <g id="S405">
+            <path id="Vector_11" d="M255.624 381.903H264.816V343.857H255.867L255.624 381.903Z" class="room"/>
+        </g>
+        <g id="SST04">
+            <path id="Vector_12" d="M736.827 388.459H790.568V494.88H708.863V460.867H736.779L736.827 388.459Z" class="room"/>
+        </g>
+        <g id="S401 studio1">
+            <path id="Vector_13" d="M611.838 451.653H714.553V456.384H731.332V248.062H583.776V431.037H611.449L611.838 451.653Z" class="room"/>
+        </g>
+        <g id="S401b studio1 store">
+            <path id="Vector_14" d="M608.385 217.229V244.719H729.581H730.164V216.881L608.385 217.229Z" class="room"/>
+        </g>
+        <g id="S401a studio1 store">
+            <path id="Vector_15" d="M584.116 244.569H605.224V216.98H583.533L584.116 244.569Z" class="room"/>
+        </g>
+        <g id="SST03">
+            <path id="Vector_16" d="M577.113 328.638H556.93V425.647H577.697L577.113 328.638Z" class="room"/>
+        </g>
+        <g id="COMMS PLANT ROOM">
+            <path id="Vector_17" d="M581.15 8.61279H483.784V83.8097H511.846V187.143L538.617 213.914H731.477V171.656H581.004L581.15 8.61279Z" class="room"/>
+        </g>
+    </g>
 </svg>

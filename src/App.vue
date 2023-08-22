@@ -135,4 +135,18 @@ const { orientation } = useScreenOrientation()
         stroke: rgb(126, 244, 255);
         animation: blink 1.6s infinite;
     }
+
+    text {
+        user-select: none;
+        -moz-user-select: none; 
+        -webkit-text-select: none;
+        -webkit-user-select: none;
+    }
+
+    text {
+        user-select: none;
+        -moz-user-select: none; 
+        -webkit-text-select: none;
+        -webkit-user-select: none;
+    }
 </style>

@@ -1,58 +1,59 @@
-<svg width="1036" height="501" viewBox="0 0 1036 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="IshbelGordonLevel7">
-<g id="level 7">
-<path id="Vector" opacity="0.55" d="M0.296143 10.4027H209.935V6.14899H492.791V0.755859H885.332V7.74413H1035.7V493.92H885.109V500.756H492.167V493.54H0.40422L0.296143 10.4027Z" fill="#75378F"/>
-</g>
-<g id="AHU 15 RET">
-<path id="Vector_2" d="M35.4539 255.064V285.889H123.238V254.746L35.4539 255.064Z" fill="#75378F"/>
-</g>
-<g id="AHU 15 SUP">
-<path id="Vector_3" d="M35.7649 326.753V357.719H122.58V327.107L35.7649 326.753Z" fill="#75378F"/>
-</g>
-<g id="AHU 12B SUP">
-<path id="Vector_4" d="M35.4192 365.195V395.771H122.58V365.195H35.4192Z" fill="#75378F"/>
-</g>
-<g id="AHU 12B RET">
-<path id="Vector_5" d="M35.6628 426.269V457.129H122.859V426.517L35.6628 426.269Z" fill="#75378F"/>
-</g>
-<g id="AUH 13B RET">
-<path id="Vector_6" d="M244.295 411.634V459.394H270.834V411.457L244.295 411.634Z" fill="#75378F"/>
-</g>
-<g id="AUH 13B SUP">
-<path id="Vector_7" d="M312.095 375.175V459.996H342.925V374.892C342.925 374.892 311.784 375.105 312.095 375.175Z" fill="#75378F"/>
-</g>
-<g id="level 7 stairs 1">
-<path id="Vector_8" d="M163.431 42.6433V69.3225H219.451V78.4282H232.773V42.1118L163.431 42.6433Z" fill="#B03A4F"/>
-</g>
-<g id="H702">
-<path id="Vector_9" d="M201.77 81.2266V97.7372H234.053V81.6517L201.77 81.2266Z" fill="#75378F"/>
-</g>
-<g id="level 7 DRY RISER 1">
-<path id="Vector_10" d="M201.666 78.7108V74.5654H216.995V78.8171" fill="#75378F"/>
-</g>
-<g id="level 7 hot water storage">
-<path id="Vector_11" d="M236.633 42.7847V81.4394H394.52V42.4658L236.633 42.7847Z" fill="#75378F"/>
-</g>
-<g id="H701 boiler room">
-<path id="Vector_12" d="M157.935 143.473H227.449V254.158H164.267V246.717H157.831L157.935 143.473Z" fill="#75378F"/>
-</g>
-<g id="level 7 electrical riser 1">
-<path id="Vector_13" d="M151.706 280.217H158.627V336.48H151.153L151.706 280.217Z" fill="#75378F"/>
-</g>
-<g id="H704">
-<path id="Vector_14" d="M211.74 368.174H233.746V414.163H205.858V402.223H212.155L211.74 368.174Z" fill="#75378F"/>
-</g>
-<g id="level 7 air chillers">
-<path id="Vector_15" d="M30.7885 142.818H156.15V248.897H136.565V226.469H30.6501L30.7885 142.818Z" fill="#75378F"/>
-</g>
-<g id="AHU 14B SUP">
-<path id="Vector_16" d="M35.5981 103.028V134.029H123.036V102.815L35.5981 103.028Z" fill="#75378F"/>
-</g>
-<g id="AHU 14B RET">
-<path id="Vector_17" d="M35.7362 41.2012H122.967V72.8406H35.4248L35.7362 41.2012Z" fill="#75378F"/>
-</g>
-<g id="level 7 stairs 3">
-<path id="Vector_18" d="M200.362 418.069V415.834H233.209V459.354H161.264V417.576L200.362 418.069Z" fill="#B03A4F"/>
-</g>
-</g>
+<svg width="1036" height="501" viewBox="0 0 1036 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="IshbelGordonLevel7">
+        <g id="level 7">
+            <path id="Vector" opacity="0.55" d="M0.296143 10.4027H209.935V6.14899H492.791V0.755859H885.332V7.74413H1035.7V493.92H885.109V500.756H492.167V493.54H0.40422L0.296143 10.4027Z" class="room"/>
+        </g>
+        <g id="AHU 15 RET">
+            <path id="Vector_2" d="M35.4539 255.064V285.889H123.238V254.746L35.4539 255.064Z" class="room"/>
+        </g>
+        <g id="AHU 15 SUP">
+            <path id="Vector_3" d="M35.7649 326.753V357.719H122.58V327.107L35.7649 326.753Z" class="room"/>
+        </g>
+        <g id="AHU 12B SUP">
+            <path id="Vector_4" d="M35.4192 365.195V395.771H122.58V365.195H35.4192Z" class="room"/>
+        </g>
+        <g id="AHU 12B RET">
+            <path id="Vector_5" d="M35.6628 426.269V457.129H122.859V426.517L35.6628 426.269Z" class="room"/>
+        </g>
+        <g id="AUH 13B RET">
+            <path id="Vector_6" d="M244.295 411.634V459.394H270.834V411.457L244.295 411.634Z" class="room"/>
+        </g>
+        <g id="AUH 13B SUP">
+            <path id="Vector_7" d="M312.095 375.175V459.996H342.925V374.892C342.925 374.892 311.784 375.105 312.095 375.175Z" class="room"/>
+        </g>
+        <g id="level 7 stairs 1">
+            <path id="Vector_8" d="M163.431 42.6433V69.3225H219.451V78.4282H232.773V42.1118L163.431 42.6433Z" class="stair"/>
+        </g>
+        <g id="H702">
+            <path id="Vector_9" d="M201.77 81.2266V97.7372H234.053V81.6517L201.77 81.2266Z" class="room"/>
+        </g>
+        <g id="level 7 DRY RISER 1">
+            <path id="Vector_10" d="M201.666 78.7108V74.5654H216.995V78.8171" class="room"/>
+        </g>
+        <g id="level 7 hot water storage">
+            <path id="Vector_11" d="M236.633 42.7847V81.4394H394.52V42.4658L236.633 42.7847Z" class="room"/>
+        </g>
+        <g id="H701 boiler room">
+            <path id="Vector_12" d="M157.935 143.473H227.449V254.158H164.267V246.717H157.831L157.935 143.473Z" class="room"/>
+        </g>
+        <g id="level 7 electrical riser 1">
+            <path id="Vector_13" d="M151.706 280.217H158.627V336.48H151.153L151.706 280.217Z" class="room"/>
+        </g>
+        <g id="H704">
+            <path id="Vector_14" d="M211.74 368.174H233.746V414.163H205.858V402.223H212.155L211.74 368.174Z" class="room"/>
+        </g>
+        <g id="level 7 air chillers">
+            <path id="Vector_15" d="M30.7885 142.818H156.15V248.897H136.565V226.469H30.6501L30.7885 142.818Z" class="room"/>
+        </g>
+        <g id="AHU 14B SUP">
+            <path id="Vector_16" d="M35.5981 103.028V134.029H123.036V102.815L35.5981 103.028Z" class="room"/>
+        </g>
+        <g id="AHU 14B RET">
+            <path id="Vector_17" d="M35.7362 41.2012H122.967V72.8406H35.4248L35.7362 41.2012Z" class="room"/>
+        </g>
+        <g id="level 7 stairs 3">
+            <path id="Vector_18" d="M200.362 418.069V415.834H233.209V459.354H161.264V417.576L200.362 418.069Z" class="stair"/>
+        </g>
+    </g>
 </svg>
