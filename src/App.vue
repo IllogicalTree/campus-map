@@ -1,14 +1,14 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import { useScreenOrientation } from '@vueuse/core'
-const { orientation } = useScreenOrientation()
+const { orientation, isSupported } = useScreenOrientation()
 
 </script>
 
 <!-- template html loaded into every page -->
 <!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
-    <div class='orientation-message' v-if="orientation.includes('portrait')">
+    <div class='orientation-message' v-if="isSupported && orientation.includes('portrait')">
         <span>Please rotate your device and view this site in landscape for the best user experience</span>
     </div>
     <div id="appContent" v-else>

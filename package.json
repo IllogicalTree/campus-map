@@ -20,13 +20,16 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
+    "@rollup/plugin-dsv": "^3.0.2",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vite-pwa/assets-generator": "^0.0.4",
+    "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
     "prettier": "^2.8.8",
+    "terser": "^5.19.2",
     "vite": "^4.3.9",
     "vite-plugin-pwa": "^0.16.4",
     "vite-svg-loader": "^4.0.0"
