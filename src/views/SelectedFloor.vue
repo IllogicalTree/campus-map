@@ -110,8 +110,8 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 <LevelSelector></LevelSelector>
             </div>
             
-            <div class="container ">
-                <nav style="display: flex; justify-content: start;">
+            <div class="container">
+                <nav>
                     <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
                         <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
                         <span style="padding-left: .5rem">Home</span>

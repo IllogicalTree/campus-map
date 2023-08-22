@@ -3,17 +3,12 @@
         <div id="centered-div">
             
                 <div id="GUIHeader">
-
+                    {{ building.room }} <span v-if=" building.roomData?.data"> - {{ building.roomData?.data['Room Name'] }} </span>
                 </div>
 
             <div id="GUIMain">
                 <div id="roomInfo" v-if="building.room">
-                    <span>
-                        {{ building.room }} 
-                    </span>
                     <div v-if="building.roomData?.data">
-                        {{ building.roomData?.data.Room }}
-                        This room contains: 
                         <ul>
                             <li v-for="(prop, label) in building.roomData?.data" :key="label">
                                 <span v-if="prop">{{ label }} - {{ prop }}</span>
