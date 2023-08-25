@@ -1,8 +1,13 @@
 <script setup>
 import { RouterView } from 'vue-router'
-//import { useScreenOrientation } from '@vueuse/core'
-//const { orientation, isSupported } = useScreenOrientation()
+import { useDrawerStore } from '@/stores/drawer';
+import {onMounted, onUnmounted} from 'vue'
 import Navigation from './components/Navigation.vue';
+
+const drawer = useDrawerStore();
+const handleResize = () => window.innerWidth <= 500 ? drawer.mobile() : drawer.desktop();
+onMounted(() => window.addEventListener('resize', handleResize))
+onUnmounted(() => window.removeEventListener('resize', handleResize))
 
 </script>
 

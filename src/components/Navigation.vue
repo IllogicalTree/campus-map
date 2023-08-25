@@ -12,11 +12,6 @@
     const nextBuilding = () => building.next()
     const prevBuilding = () => building.prev()
 
-    import { useScreenOrientation } from '@vueuse/core'
-    const { orientation } = useScreenOrientation()
-    const isMobile = ref()
-    isMobile.value = orientation.value.includes('portrait')
-    watch(() => orientation.value, newValue => isMobile.value = newValue.includes('portrait'))
     
     watch(() => building.roomData?.data, data => {
         if (!data) {
@@ -31,8 +26,6 @@
         building.roomDataFiltered = temp;
     });
 
-    console.log( route.currentRoute.value)
-
     const isOverview = ref(route.currentRoute.value.name === 'CampusOverview' );
     watch(() => route.currentRoute.value.name, name => {
         isOverview.value = name === 'CampusOverview'
@@ -42,7 +35,7 @@
 
 
 <template>
-        <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="isMobile ? 'bottom' : 'left'" :height="isMobile ? '80%' : '100%'">
+        <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
             <v-toolbar>
                 <v-toolbar-title v-if="isOverview">RGU Campus Map  </v-toolbar-title>
                 <v-toolbar-title v-else> {{ building.name }}</v-toolbar-title>
