@@ -81,6 +81,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         </v-btn>
     </section>
     <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+    <LevelSelector/>
 </template>
     
     <!--

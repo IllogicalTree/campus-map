@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import { useScreenOrientation } from '@vueuse/core'
-const { orientation, isSupported } = useScreenOrientation()
+//import { useScreenOrientation } from '@vueuse/core'
+//const { orientation, isSupported } = useScreenOrientation()
 import Navigation from './components/Navigation.vue';
 
 </script>

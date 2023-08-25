@@ -4,31 +4,31 @@
             d="M313.39,498.06v-73H295.5v29.19H210.15v-30H191.8v76.05H53.56V304.13H.08V194.22H53.67V.46H810.61v500H313.11Z"
             transform="translate(-0.08 -0.46)" />
     </g>
-    <g id="Student_Union" data-name="Student Union">
+    <g id="Student Union" data-name="Student Union">
         <polygon id="Student_Union-2" data-name="Student Union" class="union"
             points="452.06 85.3 452.06 197.05 380.82 197.05 380.82 300.2 453 300.2 453 398.29 588.92 398.83 588.92 494.42 807.71 495.61 807.71 4.59 482.79 4.93 482.79 85.3 452.06 85.3" />
     </g>
-    <g id="Meeting_Space" data-name="Meeting Space">
+    <g id="Meeting Space" data-name="Meeting Space">
         <rect class="unionArea" x="511.35" y="89.53" width="65.23" height="86.87" />
     </g>
-    <g id="Computer_Area" data-name="Computer Area">
+    <g id="Computer Area" data-name="Computer Area">
         <rect class="unionArea" x="457.69" y="89.53" width="47.69" height="87.46" />
         <rect class="unionArea" x="458.95" y="301.4" width="47.69" height="87.46" />
     </g>
-    <g id="Collaborate_Space" data-name="Collaborate Space">
+    <g id="Collaborate Space" data-name="Collaborate Space">
         <polygon class="unionArea"
             points="598.85 85.3 599.9 176.39 797.05 178.85 797.05 14.31 725.51 14.31 723.54 85.3 598.85 85.3" />
     </g>
-    <g id="IT_Help_Desk" data-name="IT Help Desk">
+    <g id="IT Help Desk" data-name="IT Help Desk">
         <rect class="unionArea" x="609.41" y="245.45" width="50.52" height="46.55" />
     </g>
-    <g id="Group_Study_Pods" data-name="Group Study Pods">
+    <g id="Group Study Pods" data-name="Group Study Pods">
         <rect class="unionArea" x="511.35" y="301.4" width="200.98" height="87.46" />
     </g>
     <g id="Gallery">
         <rect class="unionArea" x="720.01" y="300.2" width="81.63" height="88.66" />
     </g>
-    <g id="Welcome_Area" data-name="Welcome Area">
+    <g id="Welcome Area" data-name="Welcome Area">
         <rect class="unionArea" x="386.47" y="200.51" width="149.64" height="94.24" />
     </g>
     <g id="301" data-name="301">

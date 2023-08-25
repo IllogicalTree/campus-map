@@ -2,6 +2,8 @@
    <v-text-field v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?" /> 
    <datalist id="query">
     <option  v-for="result in results" :key="result">
+        {{ results.item }}
+        {{ result.item.data?.Function}}
         {{ result.item.roomId }}
     </option>
 </datalist>
@@ -22,7 +24,7 @@ const search = useSearchStore();
 const results = ref('');
 const query = ref('');
 const options = {
-    keys: ['roomId'],
+    keys: ['roomId', 'data.Function'],
     threshold: 0.5,
     caseSensitive: false,
     minMatchCharLength: 2,
