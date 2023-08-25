@@ -1,5 +1,5 @@
 <template>
-   <v-text-field v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?" /> 
+   <v-text-field single-line hide-details density="compact" variant="solo" v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?" /> 
    <datalist id="query">
     <option  v-for="result in results" :key="result">
         {{ results.item }}
@@ -40,4 +40,10 @@ watch(query, () => {
         router.push({ name: 'Floor' });
     }
 });
+
 </script>
+
+<style>
+.v-input__details {
+    display: none !important;
+}</style>
