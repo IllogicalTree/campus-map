@@ -85,23 +85,23 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
                 </section>
 
                 <section v-else class="d-fiex mt-2 space-between">
-                    <v-btn prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
+                    <v-btn class='my-2 mx-4' prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
                         Accessible Toilets
                     </v-btn>
-                    <v-btn prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
+                    <v-btn class='my-2 mx-4' prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
                         Lifts
                     </v-btn>
-                    <v-btn prepend-icon='mdi-stairs' @click="highlightCategory('stair')">
+                    <v-btn class='my-2 mx-4' prepend-icon='mdi-stairs' @click="highlightCategory('stair')">
                         Stairs
                     </v-btn>
-                    <v-btn prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
+                    <v-btn class='my-2 mx-4' prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
                         Bathrooms
                     </v-btn>
                 </section>
 
             </div>
-            <div class="d-flex flex-column pl-4">
-                <LevelSelector/>
+            <div class="d-flex flex-column pl-4" :style="isMobile ? '' : 'position: absolute; top: 40vh; right: 1rem'">
+                <LevelSelector />
             </div>
         </section>
         <component class='py-md-4' v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />

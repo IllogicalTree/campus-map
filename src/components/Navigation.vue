@@ -1,10 +1,13 @@
 <script setup>
     import {ref, watch} from 'vue'
+    import { useRouter } from 'vue-router'
     import { useBuildingStore } from '@/stores/building';
     import { useDrawerStore } from '@/stores/drawer';
+    import SearchBar from '@/components/SearchBar.vue'
 
     const building = useBuildingStore(); 
     const drawer = useDrawerStore();
+    const route = useRouter();
 
     const nextBuilding = () => building.next()
     const prevBuilding = () => building.prev()
@@ -28,14 +31,21 @@
         building.roomDataFiltered = temp;
     });
 
+    console.log( route.currentRoute.value)
+
+    const isOverview = ref(route.currentRoute.value.name === 'CampusOverview' );
+    watch(() => route.currentRoute.value.name, name => {
+        isOverview.value = name === 'CampusOverview'
+    })
+
 </script>
 
 
 <template>
         <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="isMobile ? 'bottom' : 'left'" :height="isMobile ? '80%' : '100%'">
             <v-toolbar>
-                
-                <v-toolbar-title> {{ building.name }} </v-toolbar-title>
+                <v-toolbar-title v-if="isOverview">RGU Campus Map  </v-toolbar-title>
+                <v-toolbar-title v-else> {{ building.name }}</v-toolbar-title>
             </v-toolbar>
             <v-list>
                 <v-list-item>
@@ -65,15 +75,21 @@
         
         <v-app-bar id="appBar">
             <template v-slot:prepend>
-                <v-app-bar-nav-icon  @click="drawer.toggle"></v-app-bar-nav-icon>
+                <v-app-bar-nav-icon v-if="!isOverview" @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>
             
-            <v-app-bar-title class="flex text-center">
+            <v-app-bar-title v-if="isOverview" class="flex text-center" >RGU Campus Map</v-app-bar-title>
+            <v-app-bar-title v-else class="flex text-center" >
                 <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
                 {{ building.name }}
                 <v-btn @click='nextBuilding' icon="mdi-arrow-right"/>
             </v-app-bar-title>
            
-            <v-btn @click="$router.push('/')" icon="mdi-home"/>
+            <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
 </template>
+
+<style>
+.v-toolbar__content > .v-toolbar-title {
+    margin-inline-start: 0 !important;
+}</style>

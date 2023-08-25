@@ -1,13 +1,16 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
+import { useDrawerStore } from '@/stores/drawer';
 import { buildings, } from '@/data';
 import SearchBar from '@/components/SearchBar.vue';
+import { rooms } from '../data';
 //import GUI from '@/components/GUI/HomePageGUI.vue';
 
 const selectedBuilding = useBuildingStore();
+const drawer = useDrawerStore();
 const router = useRouter();
 const selected = ref('');
 const highlighted = ref();
@@ -41,6 +44,11 @@ watch(() => highlighted.value,
         previouslyHighlighted?.classList.remove('highlight');
     }
 );
+
+onMounted(() => {
+    selectedBuilding.roomId = null
+    drawer.close()
+});
 
 </script>
 

@@ -4,6 +4,7 @@
         v-model="query"
         input-type="text"
         list="query"
+        prepend-icon="mdi-magnify"
         :items="rooms"
         item-title="roomId"
         auto-select-first
