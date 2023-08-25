@@ -53,11 +53,12 @@ import Navigation from './components/Navigation.vue';
     }
 
     .unionArea{
-        fill:#72891c;
+        fill:#75378f;
     }
 
     .union{
-        fill:#94b226;
+        fill:#142078c2; /* i am undecided on what colour to make the union*/
+        stroke:#5036a5;
     }
 
     svg {
@@ -70,7 +71,6 @@ import Navigation from './components/Navigation.vue';
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     }
 
-    .buildingLabel,
     .mainBuilding,
     .room {
         fill: #75378f;
@@ -79,6 +79,7 @@ import Navigation from './components/Navigation.vue';
     .buildingLabel{
         font-size: 20px;
     }
+
 
     .labelLine{
         stroke:  #75378f;

@@ -68,7 +68,7 @@
             </v-list>
         </v-navigation-drawer>
         
-        <v-app-bar>
+        <v-app-bar id="appBar">
             <template v-slot:prepend>
                 <v-app-bar-nav-icon  @click="toggleSidebar"></v-app-bar-nav-icon>
             </template>
