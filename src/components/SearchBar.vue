@@ -1,13 +1,13 @@
 <template>
-   <v-text-field single-line hide-details density="compact" variant="solo" v-model="query" input-type="text" autocomplete="on" list="query" placeholder="What are you looking for?" /> 
-   <datalist id="query">
-    <option  v-for="result in results" :key="result">
-        {{ results.item }}
-        {{ result.item.data?.Function}}
-        {{ result.item.roomId }}
-    </option>
-</datalist>
-  
+    <v-autocomplete
+        label="What are you looking for?"
+        v-model="query"
+        input-type="text"
+        list="query"
+        :items="rooms"
+        item-title="roomId"
+        auto-select-first
+    ></v-autocomplete>
 </template>
 
 <script setup>
@@ -27,10 +27,18 @@ const options = {
     keys: ['roomId', 'data.Function'],
     threshold: 0.5,
     caseSensitive: false,
-    minMatchCharLength: 2,
+    minMatchCharLength: 0,
 }
 
-watchEffect(() => results.value = new Fuse(rooms, options).search(query.value).slice(0, 10));
+watchEffect(() => {
+    if (!query?.value) {
+        return
+    }
+    results.value = new Fuse(rooms, options).search(query?.value).slice(0, 5)
+    if (results.value?.length == 0) {
+        results.value = rooms.map(room => room.roomId)
+    }
+});
 
 watch(query, () => {
     const room = rooms.find(room => room.roomId?.toLowerCase() === query.value?.toLowerCase());
@@ -46,4 +54,6 @@ watch(query, () => {
 <style>
 .v-input__details {
     display: none !important;
-}</style>
+}
+::-webkit-scrollbar {display:none;}
+</style>

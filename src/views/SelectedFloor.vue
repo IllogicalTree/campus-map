@@ -76,7 +76,7 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
     <div class="d-flex flex-column align-center justify-center ma-4" style="height: 100%">
         <section style="width: 100%; max-width: 680px" class="d-flex flex-row justify-center">
             <div style="width: 100%" class="d-flex flex-column">
-                <SearchBar class="d-flex"/>
+                <SearchBar/>
                 <section v-if='isMobile' class="d-fiex mt-2 justify-space-between">
                     <v-btn class='my-1 mr-3' icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')"/>
                     <v-btn class='my-1 mr-3' icon='mdi-elevator' @click="highlightCategory('lift')"/>
