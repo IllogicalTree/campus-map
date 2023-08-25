@@ -1,18 +1,20 @@
 <script setup>
     import {ref, watch} from 'vue'
-    import SearchBar from '@/components/SearchBar.vue'
     import { useBuildingStore } from '@/stores/building';
+    import { useDrawerStore } from '@/stores/drawer';
 
     const building = useBuildingStore(); 
+    const drawer = useDrawerStore();
 
-    const sidebarVisible = ref();
-    const toggleSidebar = () => sidebarVisible.value = !sidebarVisible.value;
     const nextBuilding = () => console.log("next building")
     const prevBuilding = () => console.log('prev building')
 
     import { useScreenOrientation } from '@vueuse/core'
     const { orientation } = useScreenOrientation()
-
+    const isMobile = ref()
+    isMobile.value = orientation.value.includes('portrait')
+    watch(() => orientation.value, newValue => isMobile.value = newValue.includes('portrait'))
+    
     watch(() => building.roomData?.data, data => {
         if (!data) {
             return
@@ -30,36 +32,29 @@
 
 
 <template>
-     <v-navigation-drawer style="min-height: 50vh;" v-model="sidebarVisible" :location="orientation.includes('portrait') ? 'bottom' : 'left'" >
+        <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="isMobile ? 'bottom' : 'left'" :height="isMobile ? '80%' : '100%'">
             <v-toolbar>
-                <v-btn
-                    variant="text"
-                    icon="mdi-chevron-left"
-                    @click="toggleSidebar"
-                ></v-btn>
+                
                 <v-toolbar-title> {{ building.name }} </v-toolbar-title>
             </v-toolbar>
             <v-list>
                 <v-list-item>
-                    <SearchBar/>
                     <v-card>
                         <v-card-title>{{ building.room }}</v-card-title>
-                        <v-card-content>
-                            <div id="roomInfo" v-if="building.room">
-                                <div v-if="building.roomData?.data">
-                                    <ul>
-                                        <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
-                                            <span >{{ label }} - {{ prop }}</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div v-else>
-                                    No additional info for this room
-                                </div>
+                        <div id="roomInfo" v-if="building.room">
+                            <div v-if="building.roomData?.data">
+                                <ul>
+                                    <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
+                                        <span >{{ label }} - {{ prop }}</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
-                        </v-card-content>
-                    </v-card>
+                            <div v-else>
+                                No additional info for this room
+                            </div>
+                        </div>
+                        <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
+                </v-card>
                     <v-spacer></v-spacer>
                     <v-card>
                         <v-card-title>Places of interest</v-card-title>
@@ -70,7 +65,7 @@
         
         <v-app-bar id="appBar">
             <template v-slot:prepend>
-                <v-app-bar-nav-icon  @click="toggleSidebar"></v-app-bar-nav-icon>
+                <v-app-bar-nav-icon  @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>
             
             <v-app-bar-title class="flex text-center">

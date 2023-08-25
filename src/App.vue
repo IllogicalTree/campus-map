@@ -11,13 +11,13 @@ import Navigation from './components/Navigation.vue';
 <template>
     
     <v-app>
-    <v-layout class="rounded rounded-md">
-        <Navigation/>
-        <v-main class="d-flex flex-column align-center justify-center pa-md-2" >
-            <RouterView />
-        </v-main>
-    </v-layout>
-</v-app>
+        <v-layout>
+            <Navigation/>
+            <v-main class="d-flex flex-column align-center justify-center" >
+                <RouterView />
+            </v-main>
+        </v-layout>
+    </v-app>
 </template>
 
 <style scoped>
@@ -63,7 +63,7 @@ import Navigation from './components/Navigation.vue';
 
     svg {
         width: 100%;
-        max-height: 65vh;
+        height: 100%;
     }
 
     svg text{

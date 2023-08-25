@@ -1,17 +1,24 @@
 <script setup>
-import { watchEffect, shallowRef, watch } from 'vue';
+import { watchEffect, shallowRef, watch, ref } from 'vue';
 import { useBuildingStore } from '@/stores/building';
 import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
+import { useDrawerStore } from '@/stores/drawer';
 import LevelSelector from '@/components/LevelSelector.vue';
-import BuildingSelector from '@/components/BuildingSelector.vue';
-//import GUI from '@/components/GUI/HomePageGUI.vue';
-import SearchBar from '@/components/SearchBar.vue';
+import SearchBar from '@/components/SearchBar.vue'
 
 const search = useSearchStore();
 const building = useBuildingStore();
 const highlighted = useHighlightStore();
+const drawer = useDrawerStore();
 const floorComponent = shallowRef();
+
+import { useScreenOrientation } from '@vueuse/core'
+    const { orientation } = useScreenOrientation()
+    const isMobile = ref()
+    isMobile.value = orientation.value.includes('portrait')
+    watch(() => orientation.value, newValue => isMobile.value = newValue.includes('portrait'))
+
 
 watchEffect(() => import(`../assets/floors/${building.nameId}Level${building.level}.svg`).then(val => {
     //creates a string made up of the building name and level and import that component
@@ -43,6 +50,7 @@ watch(() => highlighted.highlightedElement,
     (highlightedElement, previouslyHighlightedElement) => {
         highlightedElement?.classList?.add('highlight');
         previouslyHighlightedElement?.classList?.remove('highlight');
+        highlightedElement ? drawer.open() : drawer.close()
     }
 );
 
@@ -61,27 +69,43 @@ watch(() => highlighted.highlightedElements,
         previouslyHighlightedElements?.forEach(element => element.classList.remove('highlight'));
     }
 );
-
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
 </script>
 
 <template>
-    <section class="flex">
-        <v-btn prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
-            Accessible Toilets
-        </v-btn>
-        <v-btn prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
-            Lifts
-        </v-btn>
-        <v-btn prepend-icon='mdi-stairs' @click="highlightCategory('stair')">
-            Stairs
-        </v-btn>
-        <v-btn prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
-            Bathrooms
-        </v-btn>
-    </section>
-    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
-    <LevelSelector/>
+    <div class="d-flex flex-column align-center justify-center ma-4" style="height: 100%">
+        <section style="width: 100%; max-width: 680px" class="d-flex flex-row justify-center">
+            <div style="width: 100%" class="d-flex flex-column">
+                <SearchBar class="d-flex"/>
+                <section v-if='isMobile' class="d-fiex mt-2 justify-space-between">
+                    <v-btn class='my-1 mr-3' icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')"/>
+                    <v-btn class='my-1 mr-3' icon='mdi-elevator' @click="highlightCategory('lift')"/>
+                    <v-btn class='my-1 mr-3' icon='mdi-stairs' @click="highlightCategory('stair')"/>
+                    <v-btn class='my-1 mr-3' icon='mdi-toilet' @click="highlightCategory('bathroom')"/>
+                </section>
+
+                <section v-else class="d-fiex mt-2 space-between">
+                    <v-btn prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
+                        Accessible Toilets
+                    </v-btn>
+                    <v-btn prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
+                        Lifts
+                    </v-btn>
+                    <v-btn prepend-icon='mdi-stairs' @click="highlightCategory('stair')">
+                        Stairs
+                    </v-btn>
+                    <v-btn prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
+                        Bathrooms
+                    </v-btn>
+                </section>
+
+            </div>
+            <div class="d-flex flex-column pl-4">
+                <LevelSelector/>
+            </div>
+        </section>
+        <component class='py-md-4' v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+    </div>
 </template>
     
     <!--
