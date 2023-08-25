@@ -6,11 +6,11 @@ import SirIanWoodLevel4 from '@/assets/floors/SirIanWoodLevel4.svg';
 import SirIanWoodLevel5 from '@/assets/floors/SirIanWoodLevel5.svg';
 import SirIanWoodLevel6 from '@/assets/floors/SirIanWoodLevel6.svg';
 
-import LibraryLevel5 from '@/assets/floors/LibraryLevel5.svg';
-import LibraryLevel6 from '@/assets/floors/LibraryLevel6.svg';
-import LibraryLevel7 from '@/assets/floors/LibraryLevel7.svg';
-import LibraryLevel8 from '@/assets/floors/LibraryLevel8.svg';
-import LibraryLevel9 from '@/assets/floors/LibraryLevel9.svg';
+import LibraryLevel5 from '@/assets/floors/LibraryLevel1.svg';
+import LibraryLevel6 from '@/assets/floors/LibraryLevel2.svg';
+import LibraryLevel7 from '@/assets/floors/LibraryLevel3.svg';
+import LibraryLevel8 from '@/assets/floors/LibraryLevel4.svg';
+import LibraryLevel9 from '@/assets/floors/LibraryLevel5.svg';
 
 import IshbelGordonLevel1 from '@/assets/floors/IshbelGordonLevel1.svg';
 import IshbelGordonLevel2 from '@/assets/floors/IshbelGordonLevel2.svg';
