@@ -64,6 +64,22 @@ export const useBuildingStore = defineStore('building', () => {
     const incrementLevel = () => setLevel(level.value + 1);
     const decrementLevel = () => setLevel(level.value - 1);
     const setRoomId = newRoomId => roomId.value = newRoomId;
+    const next = () => {
+        let index = buildingsLeftToRight.findIndex(id => id === nameId.value);
+        index++
+        if (index === buildingsLeftToRight.length) {
+            index = 0
+        } 
+        setBuilding(buildingsLeftToRight[index])
+    }
+    const prev = () => {
+        let index = buildingsLeftToRight.findIndex(id => id === nameId.value);
+        if (index === 0) {
+            index = buildingsLeftToRight.length
+        }
+        index--
+        setBuilding(buildingsLeftToRight[index])
+    }
         
-    return { nameId, name, level, roomId, room, roomData, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom, displayList };
+    return { nameId, name, level, roomId, room, roomData, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom, displayList, next, prev };
 });

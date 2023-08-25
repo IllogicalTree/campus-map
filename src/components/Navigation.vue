@@ -6,8 +6,8 @@
     const building = useBuildingStore(); 
     const drawer = useDrawerStore();
 
-    const nextBuilding = () => console.log("next building")
-    const prevBuilding = () => console.log('prev building')
+    const nextBuilding = () => building.next()
+    const prevBuilding = () => building.prev()
 
     import { useScreenOrientation } from '@vueuse/core'
     const { orientation } = useScreenOrientation()
@@ -69,9 +69,9 @@
             </template>
             
             <v-app-bar-title class="flex text-center">
-                <v-btn @click='nextBuilding' icon="mdi-arrow-left"/>
+                <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
                 {{ building.name }}
-                <v-btn @click='prevBuilding' icon="mdi-arrow-right"/>
+                <v-btn @click='nextBuilding' icon="mdi-arrow-right"/>
             </v-app-bar-title>
            
             <v-btn @click="$router.push('/')" icon="mdi-home"/>
