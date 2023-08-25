@@ -1,11 +1,11 @@
 <template>
     <div class="level-selector">
         <button @click="building.incrementLevel()">
-            <v-icon name="fa-arrow-up" scale="1.5" />
+            <vue-icon name="fa-arrow-up" scale="1.5" />
         </button>
         <span>Level {{ building.level }}</span>
         <button @click="building.decrementLevel()">
-            <v-icon name="fa-arrow-down" scale="1.5" />
+            <vue-icon name="fa-arrow-down" scale="1.5" />
         </button>
     </div>
 </template>

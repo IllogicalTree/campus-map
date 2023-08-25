@@ -1,5 +1,6 @@
 @import './base.css';
 
+
 *{
   /*
   border-style:dotted;
@@ -7,6 +8,7 @@
   /*temporary style to help with formatting*/
 } 
 
+/*
 .pageHeight{
   height:100vh;
 }
@@ -20,7 +22,6 @@
 }
 
 #app {
-  max-width: 1280px;
   font-weight: normal;
 }
 
@@ -50,3 +51,4 @@ a, button {
     cursor: pointer;
   }
 }
+*/

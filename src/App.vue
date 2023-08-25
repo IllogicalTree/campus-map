@@ -2,18 +2,22 @@
 import { RouterView } from 'vue-router'
 import { useScreenOrientation } from '@vueuse/core'
 const { orientation, isSupported } = useScreenOrientation()
+import Navigation from './components/Navigation.vue';
 
 </script>
 
 <!-- template html loaded into every page -->
 <!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
-    <div class='orientation-message' v-if="isSupported && orientation.includes('portrait')">
-        <span>Please rotate your device and view this site in landscape for the best user experience</span>
-    </div>
-    <div id="appContent" v-else>
-        <RouterView />
-    </div>
+    
+    <v-app>
+    <v-layout class="rounded rounded-md">
+        <Navigation/>
+        <v-main class="d-flex flex-column align-center justify-center pa-md-2" >
+            <RouterView />
+        </v-main>
+    </v-layout>
+</v-app>
 </template>
 
 <style scoped>
@@ -57,7 +61,7 @@ const { orientation, isSupported } = useScreenOrientation()
     }
 
     svg {
-        width: 100vw;
+        width: 100%;
         max-height: 65vh;
     }
 

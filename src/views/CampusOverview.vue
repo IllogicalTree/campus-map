@@ -5,7 +5,7 @@ import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
 import { buildings, } from '@/data';
 import SearchBar from '@/components/SearchBar.vue';
-import GUI from '@/components/GUI/HomePageGUI.vue';
+//import GUI from '@/components/GUI/HomePageGUI.vue';
 
 const selectedBuilding = useBuildingStore();
 const router = useRouter();
@@ -45,19 +45,7 @@ watch(() => highlighted.value,
 </script>
 
 <template>
-    <main>
-        <header>
-            <nav>
-                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-                <SearchBar/>
-            </nav>
-        </header>
-        
-        <div class="container right">
-            <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
-        </div>
-        <span v-if="selected">Currently selected: {{ selected }}</span>
-    </main>
+        <CampusOverview @click="event => handleClickEvent(event)" />
 </template>
 
 <style scoped>

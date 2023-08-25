@@ -1,11 +1,11 @@
 <template>
     <div class="level-selector">
         <button @click="building.displayList()">
-            <v-icon name="fa-arrow-left" scale="1.5" />
+            <vue-icon name="fa-arrow-left" scale="1.5" />
         </button>
         <span class="heading">{{ building.name }} <span v-if="building.room">-</span> {{ building.room }}</span>
         <button>
-            <v-icon name="fa-arrow-right" scale="1.5" />
+            <vue-icon name="fa-arrow-right" scale="1.5" />
         </button>
         
     </div>

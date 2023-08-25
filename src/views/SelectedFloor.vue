@@ -5,7 +5,7 @@ import { useSearchStore } from '@/stores/search';
 import { useHighlightStore } from '@/stores/highlight';
 import LevelSelector from '@/components/LevelSelector.vue';
 import BuildingSelector from '@/components/BuildingSelector.vue';
-import GUI from '@/components/GUI/HomePageGUI.vue';
+//import GUI from '@/components/GUI/HomePageGUI.vue';
 import SearchBar from '@/components/SearchBar.vue';
 
 const search = useSearchStore();
@@ -66,57 +66,44 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 </script>
 
 <template>
+    <section class="flex">
+        <v-btn prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
+            Accessible Toilets
+        </v-btn>
+        <v-btn prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
+            Lifts
+        </v-btn>
+        <v-btn prepend-icon='mdi-stairs' @click="highlightCategory('stair')">
+            Stairs
+        </v-btn>
+        <v-btn prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
+            Bathrooms
+        </v-btn>
+    </section>
+    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+</template>
+    
+    <!--
     <div class="pageHeight container">
-        <div id="GUI">
-            <GUI></GUI>
-        </div>
-        
+       
+       
         <main id="map">
-
             <div id="topSection" class="wrap"> 
                 
-                <div class="filters">
-                    <button @click="highlightCategory('accessible_toilet')">
-                        <v-icon name="fa-wheelchair" scale="1.2" />
-                        <div>Accessible Toilets</div>
-                    </button>
-                    <button @click="highlightCategory('lift')">
-                        <v-icon name="md-elevator" scale="1.2" />
-                        <span>Lifts</span>
-                    </button>
-                    <button @click="highlightCategory('stair')">
-                        <v-icon name="md-stairs" scale="1.2" />
-                        <span>Stairs</span>
-                    </button>
-                    <button @click="highlightCategory('bathroom')">
-                        <v-icon name="bi-badge-wc-fill" scale="1.2" />
-                        <span>Bathrooms</span>
-                    </button>
-                </div>
-
-                <div>
-                    <SearchBar />
-                </div>
-
             </div>
             
-        
 
-            <!-- horizontal section with the floor and level toggle -->
-            <div class="container wrap">
-                <div class="floor">
-                    <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
-                </div>
-                <LevelSelector></LevelSelector>
+            <div class="container">  
+                <component v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
             </div>
             
             <div class="container">
                 <nav>
                     <RouterLink to="/" style="z-index: 3; display: flex; align-items: center;">
-                        <v-icon name="fa-arrow-left" scale="1.5"></v-icon>
+                        <vue-icon name="fa-arrow-left" scale="1.5"/>
                         <span style="padding-left: .5rem">Home</span>
                     </RouterLink>
-                    <BuildingSelector></BuildingSelector>
+                    
                 </nav>
             </div>
 
@@ -124,13 +111,16 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 
         </main>
     </div>
+-->
 
-</template>
 
 <style>
 
+
+
     /*GUI styles*/
 
+    /*
     #roomInfo{
         margin:1rem;
 
@@ -170,7 +160,6 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
 
         background-color: #341b3f;
 
-        /* border styles */
         border-radius: 30px;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
@@ -189,7 +178,11 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
         overflow:auto;
     }
 
+    */
+
     /* formatting styles */
+
+    /*
 
     #topSection{
         display:flex;
@@ -242,5 +235,6 @@ watch(() => search.query, () => highlight(document.querySelector(`[id='${search.
     .filters button span {
        padding-left: .2rem
     }
+    */
 
 </style>
