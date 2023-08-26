@@ -1,20 +1,17 @@
 <script setup>
     import {ref, watch} from 'vue'
+    import { useRouter } from 'vue-router'
     import { useBuildingStore } from '@/stores/building';
     import { useDrawerStore } from '@/stores/drawer';
     import SearchBar from '@/components/SearchBar.vue'
 
     const building = useBuildingStore(); 
     const drawer = useDrawerStore();
+    const route = useRouter();
 
-    const nextBuilding = () => console.log("next building")
-    const prevBuilding = () => console.log('prev building')
+    const nextBuilding = () => building.next()
+    const prevBuilding = () => building.prev()
 
-    import { useScreenOrientation } from '@vueuse/core'
-    const { orientation } = useScreenOrientation()
-    const isMobile = ref()
-    isMobile.value = orientation.value.includes('portrait')
-    watch(() => orientation.value, newValue => isMobile.value = newValue.includes('portrait'))
     
     watch(() => building.roomData?.data, data => {
         if (!data) {
@@ -29,18 +26,19 @@
         building.roomDataFiltered = temp;
     });
 
+    const isOverview = ref(route.currentRoute.value.name === 'CampusOverview' );
+    watch(() => route.currentRoute.value.name, name => {
+        isOverview.value = name === 'CampusOverview'
+    })
+
 </script>
 
 
 <template>
-        <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="isMobile ? 'bottom' : 'left'" :height="isMobile ? '80%' : '100%'">
+        <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
             <v-toolbar>
-                
-                <v-toolbar-title> <v-app-bar-title class="flex text-center">
-                <v-btn @click='nextBuilding' icon="mdi-arrow-left"/>
-                {{ building.name }}
-                <v-btn @click='prevBuilding' icon="mdi-arrow-right"/>
-            </v-app-bar-title> </v-toolbar-title>
+                <v-toolbar-title v-if="isOverview">RGU Campus Map  </v-toolbar-title>
+                <v-toolbar-title v-else> {{ building.name }}</v-toolbar-title>
             </v-toolbar>
             <v-list>
                 <v-list-item>
@@ -70,13 +68,22 @@
         
         <v-app-bar id="appBar">
             <template v-slot:prepend>
-                <v-app-bar-nav-icon  @click="drawer.toggle"></v-app-bar-nav-icon>
+                <v-app-bar-nav-icon v-if="!isOverview" @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>
             
-            
-
-            <SearchBar class="d-flex"/>
+            <v-app-bar-title v-if="isOverview" class="flex text-center" >RGU Campus Map</v-app-bar-title>
+            <v-app-bar-title v-else class="flex text-center" >
+                <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
+                {{ building.name }}
+                <v-btn @click='nextBuilding' icon="mdi-arrow-right"/>
+            </v-app-bar-title>
            
-            <v-btn @click="$router.push('/')" icon="mdi-home"/>
+            <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
 </template>
+
+<style>
+.v-toolbar__content > .v-toolbar-title {
+    margin-inline-start: 0 !important;
+}
+</style>
