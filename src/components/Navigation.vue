@@ -12,6 +12,11 @@
     const nextBuilding = () => building.next()
     const prevBuilding = () => building.prev()
 
+    function adminToggle() {
+
+    }
+
+
     
     watch(() => building.roomData?.data, data => {
         if (!data) {
@@ -33,6 +38,19 @@
 
 </script>
 
+<script>
+
+/*Admin state toggle code */
+export default {
+    data () {
+      return {
+        isAdmin: true,
+      }
+    },
+  }
+
+</script>
+
 
 <template>
         <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
@@ -48,11 +66,26 @@
                         <v-card-title>{{ building.room }}</v-card-title>
                         <div id="roomInfo" v-if="building.room">
                             <div v-if="building.roomData?.data">
-                                <ul>
-                                    <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
-                                        <span >{{ label }} - {{ prop }}</span>
-                                    </li>
-                                </ul>
+                                <div v-if="isAdmin">
+                                    <ul>
+                                        <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
+                                            <span >{{ label }} - {{ prop }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div v-else>
+                                    <ul>
+                                        <li>
+                                            <span> {{ building.roomDataFiltered['Room Name'] }}</span>
+                                        </li>
+                                        <li>
+                                            <span> Function - {{ building.roomDataFiltered['Function'] }}</span>
+                                        </li>
+                                        <li>
+                                            <span> Colour Code - {{ building.roomDataFiltered['Colour Code'] }}</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div v-else>
                                 No additional info for this room
@@ -73,13 +106,20 @@
                 <v-app-bar-nav-icon v-if="!isOverview" @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>
             
-            <v-app-bar-title v-if="isOverview" class="flex text-center" >RGU Campus Map</v-app-bar-title>
+            <v-app-bar-title v-if="isOverview" class="flex text-center" > <SearchBar/> </v-app-bar-title>
             <v-app-bar-title v-else class="flex text-center" >
                 <SearchBar/>
             </v-app-bar-title>
            
             <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
+
+        <v-switch style="position:fixed; position: fixed; bottom: 0; right: 0;"
+                        v-model="isAdmin"
+                        hide-details
+                        inset
+                        :label="`Admin: ${isAdmin.toString()}`"
+                    ></v-switch>
 </template>
 
 <style>
