@@ -2,6 +2,7 @@
     import {ref, watch} from 'vue'
     import { useBuildingStore } from '@/stores/building';
     import { useDrawerStore } from '@/stores/drawer';
+    import SearchBar from '@/components/SearchBar.vue'
 
     const building = useBuildingStore(); 
     const drawer = useDrawerStore();
@@ -35,7 +36,11 @@
         <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="isMobile ? 'bottom' : 'left'" :height="isMobile ? '80%' : '100%'">
             <v-toolbar>
                 
-                <v-toolbar-title> {{ building.name }} </v-toolbar-title>
+                <v-toolbar-title> <v-app-bar-title class="flex text-center">
+                <v-btn @click='nextBuilding' icon="mdi-arrow-left"/>
+                {{ building.name }}
+                <v-btn @click='prevBuilding' icon="mdi-arrow-right"/>
+            </v-app-bar-title> </v-toolbar-title>
             </v-toolbar>
             <v-list>
                 <v-list-item>
@@ -68,11 +73,9 @@
                 <v-app-bar-nav-icon  @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>
             
-            <v-app-bar-title class="flex text-center">
-                <v-btn @click='nextBuilding' icon="mdi-arrow-left"/>
-                {{ building.name }}
-                <v-btn @click='prevBuilding' icon="mdi-arrow-right"/>
-            </v-app-bar-title>
+            
+
+            <SearchBar class="d-flex"/>
            
             <v-btn @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
