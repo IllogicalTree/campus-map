@@ -38,7 +38,9 @@
         <v-navigation-drawer permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
             <v-toolbar>
                 <v-toolbar-title v-if="isOverview">RGU Campus Map  </v-toolbar-title>
-                <v-toolbar-title v-else> {{ building.name }}</v-toolbar-title>
+                <v-toolbar-title v-else> <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
+                {{ building.name }}
+                <v-btn @click='nextBuilding' icon="mdi-arrow-right"/></v-toolbar-title>
             </v-toolbar>
             <v-list>
                 <v-list-item>
@@ -73,9 +75,7 @@
             
             <v-app-bar-title v-if="isOverview" class="flex text-center" >RGU Campus Map</v-app-bar-title>
             <v-app-bar-title v-else class="flex text-center" >
-                <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
-                {{ building.name }}
-                <v-btn @click='nextBuilding' icon="mdi-arrow-right"/>
+                <SearchBar/>
             </v-app-bar-title>
            
             <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
