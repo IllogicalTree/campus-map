@@ -78,7 +78,7 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
 
     .mainBuilding,
     .room {
-        fill: #75378f;
+        fill: #7a20a0;
     }
 
     .buildingLabel{
@@ -93,7 +93,7 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
 
     .background {
         /*opacity: 0.55; */
-        fill: #370e48;
+        fill: #4a0568;
         pointer-events:none;
     }
 
