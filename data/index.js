@@ -20,6 +20,7 @@ export const buildings = {
         name: 'Sir Ian Wood',
         levels: 6,
         entranceLevel: 3,
+        //importantPlaces: 'N533'
     },
     'Library': {
         name: 'RGU Library',

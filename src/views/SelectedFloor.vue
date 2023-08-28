@@ -41,9 +41,13 @@ const highlight = target => {
 
 watch(() => highlighted.highlightedElement,
     (highlightedElement, previouslyHighlightedElement) => {
-        highlightedElement?.classList?.add('highlight');
+        highlightedElement?.classList?.add('highlight')
         previouslyHighlightedElement?.classList?.remove('highlight');
-        highlightedElement ? drawer.open() : drawer.close()
+        //highlightedElement ? drawer.open() : drawer.close()
+        //code removed in favour of the below code
+        //open the drawer if not already, do not close unless closed manually
+        //this also fixes the visual bug where the page would load and the automatically visible drawer would close immediately
+        drawer.open();
     }
 );
 
@@ -63,6 +67,7 @@ watch(() => highlighted.highlightedElements,
     }
 );
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
+
 
 </script>
 

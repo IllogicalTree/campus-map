@@ -121,12 +121,16 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
         fill: #8eb309
     }
 
+    .print{
+        fill:#1abe87
+    }
+
     .road {
         fill: #f8cdff;
     }
 
     .library{
-        fill:#0e966d
+        fill:#08b480
     }
 
     .parking {

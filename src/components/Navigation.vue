@@ -58,7 +58,6 @@ export default {
                 <v-list-item>
                     <v-card class="bg-purple-darken-1" >
                         <v-card-title>{{ building.room }} </v-card-title>
-
                         <div id="roomInfo" v-if="building.room">
                             <div v-if="building.roomData?.data">
                                 <div v-if="building.roomDataFiltered.Image">
@@ -95,16 +94,24 @@ export default {
                             </div>
                         </div>
                         <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
-                </v-card>
-                    <v-spacer></v-spacer>
-                    <v-card class="bg-purple-darken-1">
-                        <v-card-title>Places of interest in {{ building.name }}</v-card-title>
                     </v-card>
                 </v-list-item>
+                <v-card-title>Places of interest in {{ building.name }}</v-card-title>
+                <!-- my goal here is to generate a series of buttons matching a specific list of important places in the data.-->
+                <!-- clicking on them will do a search directly to the right room (like a quicksearch) -->
+                <!-- but i cant quite figure out how the search works so im leaving it for now -->
+                <!-- building.importantPlaces is also undefined and im not entirely sure why... ive commented it out for now -->
+                <ul v-for="(place) in building.importantPlaces" :key="place">
+                    <li>
+                        <v-btn class='my-2 mx-4' prepend-icon='mdi-monitor'>
+                        {{ place }}
+                        </v-btn>
+                    </li>
+                </ul>
             </v-list>
         </v-navigation-drawer>
         
-        <v-app-bar class="dark">
+        <v-app-bar>
             <template v-slot:prepend>
                 <v-app-bar-nav-icon v-if="!isOverview" @click="drawer.toggle"></v-app-bar-nav-icon>
             </template>

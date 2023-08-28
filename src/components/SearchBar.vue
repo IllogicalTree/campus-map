@@ -25,7 +25,7 @@ const search = useSearchStore();
 const results = ref('');
 const query = ref('');
 const options = {
-    keys: ['roomId', 'data.Function'],
+    keys: ['roomId', 'data.Function', 'data["Room Name"]'],
     threshold: 0.5,
     caseSensitive: false,
     minMatchCharLength: 0,
