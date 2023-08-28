@@ -41,6 +41,7 @@ Room,Level,Building,Colour Code,Room Name,Function,Owner | Booker,Usage Notes / 
 522,5,RB,Yellow,Yellow Teaching Room,Teaching,,,60,,Y,Yes,HDMI & VGA,,Projector,,Standard monitor,WebCam,WebCam,SDC-450,,,,,Correct,,,2023-07-17T10:58:37Z,l.mitchell36@rgu.ac.uk
 620,6,RB,Yellow,Meeting Room,Meeting,,(Yellow Room) standard signage,28,,Y,Yes,VGA,,Screen,,Standard monitor,Webcam,,,,,,,Correct,,,2023-07-17T10:58:38Z,l.mitchell36@rgu.ac.uk
 232a,2,RB,Specialist,Moot Court,Specialist Activities,LAW,"Comprises 232a (Yellow Room), 232b ",20,,,Yes,VGA,,Projector,,,Not Required,,,,,,,Correct,,,2023-05-30T13:19:59Z,l.mitchell36@rgu.ac.uk
+412,4,RB,,,Social,,,,,,,,,,,,,,,,,,,,,,,
 413,4,RB,Purple,Meeting Room,Meeting,SU,,,,,Yes,,,,,,,,,,,,,Correct,,,2023-05-30T13:19:59Z,l.mitchell36@rgu.ac.uk
 413a,4,RB,Yellow,Boardroom,Meeting,SU,,10,,,Yes,,,,,Standard monitor,,,,,,,,Correct,,,2023-07-17T10:58:38Z,l.mitchell36@rgu.ac.uk
 417/418,4,RB,Yellow,Yellow IT Lab,IT Lab (School),CCB,MAC Lab,36,,,Mac,HDMI & VGA,,Projector,Projector,Standard monitor,Camera built into MAC,,,,,,,Correct,,,2023-07-17T10:58:40Z,l.mitchell36@rgu.ac.uk
@@ -112,6 +113,7 @@ IC124,1,ICRGU,Blue,Blue Teaching Room,Teaching (School),ICRGU,ICRGU branding,35,
 IC215,2,ICRGU,Yellow,DELTA Office,Staff Office,DELTA,,14,,Y,Yes,HDMI & VGA,,Projector,Screen,Standard monitor,IP,Boundary,SDC-450,,,,,,Requires new signage - Staff offices,,2023-07-17T10:59:05Z,l.mitchell36@rgu.ac.uk
 IC219,2,ICRGU,Purple,Meeting Room,Meeting,ITS/DELTA,,12,,Y,Yes,HDMI & VGA,,Screen,,,WebCam,WebCam & boundary,,Cisco 7937,,,,,,,2023-05-30T11:18:59Z,l.mitchell36@rgu.ac.uk
 IC220,2,ICRGU,Yellow,Meeting Room,Meeting,ITS/DELTA,,4,,Y,Yes,HDMI,,Screen,,Standard monitor,WebCam,WebCam,,Cisco 8831,,,,,,,2023-07-17T10:59:07Z,l.mitchell36@rgu.ac.uk
+Main Atrium,3,SIWB,,,,,,,https://www.barbourproductsearch.info/GordonsUni1IMAGE-file065972.jpg,,,,,,,,,,,,,,,,,,,
 N105,1,SIWB,Yellow,Yellow Teaching Room,Teaching,,,31,,Y,Yes,HDMI,,Projector,,Standard monitor,IP,Boundary,SDC-330,,,,,,,,2023-07-17T10:59:08Z,l.mitchell36@rgu.ac.uk
 N106,1,SIWB,Yellow,Yellow Teaching Room,Teaching,,,33,,Y,Yes,HDMI,,Projector,,Standard monitor,IP,Boundary,SDC-330,,,,,,,,2023-07-17T10:59:09Z,l.mitchell36@rgu.ac.uk
 N107,1,SIWB,Yellow,Yellow Teaching Room,Teaching,,,32,,Y,Yes,HDMI,,Projector,,Standard monitor,IP,Boundary,SDC-330,,,,,,,,2023-07-17T10:59:10Z,l.mitchell36@rgu.ac.uk
@@ -193,7 +195,7 @@ N527,5,SIWB,Specialist,CAD IT Lab,IT Lab (School),SOC,(Yellow),30,,,Yes,HDMI & V
 N528,5,SIWB,Specialist,Post Graduate Computing Lab,IT Lab (School),SOC,(Yellow),30,,,Yes,HDMI,,Projector,,,IP,Boundary & lapel,SDC-330,,,,,,,,2023-05-30T11:18:43Z,l.mitchell36@rgu.ac.uk
 N529,5,SIWB,Specialist,Post Graduate Computing Lab,IT Lab (School),SOC,(Yellow),30,,,Yes,HDMI,,Projector,,,IP,Boundary,SDC-330,,,,,,,,2023-05-30T11:18:43Z,l.mitchell36@rgu.ac.uk
 N530,5,SIWB,Specialist,Multimedia Computer Lab,IT Lab (School),SOC,(Yellow) 50 PCS,50,,,Yes,HDMI & VGA,,Projector,Projector,,IP,Boundary,SDC-330,,,,,,,,2023-05-30T11:18:43Z,l.mitchell36@rgu.ac.uk
-N533,5,SIWB,Specialist,Foundation Year Computer Lab,IT Lab (School),SOC,(Yellow) 116 PCS,116,,Y,Yes,HDMI & VGA,,Projector,Projector x4 & Screen x2,,IP,Lapel,SDC-330,,,Summer 2023,Medium,Correct,,r.pearce@rgu.ac.uk,2023-06-06T15:51:56Z,l.mitchell36@rgu.ac.uk
+N533,5,SIWB,Specialist,Foundation Year Computer Lab,IT Lab (School),SOC,(Yellow) 116 PCS,116,https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.XtD6uHN9XALt5vz7A2ooZAHaE8%26pid%3DApi&f=1&ipt=0e7ab27e7c71508ada75b4d37ee3f0ba27baee76f31092f558d74de993a7a76e&ipo=images,Y,Yes,HDMI & VGA,,Projector,Projector x4 & Screen x2,,IP,Lapel,SDC-330,,,Summer 2023,Medium,Correct,,r.pearce@rgu.ac.uk,2023-06-06T15:51:56Z,l.mitchell36@rgu.ac.uk
 N533a,5,SIWB,Specialist,Booth,Specialist Activities,SOC,Booth within Video Lab,2,,,N/A,,,,,,,,,,,,,,,,2023-05-30T11:18:39Z,l.mitchell36@rgu.ac.uk
 N537,5,SIWB,Yellow,Video Call Room,Teaching ,GS,(Yellow) standard signage,12,,,Yes,HDMI & VGA,,Screen,,Standard monitor,WebCam,WebCam & boundary,,Cisco 7937,,,,,ADD TO CELCAT,,2023-07-17T10:59:38Z,l.mitchell36@rgu.ac.uk
 N548c,5,SIWB,Yellow,Meeting Room,Meeting (School),PALS,,3,,Y,N/A,,,,,Standard monitor,,,,,,,,,,,2023-07-17T10:59:39Z,l.mitchell36@rgu.ac.uk

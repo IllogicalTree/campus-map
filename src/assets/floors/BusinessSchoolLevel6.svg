@@ -130,7 +130,7 @@
         <g id="stairs A level 6">
             <path id="Vector_43" d="M85.8801 409.724H128.752V477.271H85.9641L85.8801 409.724Z" class="stair"/>
         </g>
-        <g id="elevator A level 6">
+        <g id="lift A level 6">
             <path id="Vector_44" d="M97.6896 344.499V363.159H116.249V344.671L97.6896 344.499Z" class="lift"/>
         </g>
         <g id="stairs B level 6">
@@ -139,7 +139,7 @@
         <g id="stairs C level 6">
             <path id="Vector_46" d="M85.6803 24.1383V91.4274H128.342V23.9233L85.6803 24.1383Z" class="stair"/>
         </g>
-        <g id="elevator B level 6">
+        <g id="lift B level 6">
             <path id="Vector_47" d="M98.6553 131.414H115.493V155.921H98.5713L98.6553 131.414Z" class="lift"/>
         </g>
     </g>

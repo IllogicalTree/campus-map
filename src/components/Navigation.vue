@@ -47,7 +47,7 @@ export default {
 
 
 <template>
-        <v-navigation-drawer class="bg-purple-darken-1" permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
+        <v-navigation-drawer class="bg-purple-darken-1" :width="325" permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
             <v-toolbar class="bg-purple-darken-3">
                 <v-toolbar-title class="flex text-center"  v-if="isOverview">RGU Campus Map  </v-toolbar-title>
                 <v-toolbar-title  v-else > 
@@ -58,7 +58,6 @@ export default {
                 <v-list-item>
                     <v-card class="bg-purple-darken-1" >
                         <v-card-title>{{ building.room }} </v-card-title>
-                        <v-card-text v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-text>
 
                         <div id="roomInfo" v-if="building.room">
                             <div v-if="building.roomData?.data">
@@ -69,6 +68,7 @@ export default {
                                         v-bind:src="building.roomDataFiltered.Image"
                                     ></v-img>
                                 </div>
+                                <v-card-text v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-text>
                                 <div v-if="isAdmin">
                                     <ul>
                                         <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
@@ -112,7 +112,7 @@ export default {
             <v-app-bar-title v-if="isOverview" class="flex text-center" > <SearchBar/> </v-app-bar-title>
             <v-app-bar-title v-else class="flex text-center" >
                 <v-btn @click='prevBuilding' icon="mdi-arrow-left"/>
-                        {{ building.name }}
+                        {{ building.name }} <span v-if="building.name == 'RGU Library'"> - Level {{ building.level + 4}} </span>
                 <v-btn @click='nextBuilding' icon="mdi-arrow-right"/>
             </v-app-bar-title>
            

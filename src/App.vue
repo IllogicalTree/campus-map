@@ -58,12 +58,12 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     }
 
     .unionArea{
-        fill:#75378f;
+        fill:#56378f;
     }
 
     .union{
-        fill:#142078c2; /* i am undecided on what colour to make the union*/
-        stroke:#5036a5;
+        fill:#14207800; /* i am undecided on what colour to make the union*/
+        stroke:#c6b5ff;
     }
 
     svg {
@@ -118,11 +118,15 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     }
 
     .reception {
-        fill: #6c7f28
+        fill: #8eb309
     }
 
     .road {
         fill: #f8cdff;
+    }
+
+    .library{
+        fill:#0e966d
     }
 
     .parking {

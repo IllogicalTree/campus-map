@@ -4,7 +4,7 @@
             d="M188.08,11.15V88.39h-54V10.06H.82L.29,487.3H133.83V411.43H249.58v77.85l382,1.81.77-199.26H584.46V214H632L632.33,13ZM297.76,289.47H248.31l-.92,100.93-112.07.19L135,108.81l50,.14v98H297.76Zm174,1.45L315,290l0-83.77,155.62.93Z"
             transform="translate(-0.29 -10.06)" />
     </g>
-    <g id="Student_Union" data-name="Student Union">
+    <g id="Student Union" data-name="Student Union">
         <polygon class="union"
             points="550.3 281.77 549.13 199.16 314.37 197.32 315.11 81.7 283.08 81.7 283.59 6.67 626.84 5.68 627.01 197.32 579.71 197.32 579.71 285.42 626.22 285.42 627.01 477.1 315.48 476.42 314.36 280.24 550.3 281.77" />
     </g>
@@ -86,11 +86,11 @@
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="406" data-name="406">
-        <path id="Vector_21" data-name="Vector 21" class="room"
+        <path id="Vector_21" data-name="Vector 21" class="unionArea"
             d="M378.75,296.68v18.66H315V296.27Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="407" data-name="407">
-        <path id="Vector_22" data-name="Vector 22" class="room" d="M315,370.12h16.75V390.4H315.07Z"
+        <path id="Vector_22" data-name="Vector 22" class="unionArea" d="M315,370.12h16.75V390.4H315.07Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="Bathroom">
@@ -98,7 +98,7 @@
             d="M315.22,368.3h16.27V350.74H346.8V317.35H315.26Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="408" data-name="408">
-        <path id="Vector_24" data-name="Vector 24" class="room" d="M333.22,352.67h13v37.92H333.19Z"
+        <path id="Vector_24" data-name="Vector 24" class="unionArea" d="M333.22,352.67h13v37.92H333.19Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="Bathroom-2" data-name="Bathroom">
@@ -106,55 +106,55 @@
             d="M353.44,318h23.24v45.33H347.24V353.12H353Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="411" data-name="411">
-        <path id="Vector_26" data-name="Vector 26" class="room"
+        <path id="Vector_26" data-name="Vector 26" class="unionArea"
             d="M365.73,383.53h11.58v8.61H365.8Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="410" data-name="410">
-        <path id="Vector_27" data-name="Vector 27" class="room" d="M363.64,383.56H347.92v7h15.87Z"
+        <path id="Vector_27" data-name="Vector 27" class="unionArea" d="M363.64,383.56H347.92v7h15.87Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="408a" data-name="408a">
-        <path id="Vector_28" data-name="Vector 28" class="room" d="M348,382.15h9.49V365h-9.64Z"
+        <path id="Vector_28" data-name="Vector 28" class="unionArea" d="M348,382.15h9.49V365h-9.64Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="412" data-name="412">
-        <path id="Vector_29" data-name="Vector 29" class="room"
+        <path id="Vector_29" data-name="Vector 29" class="unionArea"
             d="M381.57,296.87V390H503.94V296.35Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="409" data-name="409">
-        <path id="Vector_30" data-name="Vector 30" class="room"
+        <path id="Vector_30" data-name="Vector 30" class="unionArea"
             d="M317.09,411.4V484s62.14-.19,62.19,0,0-73,0-73Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="413" data-name="413">
-        <path id="Vector_31" data-name="Vector 31" class="room" d="M381.25,411.43v72.3h89.69v-72Z"
+        <path id="Vector_31" data-name="Vector 31" class="unionArea" d="M381.25,411.43v72.3h89.69v-72Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="414" data-name="414">
-        <path id="Vector_32" data-name="Vector 32" class="room" d="M520.14,411.6V484H627.3V411.37Z"
+        <path id="Vector_32" data-name="Vector 32" class="unionArea" d="M520.14,411.6V484H627.3V411.37Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="415" data-name="415">
-        <path id="Vector_33" data-name="Vector 33" class="room"
+        <path id="Vector_33" data-name="Vector 33" class="unionArea"
             d="M520.64,17.29H627.3V88.44H520.45Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="416" data-name="416">
-        <path id="Vector_34" data-name="Vector 34" class="room"
+        <path id="Vector_34" data-name="Vector 34" class="unionArea"
             d="M381.12,108.52v93.8H503.93V109.08Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="417" data-name="417">
-        <path id="Vector_35" data-name="Vector 35" class="room" d="M470.72,17.29H381.13V88.52H470Z"
+        <path id="Vector_35" data-name="Vector 35" class="unionArea" d="M470.72,17.29H381.13V88.52H470Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="418" data-name="418">
-        <path id="Vector_36" data-name="Vector 36" class="room" d="M348,17.86h31.25v70H348.06Z"
+        <path id="Vector_36" data-name="Vector 36" class="unionArea" d="M348,17.86h31.25v70H348.06Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="419" data-name="419">
-        <path id="Vector_37" data-name="Vector 37" class="room"
+        <path id="Vector_37" data-name="Vector 37" class="unionArea"
             d="M346.84,107.62h10.07v23.82H346.8Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="419a" data-name="419a">
-        <path id="Vector_38" data-name="Vector 38" class="room"
+        <path id="Vector_38" data-name="Vector 38" class="unionArea"
             d="M359.2,108.59v22.17h18.88V108.31Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="Bathroom-3" data-name="Bathroom">
@@ -162,23 +162,23 @@
             d="M346.6,133.14v48.38h29.83V133.59Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="420" data-name="420">
-        <path id="Vector_40" data-name="Vector 40" class="room" d="M333.8,108v9.34h10.75v-9.38Z"
+        <path id="Vector_40" data-name="Vector 40" class="unionArea" d="M333.8,108v9.34h10.75v-9.38Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="421" data-name="421">
-        <path id="Vector_41" data-name="Vector 41" class="room"
+        <path id="Vector_41" data-name="Vector 41" class="unionArea"
             d="M315.67,119.39h15.76V107.86H315.55Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="422" data-name="422">
-        <path id="Vector_42" data-name="Vector 42" class="room"
+        <path id="Vector_42" data-name="Vector 42" class="unionArea"
             d="M346.17,76.91V88.44H316.82V76.51Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="423" data-name="423">
-        <path id="Vector_43" data-name="Vector 43" class="room" d="M316.22,121.37v9.95h29V121.17Z"
+        <path id="Vector_43" data-name="Vector 43" class="unionArea" d="M316.22,121.37v9.95h29V121.17Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="424" data-name="424">
-        <path id="Vector_44" data-name="Vector 44" class="room"
+        <path id="Vector_44" data-name="Vector 44" class="unionArea"
             d="M375.67,183.86v16.22H318.12V183Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="Bathroom-4" data-name="Bathroom">
@@ -191,11 +191,11 @@
             d="M191.53,109v93.92H297.76V109.11Z" transform="translate(-0.29 -10.06)" />
     </g>
     <g id="426" data-name="426">
-        <path id="Vector_47" data-name="Vector 47" class="room" d="M345.63,18.73h-60V73.9h60.44Z"
+        <path id="Vector_47" data-name="Vector 47" class="unionArea" d="M345.63,18.73h-60V73.9h60.44Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="426a" data-name="426a">
-        <path id="Vector_48" data-name="Vector 48" class="room" d="M286,77.42h29.35V87.74H285.67Z"
+        <path id="Vector_48" data-name="Vector 48" class="unionArea" d="M286,77.42h29.35V87.74H285.67Z"
             transform="translate(-0.29 -10.06)" />
     </g>
     <g id="427" data-name="427">
