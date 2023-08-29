@@ -17,9 +17,10 @@ var buildingsLeftToRight = [
 export const useBuildingStore = defineStore('building', () => {
     const nameId = ref('SirIanWood'); //autos to this
     const name = computed(() => buildings[nameId.value].name)
-    const level = ref(buildings[nameId.value]?.entranceLevel ?? 1) //will set the autolevel for siwb specifically
+    const level = ref(buildings[nameId.value]?.entranceLevel ?? 1) 
     const roomId = ref();
     const roomData = computed(() => rooms.find(room => room.roomId === roomId.value));
+    const importantPlaces = computed(() => buildings[nameId.value].importantPlaces);
 
     const room = computed(() => {
         facilities.forEach(facility => {
@@ -80,5 +81,5 @@ export const useBuildingStore = defineStore('building', () => {
         setBuilding(buildingsLeftToRight[index])
     }
         
-    return { nameId, name, level, roomId, room, roomData, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom, displayList, next, prev };
+    return { nameId, name, level, roomId, room, roomData, importantPlaces, setBuilding, setLevel, incrementLevel, decrementLevel, setRoomId, setRoom, displayList, next, prev };
 });

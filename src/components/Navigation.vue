@@ -3,8 +3,10 @@
     import { useRouter } from 'vue-router'
     import { useBuildingStore } from '@/stores/building';
     import { useDrawerStore } from '@/stores/drawer';
+    import { useHighlightStore } from '@/stores/highlight';
     import SearchBar from '@/components/SearchBar.vue'
 
+    const highlighted = useHighlightStore();
     const building = useBuildingStore(); 
     const drawer = useDrawerStore();
     const route = useRouter();
@@ -30,6 +32,12 @@
         isOverview.value = name === 'CampusOverview'
     })
 
+    function redirect(place) {
+        console.log("redirect");
+        building.setRoom(place);
+        highlighted.highlightedElement = place;
+    }
+
 </script>
 
 <script>
@@ -42,7 +50,6 @@ export default {
       }
     },
   }
-
 </script>
 
 
@@ -56,18 +63,17 @@ export default {
             </v-toolbar>
             <v-list >
                 <v-list-item>
-                    <v-card class="bg-purple-darken-1" >
+                    <v-card class="bg-purple-darken-1">
                         <v-card-title>{{ building.room }} </v-card-title>
                         <div id="roomInfo" v-if="building.room">
                             <div v-if="building.roomData?.data">
+                                <v-card-title style="margin-top:-1.5rem; font-size:1rem;" v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-title>
                                 <div v-if="building.roomDataFiltered.Image">
                                     <v-img
-                                        max-height="300"
-                                        max-width="285"
+                                        aspect-ratio:1.7
                                         v-bind:src="building.roomDataFiltered.Image"
                                     ></v-img>
                                 </div>
-                                <v-card-text v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-text>
                                 <div v-if="isAdmin">
                                     <ul>
                                         <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
@@ -76,17 +82,14 @@ export default {
                                     </ul>
                                 </div>
                                 <div v-else>
-                                    <ul>
-                                        <li>
-                                            <span> {{ building.roomDataFiltered['Room Name'] }}</span>
-                                        </li>
-                                        <li>
+                                    <v-list>
+                                        <v-list-item>
                                             <span> Function - {{ building.roomDataFiltered['Function'] }}</span>
-                                        </li>
-                                        <li>
+                                        </v-list-item>
+                                        <v-list-item>
                                             <span> Colour Code - {{ building.roomDataFiltered['Colour Code'] }}</span>
-                                        </li>
-                                    </ul>
+                                        </v-list-item>
+                                    </v-list>
                                 </div>
                             </div>
                             <div v-else>
@@ -100,10 +103,9 @@ export default {
                 <!-- my goal here is to generate a series of buttons matching a specific list of important places in the data.-->
                 <!-- clicking on them will do a search directly to the right room (like a quicksearch) -->
                 <!-- but i cant quite figure out how the search works so im leaving it for now -->
-                <!-- building.importantPlaces is also undefined and im not entirely sure why... ive commented it out for now -->
                 <ul v-for="(place) in building.importantPlaces" :key="place">
                     <li>
-                        <v-btn class='my-2 mx-4' prepend-icon='mdi-monitor'>
+                        <v-btn @click='redirect(place)' class='my-2 mx-4' prepend-icon='mdi-monitor'> <!-- redirect function is in the script of this file-->
                         {{ place }}
                         </v-btn>
                     </li>
