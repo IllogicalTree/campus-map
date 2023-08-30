@@ -23,8 +23,6 @@ const highlight = target => {
     //code for library redirect .. for now 
     if (target?.parentNode?.id === "Library") { //if the clicked vector id is one of the set list of buildings (in buildingstore)
         building.setBuilding(target.parentNode.id);
-        //building.setBuilding(target.parentNode.id); 
-        //router.push({ name: 'Floor' }); 
     } else {
         const element = document.querySelector(`[id='${target?.parentNode?.id}'] > *`); //any element with an id
         if (!element || element === highlighted.highlightedElement) {
@@ -41,9 +39,13 @@ const highlight = target => {
 
 watch(() => highlighted.highlightedElement,
     (highlightedElement, previouslyHighlightedElement) => {
-        highlightedElement?.classList?.add('highlight');
+        highlightedElement?.classList?.add('highlight')
         previouslyHighlightedElement?.classList?.remove('highlight');
-        highlightedElement ? drawer.open() : drawer.close()
+        //highlightedElement ? drawer.open() : drawer.close()
+        //code removed in favour of the below code
+        //open the drawer if not already, do not close unless closed manually
+        //this also fixes the visual bug where the page would load and the automatically visible drawer would close immediately
+        drawer.open();
     }
 );
 
@@ -63,6 +65,8 @@ watch(() => highlighted.highlightedElements,
     }
 );
 watch(() => search.query, () => highlight(document.querySelector(`[id='${search.query}'] > *`)));
+
+console.log("Important Places", building.importantPlaces)
 
 </script>
 

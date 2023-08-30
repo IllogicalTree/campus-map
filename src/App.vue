@@ -58,12 +58,12 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     }
 
     .unionArea{
-        fill:#75378f;
+        fill:#56378f;
     }
 
     .union{
-        fill:#142078c2; /* i am undecided on what colour to make the union*/
-        stroke:#5036a5;
+        fill:#14207800; /* i am undecided on what colour to make the union*/
+        stroke:#c6b5ff;
     }
 
     svg {
@@ -78,7 +78,7 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
 
     .mainBuilding,
     .room {
-        fill: #75378f;
+        fill: #7a20a0;
     }
 
     .buildingLabel{
@@ -93,7 +93,7 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
 
     .background {
         /*opacity: 0.55; */
-        fill: #370e48;
+        fill: #4a0568;
         pointer-events:none;
     }
 
@@ -118,11 +118,19 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     }
 
     .reception {
-        fill: #6c7f28
+        fill: #8eb309
+    }
+
+    .print{
+        fill:#1abe87
     }
 
     .road {
         fill: #f8cdff;
+    }
+
+    .library{
+        fill:#08b480
     }
 
     .parking {
