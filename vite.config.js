@@ -51,7 +51,7 @@ export default defineConfig({
         short_name: 'RGU Map',
         description: 'An interactive map of the Robert Gordon University campus',
         theme_color: '#ffffff',
-        orientation: "landscape",
+        orientation: 'any',
         icons: [
           {
             src: 'pwa-192x192.png',
