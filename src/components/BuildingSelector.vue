@@ -1,17 +1,13 @@
 <template>
     <div class="level-selector">
-        <button>
-            <v-icon name="fa-arrow-left" scale="1.5" />
+        <button @click="building.displayList()">
+            <vue-icon name="fa-arrow-left" scale="1.5" />
         </button>
         <span class="heading">{{ building.name }} <span v-if="building.room">-</span> {{ building.room }}</span>
         <button>
-            <v-icon name="fa-arrow-right" scale="1.5" />
+            <vue-icon name="fa-arrow-right" scale="1.5" />
         </button>
-        <ul>
-            <li v-for="(prop, label) in building.roomData?.data" :key="label">
-                <span v-if="prop">{{ label }} - {{ prop }}</span>
-            </li>
-        </ul>
+        
     </div>
 </template>
 
@@ -23,8 +19,8 @@ const building = useBuildingStore(); //needed so that the templating {{ building
 
 <style scoped>
     .level-selector {
-        position: absolute;
-        z-index: 2;
+        /*position: absolute;
+        z-index: 2; */ /* i am keeping the overlay off for now */
         top: 0;
         left: 0;
         right: 0;
@@ -40,14 +36,5 @@ const building = useBuildingStore(); //needed so that the templating {{ building
     .heading {
         padding: .5rem;
         margin: .5rem;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 </style>

@@ -2,14 +2,14 @@ import spaceFunctionData from './teachingSpaceFunction.csv';
 
 export const buildings = {
     'BusinessSchool': {
-        name: 'Business School',
+        name: 'Riverside Building',
         levels: 6,
-        entranceLevel: 1,
+        entranceLevel: 3,
     },
     'IshbelGordon': {
         name: 'Ishbel Gordon',
         levels: 7,
-        entranceLevel: 1,
+        entranceLevel: 4,
     },
     'RGUSport': {
         name: 'RGU Sport',
@@ -20,13 +20,12 @@ export const buildings = {
         name: 'Sir Ian Wood',
         levels: 6,
         entranceLevel: 3,
+        importantPlaces: ['N533', 'Library']
     },
     'Library': {
         name: 'RGU Library',
-        levels: 9,
-        entranceLevel: 5 //although there are 4 floors in the library, the level is still considered level 6 as its part of the siwb
-        //i just remembered floor 5 is the entrance to the library, will fix later
-        //encountered a problem where since the Library levels do not start at 1, the level toggle will glitch if trying to go to levels below 5
+        levels: 5,
+        entranceLevel: 1 
     },
     'Gatehouse': {
         name: 'Gatehouse Graphics and Printing Facility',
@@ -182,12 +181,12 @@ const SirIanWoodFloor1 = [
         level: 1
     },
     {
-        roomId: "NS118-2",
+        roomId: "N118",
         building: buildings.SirIanWood,
         level: 1
     },
     {
-        roomId: "NS117-2",
+        roomId: "N117",
         building: buildings.SirIanWood,
         level: 1
     },
@@ -816,7 +815,7 @@ const SirIanWoodFloor3 = [
         level: 3
     },
     {
-        roomId: "Main_Atrium",
+        roomId: "Main Atrium",
         building: buildings.SirIanWood,
         level: 3
     },
@@ -1203,7 +1202,7 @@ const SirIanWoodFloor4 = [
         level: 4
     },
     {
-        roomId: "SOC_Office",
+        roomId: "SOC Office",
         building: buildings.SirIanWood,
         level: 4
     },

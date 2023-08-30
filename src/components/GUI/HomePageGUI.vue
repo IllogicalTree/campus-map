@@ -1,37 +1,63 @@
 <template>
-    <head> 
-        <link rel="stylesheet" href="GUIdemo.css">
-    </head>
-
-    <body> 
-
-    <div id="navigation"> 
-
-        <button onclick="showHideMenu()" id="collapse-menu"> button </button>
+        
         <div id="centered-div">
-            <div class="building-nav">
-                <button class = "switch-building-button"> </button>
-                    <h3> Sir Ian Wood Building </h3>
-                <button class = "switch-building-button"> </button>
+            
+                <div id="GUIHeader">
+                    {{ building.room }} <span v-if=" building.roomData?.data"> - {{ building.roomData?.data['Room Name'] }} </span>
+                </div>
+
+            <div id="GUIMain">
+                <div id="roomInfo" v-if="building.room">
+                    <div v-if="building.roomData?.data">
+                        <ul>
+                            <li v-for="(prop, label) in building.roomData?.data" :key="label">
+                                <span v-if="prop">{{ label }} - {{ prop }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div v-else>
+                        No additional info for this room
+                    </div>
+                </div>
+                <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
+                
+                
+                </div>
             </div>
-
-        <div class = "searchbar"> <input type="text" placeholder="Search.." style="width: 65%"> </div>
-
-        <h4 class="inner-heading"> Favourites </h4>
-
-        <div class = "favourites"> ♥ ♥ ♥ </div>
-           
-        <h4 class ="inner-heading"> Points of Interest in the Sir Ian Wood Building</h4>
-
-        <ul class= "recommended-places"> <li> Toilets </li> <li> Gender Neutral Toilets </li> <li> Accessible Toilets </li> <li> etc </li></ul>
-        </div>
-    
-    </div>
-    </body>
+        <button @click="showHideMenu()" id="collapse-menu"> <p>expand</p> </button>
 </template>
 
-<script>
+<script setup>
+
+import SearchBar from '@/components/SearchBar.vue';
+import LevelSelector from '@/components/LevelSelector.vue';
+import BuildingSelector from '@/components/BuildingSelector.vue';
+import { useBuildingStore } from '@/stores/building';
+
+const building = useBuildingStore(); 
+
+
 </script>
 
-<style>
-</style>
+<script> 
+
+function showHideMenu() {
+    var x = document.getElementById("centered-div");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function growDiv() {
+  var growDiv = document.getElementById('grow');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button").value = document.getElementById("more-button").value == 'Read more' ? 'Read less' : 'Read more';
+}
+</script>

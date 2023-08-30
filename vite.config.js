@@ -6,6 +6,7 @@ import svgLoader from 'vite-svg-loader'
 import dsv from '@rollup/plugin-dsv' 
 import { VitePWA } from 'vite-plugin-pwa'
 import legacy from '@vitejs/plugin-legacy'
+import vuetify from 'vite-plugin-vuetify'
 
 const getCache = ({ name, pattern }) => ({
   urlPattern: pattern,
@@ -50,7 +51,7 @@ export default defineConfig({
         short_name: 'RGU Map',
         description: 'An interactive map of the Robert Gordon University campus',
         theme_color: '#ffffff',
-        orientation: "landscape",
+        orientation: 'any',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -68,6 +69,7 @@ export default defineConfig({
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
+    vuetify(),
   ],
   resolve: {
     alias: {

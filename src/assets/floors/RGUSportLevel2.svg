@@ -1,82 +1,83 @@
-<svg width="515" height="501" viewBox="0 0 515 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="RGUSportLevel2">
-<g id="level 1">
-<path id="Vector" opacity="0.55" d="M146.153 12.8981V92.7435H228.932V158.724H265.46V162.714H438.99V195.055H474.686V200.053H514.167V220.972H476.3V500.731H36.6312V265.73H0.906616V13.0307C0.906616 13.0307 74.6206 -14.5556 146.153 12.8981Z" fill="#75378F"/>
-</g>
-<g id="sports hall 3">
-<path id="Vector_2" d="M40.9387 267.741H184.04V495.906H40.8354L40.9387 267.741Z" fill="#75378F"/>
-</g>
-<g id="sports hall 2">
-<path id="Vector_3" d="M186.057 267.899H328.608V496.067H185.609L186.057 267.899Z" fill="#75378F"/>
-</g>
-<g id="sports hall 1">
-<path id="Vector_4" d="M330.584 268.17V495.833H473.858V267.624L330 268.364" fill="#75378F"/>
-</g>
-<g id="hall store 1">
-<path id="Vector_5" d="M364.021 166.54V228.041H362.507V246.427H373.102V264.955H435.227V227.054H424.392V197.537H435.537V166.928L364.021 166.54Z" fill="#75378F"/>
-</g>
-<g id="electrical store (switchroom)">
-<path id="Vector_6" d="M426.868 216.417V199.932H471.725V224.729H446.475V216.663L426.868 216.417Z" fill="#75378F"/>
-</g>
-<g id="S102">
-<path id="Vector_7" d="M427.109 218.6V225.399H444.446V218.741L427.109 218.6Z" fill="#75378F"/>
-</g>
-<g id="S103">
-<path id="Vector_8" d="M279.877 263.123H346.474V247.942H343.206V207.012H326.626V215.36H297.489V206.941H279.671L279.877 263.123Z" fill="#75378F"/>
-</g>
-<g id="SST03">
-<path id="Vector_9" d="M298.694 178.904V213.74H324.7V178.763L298.694 178.904Z" fill="#75378F"/>
-</g>
-<g id="S103a disabled toilet">
-<path id="Vector_10" d="M279.567 177.635H296.01V205.286H279.602L279.567 177.635Z" fill="#C26700"/>
-</g>
-<g id="S103b female toilet">
-<path id="Vector_11" d="M327.83 205.039H344.788V190.281H361.403V166.716H328.036L327.83 205.039Z" fill="#4B337F"/>
-</g>
-<g id="S103c">
-<path id="Vector_12" d="M325.8 166.787V175.91H279.499V166.822L325.8 166.787Z" fill="#75378F"/>
-</g>
-<g id="S103d male toilet">
-<path id="Vector_13" d="M346.543 192.359V225.187H361.507V192.359H346.543Z" fill="#4B337F"/>
-</g>
-<g id="SLS01">
-<path id="Vector_14" d="M348.297 229.696H359.787V243.081H348.125L348.297 229.696Z" fill="#75378F"/>
-</g>
-<g id="S103e electrical cupboard(comms)">
-<path id="Vector_15" d="M371.242 248.153V264.708H348.125V248.188L371.242 248.153Z" fill="#75378F"/>
-</g>
-<g id="S104 hall store 2">
-<path id="Vector_16" d="M195.448 162.63H261.254V167.209H277.731V265.483H171.093V229.696H195.242L195.448 162.63Z" fill="#75378F"/>
-</g>
-<g id="S104a">
-<path id="Vector_17" d="M193.923 160.815H224.882V96.3912H146.245V227.74H193.957L193.923 160.815Z" fill="#75378F"/>
-</g>
-<g id="S105">
-<path id="Vector_18" d="M162.688 266.645H169.602V229.801H96.3318V244.666H162.723L162.688 266.645Z" fill="#75378F"/>
-</g>
-<g id="S105a">
-<path id="Vector_19" d="M160.89 246.603H154.698L137.518 263.783H160.821L160.89 246.603Z" fill="#75378F"/>
-</g>
-<g id="SST02">
-<path id="Vector_20" d="M112.971 246.885V263.616H136.535L153.711 246.44L112.971 246.885Z" fill="#75378F"/>
-</g>
-<g id="S106">
-<path id="Vector_21" d="M110.208 246.744V263.546H18.6368V246.92L110.208 246.744Z" fill="#75378F"/>
-</g>
-<g id="SST01">
-<path id="Vector_22" d="M83.5829 221.912H60.8793V244.419H83.3765L83.5829 221.912Z" fill="#75378F"/>
-</g>
-<g id="S108">
-<path id="Vector_23" d="M142.644 15.2501V157.429H126.991V203.979H143.551V227.347H111.974V216.058H94.6427V220.424H58.3467V244.536H16.5157V264.001H4.94635V14.9964C4.94635 14.9964 69.4624 -11.0695 142.644 15.2501Z" fill="#75378F"/>
-</g>
-<g id="S108a PAC">
-<path id="Vector_24" d="M95.8787 217.53H110.516V227.204H95.8364L95.8787 217.53Z" fill="#75378F"/>
-</g>
-<g id="S108B Acid">
-<path id="Vector_25" d="M129.432 184.105V202.694H142.693V183.91L129.432 184.105Z" fill="#75378F"/>
-</g>
-<g id="S108c HTH">
-<path id="Vector_26" d="M129.115 182.51V159.279H142.671V182.358" fill="#75378F"/>
-</g>
-</g>
+<svg width="515" height="501" viewBox="0 0 515 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="RGUSportLevel2">
+        <g id="level 1">
+            <path id="Vector"   d="M146.153 12.8981V92.7435H228.932V158.724H265.46V162.714H438.99V195.055H474.686V200.053H514.167V220.972H476.3V500.731H36.6312V265.73H0.906616V13.0307C0.906616 13.0307 74.6206 -14.5556 146.153 12.8981Z" class="background"/>
+        </g>
+        <g id="sports hall 3">
+            <path id="Vector_2" d="M40.9387 267.741H184.04V495.906H40.8354L40.9387 267.741Z" class="room"/>
+        </g>
+        <g id="sports hall 2">
+            <path id="Vector_3" d="M186.057 267.899H328.608V496.067H185.609L186.057 267.899Z" class="room"/>
+        </g>
+        <g id="sports hall 1">
+            <path id="Vector_4" d="M330.584 268.17V495.833H473.858V267.624L330 268.364" class="room"/>
+        </g>
+        <g id="hall store 1">
+            <path id="Vector_5" d="M364.021 166.54V228.041H362.507V246.427H373.102V264.955H435.227V227.054H424.392V197.537H435.537V166.928L364.021 166.54Z" class="room"/>
+        </g>
+        <g id="electrical store (switchroom)">
+            <path id="Vector_6" d="M426.868 216.417V199.932H471.725V224.729H446.475V216.663L426.868 216.417Z" class="room"/>
+        </g>
+        <g id="S102">
+            <path id="Vector_7" d="M427.109 218.6V225.399H444.446V218.741L427.109 218.6Z" class="room"/>
+        </g>
+        <g id="S103">
+            <path id="Vector_8" d="M279.877 263.123H346.474V247.942H343.206V207.012H326.626V215.36H297.489V206.941H279.671L279.877 263.123Z" class="room"/>
+        </g>
+        <g id="SST03">
+            <path id="Vector_9" d="M298.694 178.904V213.74H324.7V178.763L298.694 178.904Z" class="room"/>
+        </g>
+        <g id="S103a disabled toilet">
+            <path id="Vector_10" d="M279.567 177.635H296.01V205.286H279.602L279.567 177.635Z" class="accessible-toilet"/>
+        </g>
+        <g id="S103b female toilet">
+            <path id="Vector_11" d="M327.83 205.039H344.788V190.281H361.403V166.716H328.036L327.83 205.039Z" class="bathroom"/>
+        </g>
+        <g id="S103c">
+            <path id="Vector_12" d="M325.8 166.787V175.91H279.499V166.822L325.8 166.787Z" class="room"/>
+        </g>
+        <g id="S103d male toilet">
+            <path id="Vector_13" d="M346.543 192.359V225.187H361.507V192.359H346.543Z" class="bathroom"/>
+        </g>
+        <g id="SLS01">
+            <path id="Vector_14" d="M348.297 229.696H359.787V243.081H348.125L348.297 229.696Z" class="room"/>
+        </g>
+        <g id="S103e electrical cupboard(comms)">
+            <path id="Vector_15" d="M371.242 248.153V264.708H348.125V248.188L371.242 248.153Z" class="room"/>
+        </g>
+        <g id="S104 hall store 2">
+            <path id="Vector_16" d="M195.448 162.63H261.254V167.209H277.731V265.483H171.093V229.696H195.242L195.448 162.63Z" class="room"/>
+        </g>
+        <g id="S104a">
+            <path id="Vector_17" d="M193.923 160.815H224.882V96.3912H146.245V227.74H193.957L193.923 160.815Z" class="room"/>
+        </g>
+        <g id="S105">
+            <path id="Vector_18" d="M162.688 266.645H169.602V229.801H96.3318V244.666H162.723L162.688 266.645Z" class="room"/>
+        </g>
+        <g id="S105a">
+            <path id="Vector_19" d="M160.89 246.603H154.698L137.518 263.783H160.821L160.89 246.603Z" class="room"/>
+        </g>
+        <g id="SST02">
+            <path id="Vector_20" d="M112.971 246.885V263.616H136.535L153.711 246.44L112.971 246.885Z" class="room"/>
+        </g>
+        <g id="S106">
+            <path id="Vector_21" d="M110.208 246.744V263.546H18.6368V246.92L110.208 246.744Z" class="room"/>
+        </g>
+        <g id="SST01">
+            <path id="Vector_22" d="M83.5829 221.912H60.8793V244.419H83.3765L83.5829 221.912Z" class="room"/>
+        </g>
+        <g id="S108">
+            <path id="Vector_23" d="M142.644 15.2501V157.429H126.991V203.979H143.551V227.347H111.974V216.058H94.6427V220.424H58.3467V244.536H16.5157V264.001H4.94635V14.9964C4.94635 14.9964 69.4624 -11.0695 142.644 15.2501Z" class="room"/>
+        </g>
+        <g id="S108a PAC">
+            <path id="Vector_24" d="M95.8787 217.53H110.516V227.204H95.8364L95.8787 217.53Z" class="room"/>
+        </g>
+        <g id="S108B Acid">
+            <path id="Vector_25" d="M129.432 184.105V202.694H142.693V183.91L129.432 184.105Z" class="room"/>
+        </g>
+        <g id="S108c HTH">
+            <path id="Vector_26" d="M129.115 182.51V159.279H142.671V182.358" class="room"/>
+        </g>
+    </g>
 </svg>
