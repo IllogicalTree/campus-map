@@ -53,7 +53,7 @@ onMounted(() => {
 </script>
 
 <template>
-        <CampusOverview @click="event => handleClickEvent(event)" />
+    <CampusOverview @click="event => handleClickEvent(event)" />
 </template>
 
 <style scoped>
