@@ -1,12 +1,8 @@
 <template>
     <div class="level-selector">
-        <button @click="building.incrementLevel()">
-            <v-icon name="fa-arrow-up" scale="1.5" />
-        </button>
+        <v-btn icon='mdi-arrow-up' @click="building.incrementLevel()"/>
         <span>Level {{ building.level }}</span>
-        <button @click="building.decrementLevel()">
-            <v-icon name="fa-arrow-down" scale="1.5" />
-        </button>
+        <v-btn icon='mdi-arrow-down' @click="building.decrementLevel()"/>
     </div>
 </template>
 
@@ -18,8 +14,8 @@ const building = useBuildingStore();
 
 <style scoped>
     .level-selector {
-        position: absolute;
-        z-index: 2;
+        /*position: absolute;
+        z-index: 2;*/
         top: 35vh;
         right: 5vw;
         display: flex;

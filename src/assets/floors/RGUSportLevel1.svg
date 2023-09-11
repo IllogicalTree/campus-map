@@ -1,11 +1,12 @@
-<svg width="267" height="501" viewBox="0 0 267 501" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="RGUSportLevel1">
-<path id="Vector" opacity="0.55" d="M265.921 23.4373V429.123H172.693V462.628H25.0731V500.966H0.612671V22.7041C0.612671 22.7041 130.102 -26.6911 265.921 23.4373Z" fill="#75378F"/>
-<path id="Vector_2" d="M109.75 418.043H127.237V461.05H109.911L109.75 418.043Z" fill="#75378F"/>
-<path id="Vector_3" d="M128.738 418.482H171.758V438.146H128.791L128.738 418.482Z" fill="#75378F"/>
-<path id="Vector_4" d="M129.489 441.881V459.842H170.9V442.265L129.489 441.881Z" fill="#75378F"/>
-<path id="Vector_5" d="M240.526 346.973H266.167V378.83H240.795L240.526 346.973Z" fill="#75378F"/>
-<path id="Vector_6" d="M265.415 298.813H240.419V326.112H265.737L265.415 298.813Z" fill="#75378F"/>
-<path id="Vector_7" d="M176.372 427.545V410.573H204.051V427.435L176.372 427.545Z" fill="#75378F"/>
-</g>
+<svg width="267" height="501" viewBox="0 0 267 501"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="RGUSportLevel1">
+        <path id="Vector"   d="M265.921 23.4373V429.123H172.693V462.628H25.0731V500.966H0.612671V22.7041C0.612671 22.7041 130.102 -26.6911 265.921 23.4373Z" class="background"/>
+        <path id="Vector_2" d="M109.75 418.043H127.237V461.05H109.911L109.75 418.043Z" class="room"/>
+        <path id="Vector_3" d="M128.738 418.482H171.758V438.146H128.791L128.738 418.482Z" class="room"/>
+        <path id="Vector_4" d="M129.489 441.881V459.842H170.9V442.265L129.489 441.881Z" class="room"/>
+        <path id="Vector_5" d="M240.526 346.973H266.167V378.83H240.795L240.526 346.973Z" class="room"/>
+        <path id="Vector_6" d="M265.415 298.813H240.419V326.112H265.737L265.415 298.813Z" class="room"/>
+        <path id="Vector_7" d="M176.372 427.545V410.573H204.051V427.435L176.372 427.545Z" class="room"/>
+    </g>
 </svg>

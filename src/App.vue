@@ -1,19 +1,28 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import { useScreenOrientation } from '@vueuse/core'
-const { orientation, isSupported } = useScreenOrientation()
+import { useDrawerStore } from '@/stores/drawer';
+import {onMounted, onUnmounted} from 'vue'
+import Navigation from './components/Navigation.vue';
+
+const drawer = useDrawerStore();
+const handleResize = () => window.innerWidth <= 500 ? drawer.mobile() : drawer.desktop();
+onMounted(() => window.addEventListener('resize', handleResize))
+onUnmounted(() => window.removeEventListener('resize', handleResize))
 
 </script>
 
 <!-- template html loaded into every page -->
 <!-- contains the search bar and the header buttons for viewing all the svgs of each building-->
 <template>
-    <div class='orientation-message' v-if="isSupported && orientation.includes('portrait')">
-        <span>Please rotate your device and view this site in landscape for the best user experience</span>
-    </div>
-    <div v-else>
-        <RouterView />
-    </div>
+    
+    <v-app>
+        <v-layout>
+            <Navigation/>
+            <v-main class="d-flex flex-column align-center justify-center" >
+                <RouterView />
+            </v-main>
+        </v-layout>
+    </v-app>
 </template>
 
 <style scoped>
@@ -28,6 +37,11 @@ const { orientation, isSupported } = useScreenOrientation()
 </style>
 
 <style>
+
+/*formatting for maps alongside gui*/
+/*later include media queries*/
+
+
 /* styles across all maps including hover styles */
 
     g > g:hover {
@@ -43,9 +57,18 @@ const { orientation, isSupported } = useScreenOrientation()
         pointer-events:none;
     }
 
+    .unionArea{
+        fill:#56378f;
+    }
+
+    .union{
+        fill:#14207800; /* i am undecided on what colour to make the union*/
+        stroke:#c6b5ff;
+    }
+
     svg {
-        width: 100vw;
-        max-height: 65vh;
+        width: 100%;
+        height: 100%;
     }
 
     svg text{
@@ -53,16 +76,15 @@ const { orientation, isSupported } = useScreenOrientation()
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     }
 
-    .buildingLabel,
     .mainBuilding,
-    .background,
     .room {
-        fill: #75378f;
+        fill: #7a20a0;
     }
 
     .buildingLabel{
         font-size: 20px;
     }
+
 
     .labelLine{
         stroke:  #75378f;
@@ -70,16 +92,17 @@ const { orientation, isSupported } = useScreenOrientation()
     }
 
     .background {
-        opacity: 0.55;
+        /*opacity: 0.55; */
+        fill: #4a0568;
         pointer-events:none;
     }
 
     .lift {
-        fill: #2d6d9c;
+        fill: #4289bb;
     }
 
     .bathroom {
-        fill: #4b337f;
+        fill: #5036a5;
     }
 
     .accessible-toilet {
@@ -95,11 +118,19 @@ const { orientation, isSupported } = useScreenOrientation()
     }
 
     .reception {
-        fill: #6c7f28
+        fill: #8eb309
+    }
+
+    .print{
+        fill:#1abe87
     }
 
     .road {
         fill: #f8cdff;
+    }
+
+    .library{
+        fill:#08b480
     }
 
     .parking {
@@ -110,8 +141,31 @@ const { orientation, isSupported } = useScreenOrientation()
         fill: #977ca3;
     }
 
+    @keyframes blink {
+        0% {
+            stroke: rgb(48, 238, 255);
+            stroke-width: 2px;
+        }
+    }
+
     .highlight {
-        fill: hsla(184, 100%, 50%, 0.2);
-        stroke: rgb(126, 244, 255);
+        fill: hsla(188, 47%, 65%, 0.903);
+        stroke: rgb(255, 253, 200);
+        stroke-width: 0.2%;
+        animation: blink 1.6s infinite;
+    }
+
+    text {
+        user-select: none;
+        -moz-user-select: none; 
+        -webkit-text-select: none;
+        -webkit-user-select: none;
+    }
+
+    text {
+        user-select: none;
+        -moz-user-select: none; 
+        -webkit-text-select: none;
+        -webkit-user-select: none;
     }
 </style>

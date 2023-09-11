@@ -1,12 +1,16 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import CampusOverview from '@/assets/floors/CampusOverview.svg';
 import { useBuildingStore } from '@/stores/building';
+import { useDrawerStore } from '@/stores/drawer';
 import { buildings, } from '@/data';
 import SearchBar from '@/components/SearchBar.vue';
+import { rooms } from '../data';
+//import GUI from '@/components/GUI/HomePageGUI.vue';
 
 const selectedBuilding = useBuildingStore();
+const drawer = useDrawerStore();
 const router = useRouter();
 const selected = ref('');
 const highlighted = ref();
@@ -41,33 +45,28 @@ watch(() => highlighted.value,
     }
 );
 
+onMounted(() => {
+    selectedBuilding.roomId = null
+    drawer.close()
+});
+
 </script>
 
 <template>
-    <main>
-        <header>
-            <nav>
-                <RouterLink to="/">Overview</RouterLink>
-                <RouterLink to="/all-floors">[TEMP] All Floors</RouterLink>
-                <RouterLink to="/admin">Admin</RouterLink>
-                <SearchBar/>
-            </nav>
-        </header>
-        <div class="container">
-            <CampusOverview @click="event => handleClickEvent(event)" /> <!-- if the component is clicked handle the click by redirecting-->
-        </div>
-        <span v-if="selected">Currently selected: {{ selected }}</span>
-    </main>
+    <CampusOverview @click="event => handleClickEvent(event)" />
 </template>
 
 <style scoped>
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 65vh;
-    overflow: hidden;
+
+
+.right{
+    flex: 65%
 }
+
+.left{
+    flex: 35%;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
