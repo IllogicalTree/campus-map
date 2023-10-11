@@ -54,7 +54,7 @@ export default {
 
 
 <template>
-        <v-navigation-drawer class="bg-purple-darken-1" :width="325" permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
+        <v-navigation-drawer class="bg-purple-darken-1" :width="400" permanent absolute v-model="drawer.visible" :location="drawer.isMobile ? 'bottom' : 'left'" :height="drawer.isMobile ? '100%' : '100%'">
             <v-toolbar class="bg-purple-darken-3">
                 <v-toolbar-title class="flex text-center"  v-if="isOverview">RGU Campus Map  </v-toolbar-title>
                 <v-toolbar-title  v-else > 
@@ -63,24 +63,23 @@ export default {
             </v-toolbar>
             <v-list >
                 <v-list-item>
-                    <v-card class="bg-purple-darken-1">
+                    <v-card>
                         <v-card-title>{{ building.room }} </v-card-title>
+                        <v-card-title style="margin-top:-1.5rem; font-size:1rem;" v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-title>
                         <div id="roomInfo" v-if="building.room">
                             <div v-if="building.roomData?.data">
-                                <v-card-title style="margin-top:-1.5rem; font-size:1rem;" v-if="building.roomData?.data"> {{ building.roomDataFiltered['Room Name'] }} </v-card-title>
+                                
                                 <div v-if="building.roomDataFiltered.Image">
                                     <v-img
                                         aspect-ratio:1.7
                                         v-bind:src="building.roomDataFiltered.Image"
                                     ></v-img>
                                 </div>
-                                <div v-if="isAdmin">
-                                    <ul>
-                                        <li v-for="(prop, label) in building.roomDataFiltered" :key="label" >
-                                            <span >{{ label }} - {{ prop }}</span>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <v-card-text v-if="isAdmin">
+                                        <div v-for="(prop, label) in building.roomDataFiltered" :key="label" >
+                                            <span v-if="label != 'Image'" >{{ label }} - {{ prop }}</span>
+                                        </div>
+                                </v-card-text>
                                 <div v-else>
                                     <v-list>
                                         <v-list-item>
@@ -92,11 +91,11 @@ export default {
                                     </v-list>
                                 </div>
                             </div>
-                            <div v-else>
+                            <v-card-text v-else>
                                 No additional info for this location
-                            </div>
+                            </v-card-text>
                         </div>
-                        <div id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</div>
+                        <v-card-text id="roomInfo" v-else> Click on a room to see its details, or click on a filter to see what points of interest are found on this floor.</v-card-text>
                     </v-card>
                 </v-list-item>
                 <v-card-title>Places of interest in {{ building.name }}</v-card-title>
@@ -128,12 +127,15 @@ export default {
             <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
 
+        <!--
         <v-switch style="position:fixed; position: fixed; bottom: 0; right: 0;"
                         v-model="isAdmin"
                         hide-details
                         inset
                         :label="`Admin: ${isAdmin.toString()}`"
                     ></v-switch>
+        -->
+
 </template>
 
 <style>
