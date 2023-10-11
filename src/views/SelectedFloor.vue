@@ -104,7 +104,7 @@ console.log("Important Places", building.importantPlaces)
                 <LevelSelector />
             </div>
         </section>
-        <component class='py-md-4' v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)" />
+        <component class='py-md-4' v-if="floorComponent" :is="floorComponent" @click="event => highlight(event?.target)"/>
             <!--<div class="p-2">This map is provided as is and was developed as a student project. While every best effort has been made, no guarantees are made regarding the accuracy or correctness of the information provided.</div>-->
     </div>
 </template>

@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
-import dsv from '@rollup/plugin-dsv' 
 import { VitePWA } from 'vite-plugin-pwa'
 import legacy from '@vitejs/plugin-legacy'
 import vuetify from 'vite-plugin-vuetify'
@@ -30,7 +29,6 @@ export default defineConfig({
     svgLoader({
       svgo: false
     }),
-    dsv(),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
