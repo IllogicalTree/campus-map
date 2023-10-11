@@ -77,7 +77,7 @@ export default {
                                 </div>
                                 <v-card-text v-if="isAdmin">
                                         <div v-for="(prop, label) in building.roomDataFiltered" :key="label" >
-                                            <span >{{ label }} - {{ prop }}</span>
+                                            <span v-if="label != 'Image'" >{{ label }} - {{ prop }}</span>
                                         </div>
                                 </v-card-text>
                                 <div v-else>
@@ -127,12 +127,15 @@ export default {
             <v-btn v-if="!isOverview" @click="$router.push('/')" icon="mdi-home"/>
         </v-app-bar>
 
+        <!--
         <v-switch style="position:fixed; position: fixed; bottom: 0; right: 0;"
                         v-model="isAdmin"
                         hide-details
                         inset
                         :label="`Admin: ${isAdmin.toString()}`"
                     ></v-switch>
+        -->
+
 </template>
 
 <style>
