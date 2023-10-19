@@ -100,7 +100,7 @@ console.log("Important Places", building.importantPlaces)
                 </section>
 
             </div>
-            <div class="d-flex flex-column pl-4" :style="drawer.isMobile ? '' : 'position: absolute; top: 40vh; right: 1rem'">
+            <div class="d-flex flex-column pl-4" :style="drawer.isMobile ? 'z-index: 999' : 'position: absolute; top: 40vh; right: 1rem; z-index: 999'">
                 <LevelSelector />
             </div>
         </section>
