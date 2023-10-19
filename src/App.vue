@@ -20,8 +20,20 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
             <Navigation/>
             <v-main class="d-flex flex-column align-center justify-center" >
                 <RouterView />
-            </v-main>
+            </v-main>  
         </v-layout>
+        <div class="footer" style="width: 100%">
+            <p>This map is provided as is and was developed as a student project in association with the school of computing.</p>
+            <v-btn
+                color="purple"
+                dark
+                class="footer-btn"
+                href="https://forms.office.com/e/Fs3TMRqNHP" 
+                target="_blank"
+            >
+            Let us know what you think!
+            </v-btn>
+        </div>
     </v-app>
 </template>
 
@@ -33,6 +45,19 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
         height: calc(100vh - 4rem);
         text-align: center;
         padding: 1rem;
+    }
+    .footer {
+        width: 100%;
+        background: #6a1b9a;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer p {
+        color: white;
     }
 </style>
 
