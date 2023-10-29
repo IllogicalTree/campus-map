@@ -55,6 +55,20 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
 
     #road {
         pointer-events:none;
+        fill: #eaeaea;
+    }
+
+    #road text{
+        fill:grey;
+    }
+
+    #River {
+        fill: rgb(145, 216, 234);
+        pointer-events: none;
+    }
+
+    #River text {
+        fill: rgb(38, 126, 180)
     }
 
     .unionArea{
@@ -74,6 +88,8 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     svg text{
         font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16pt;
+    letter-spacing: 1pt;
     }
 
     .mainBuilding,
@@ -138,7 +154,8 @@ onUnmounted(() => window.removeEventListener('resize', handleResize))
     }
 
     .otherBuilding{
-        fill: #977ca3;
+        fill: #a48cad;
+        pointer-events: none;
     }
 
     @keyframes blink {

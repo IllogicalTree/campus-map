@@ -85,9 +85,6 @@ console.log("Important Places", building.importantPlaces)
                 </section>
 
                 <section v-else class="d-fiex mt-2 space-between">
-                    <v-btn class='my-2 mx-4' prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
-                        Accessible Toilets
-                    </v-btn>
                     <v-btn class='my-2 mx-4' prepend-icon='mdi-elevator' @click="highlightCategory('lift')">
                         Lifts
                     </v-btn>
@@ -95,7 +92,10 @@ console.log("Important Places", building.importantPlaces)
                         Stairs
                     </v-btn>
                     <v-btn class='my-2 mx-4' prepend-icon='mdi-toilet' @click="highlightCategory('bathroom')">
-                        Bathrooms
+                        Toilets
+                    </v-btn>
+                    <v-btn class='my-2 mx-4' prepend-icon='mdi-wheelchair' @click="highlightCategory('accessible_toilet')">
+                        Accessible Toilets
                     </v-btn>
                 </section>
 

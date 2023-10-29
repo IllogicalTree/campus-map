@@ -5227,6 +5227,11 @@ const BusinessSchoolFloor2 = [
 ];
 const BusinessSchoolFloor3 = [
     {
+        roomId:"Student Union",
+        building: buildings.BusinessSchool,
+        level:3
+    },
+    {
         roomId: "301",
         building: buildings.BusinessSchool,
         level: 3

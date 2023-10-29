@@ -57,8 +57,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
-
 .right{
     flex: 65%
 }
